@@ -1,27 +1,31 @@
-Chemoinformatics Tools
-===
+Substructure search program
 
 [TOC]
 
-Python
----
+Introduction
+===
 
-Anaconda distribution recommended. Package installation
+This program is made up of two parts:
+
+* spiderquery.py: Queries the ChemSpider database for SMILES strings and other properties of a molecule.
+* substructure\_search.py: Uses the Open Babel chemoinformatics tool to find number of instances of a substructure (specified by SMARTS pattern) occurring in a molecule (specified by SMILES pattern).
+
+Both programs require python. Anaconda distribution is recommended as it comes with the pandas library. Package installation can be carried through with the pip package manager:
 
 ```sh
 $ pip install packagename
 ```
 
+"substructure_search.py" additionally requires OpenBabel (link to installation guide included below).
+
 spiderquery.py
----
+===
 
 ### Setup
 
 Required python packages:
 
-* pandas (save to table)
 * chemspipy (search from chemspider)
-* shelve (write/save to database)
 
 ### Arguments
 
@@ -55,7 +59,7 @@ Input/output included in folder "examples/".
     $ spiderquery.py -d -p example -i compounds.csv
 	```
 
-    This will create a file called "examples\_db.p".
+    This will create a file called "examples\_p.db".  ("_p" stands for python "pickle object created by shelve module)
 
 * Query to both database and CSV:
 
@@ -71,21 +75,20 @@ Input/output included in folder "examples/".
     $ spiderquery.py -D -p example -i compounds.csv
 	```
 
-    This will read compounds from file called "examples\_db.p" and create files called "examples\_main.csv", "examples\_alternates.csv". if `-i compounds.csv` is omitted, all compounds in the database will be included.
+    This will read compounds from file called "examples\_p.db" and create files called "examples\_main.csv", "examples\_alternates.csv". if `-i compounds.csv` is omitted, all compounds in the database will be included.
 
 substructure_search.py
----
+===
 
 ### Setup
 
-Required programs:
+Required external programs:
 
-* OpenBabel
+* Open Babel (http://openbabel.org/wiki/Category:Installation)
 
 Required python packages:
 
-* pybel
-* pandas
+* pybel (interface to Open Babel)
 
 ### Arguments
 
@@ -103,11 +106,11 @@ Flags:
 ### Examples
 
 ```
-$ cd examples/
 $ python substructure_search.py -d -g FTIRgroups.csv \
-  -i search_test.csv -o example_output.csv
+  -i example_main.csv -o example_out.csv
 ```
 
 ### Additional information
 
 Patterns specified in GROUPFILE can be derived from a combination of SMARTS patterns. For instance, `ester_all` is defined as `"[CX3,CX3H1](=O)[OX2H0][#6]"`. `nitroester` is defined as `"[#6][OX2H0][CX3,CX3H1](=O)[C;$(C[N+](=O)[O-]),$(CC[N+](=O)[O-]),$(CCC[N+](=O)[O-]),$(CCCC[N+](=O)[O-]),$(CCCCC[N+](=O)[O-])]"`. `ester` can be defined as `{ester_all}-{nitroester}`. When present, such custom patterns are computed after all the SMARTS patterns have been matched and counted. 
+
