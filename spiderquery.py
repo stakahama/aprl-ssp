@@ -105,14 +105,14 @@ class spiderquery:
 
     def search(self,cmpd):
         """
-        main search function on individual character string cmpd
+        Main search function on individual character string cmpd
         """
         matched = self.null
         try:
             results = self.csp.search(cmpd)
             if results:
                 matched['first'] = results[0]
-                matched['rest'] = ';'.join(['{:d}:{:s}'.format(r.csid,r.commname)
+                matched['rest'] = ';'.join(['{:d}:{:s}'.format(r.csid,r.common_name.encode('utf-8'))
                                             for r in results[1:] if r])
         except KeyError:
             pass
@@ -120,7 +120,7 @@ class spiderquery:
 
     def search2db(self,compounds):
         """
-        query -> DB
+        Query -> DB
         """
         db = shelve.open(self.dbname)
         master = db['master'] if 'master' in db.keys() else {}
@@ -138,7 +138,7 @@ class spiderquery:
 
     def localized(self,c):
         """
-        called by self.search2db()
+        Called by self.search2db()
         """
         if c:
             for f in self.fields.values():
@@ -148,7 +148,7 @@ class spiderquery:
 
     def db_getter(self,db):
         """
-        returns getter function for db
+        Returns getter function for db
         called by self.db2table()
         """
         def db_get(cmpd):
@@ -159,6 +159,9 @@ class spiderquery:
         return db_get
 
     def db2table(self,compounds=None):
+        """
+        DB -> CSV
+        """
         db = shelve.open(self.dbname)
         if not compounds:
             compounds = list(set(db.keys())-set('master'))
@@ -167,12 +170,15 @@ class spiderquery:
         return out
 
     def search2table(self,compounds):
+        """
+        Query -> CSV
+        """
         out = self.results2table(compounds,self.search)
         return out
 
     def results2table(self,compounds,retrievefn):
         """
-        called by search2table/db2table
+        called by self.search2table() and self.db2table()
         """
         contents = []
         alternates = []
@@ -191,7 +197,7 @@ class spiderquery:
         contents.index.name = self.index_label
         if len(alternates)==0:
             alternates = None
-        alternates = pd.DataFrame(alternates,columns=[self.index_label,'CSID']).set_index(self.index_label)
+        alternates = pd.DataFrame(alternates,columns=[self.index_label,'CSID:common_name']).set_index(self.index_label)
         Tables = namedtuple('Tables',['main','alternates'])
         return Tables(main=contents,alternates=alternates)        
 
