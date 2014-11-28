@@ -7,7 +7,7 @@ Introduction
 
 This program is made up of two parts:
 
-* "spiderquery.py": Queries the ChemSpider database for SMILES strings and other properties of a molecule.
+* "spider_query.py": Queries the ChemSpider database for SMILES strings and other properties of a molecule.
 * "substructure\_search.py": Uses the Open Babel chemoinformatics tool to find number of instances of a substructure (specified by SMARTS pattern) occurring in a molecule (specified by SMILES pattern).
 
 ### Setup
@@ -37,7 +37,7 @@ $ pip install packagename
 
 "substructure_search.py" additionally requires Open Babel (link to installation guide included below).
 
-spiderquery.py
+spider_query.py
 ===
 
 ### Setup
@@ -67,7 +67,7 @@ Input/output included in folder "examples/".
 * Query to CSV:
 
     ```
-    $ spiderquery.py -p example -i compounds.csv
+    $ spider_query.py -p example -i compounds.csv
 	```
 
     This will create files called "examples\_main.csv" and "examples\_alternates.csv".
@@ -75,7 +75,7 @@ Input/output included in folder "examples/".
 * Query to database only:
 
     ```
-    $ spiderquery.py -d -p example -i compounds.csv
+    $ spider_query.py -d -p example -i compounds.csv
 	```
 
     This will create a file called "examples\_p.db".  ("_p" stands for python "pickle object created by shelve module)
@@ -83,7 +83,7 @@ Input/output included in folder "examples/".
 * Query to both database and CSV:
 
     ```
-    $ spiderquery.py -b -p example -i compounds.csv
+    $ spider_query.py -b -p example -i compounds.csv
 	```
 
     This will create files called "examples\_main.csv", "examples\_alternates.csv", and "examples\_db.p".
@@ -91,7 +91,7 @@ Input/output included in folder "examples/".
 * Database to CSV:
 
     ```
-    $ spiderquery.py -D -p example -i compounds.csv
+    $ spider_query.py -D -p example -i compounds.csv
 	```
 
     This will read compounds from file called "examples\_p.db" and create files called "examples\_main.csv", "examples\_alternates.csv". if `-i compounds.csv` is omitted, all compounds in the database will be included.
@@ -101,7 +101,7 @@ Input/output included in folder "examples/".
 If the [ChemSpider token](http://chemspipy.readthedocs.org/en/latest/guide/intro.html#obtaining-a-security-token) is not written to "~/.chemspidertoken", specify its location with the `-t` argument. For instance,
 
 ```
-$ spiderquery.py  -t /path/to/token.txt -p example -i compounds.csv
+$ spider_query.py  -t /path/to/token.txt -p example -i compounds.csv
 ```
 
 substructure_search.py
