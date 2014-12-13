@@ -9,6 +9,7 @@ This program is made up of two parts:
 
 * "spider_query.py": Queries the ChemSpider database for SMILES strings and other properties of a molecule.
 * "substructure\_search.py": Uses the Open Babel chemoinformatics tool to find number of instances of a substructure (specified by SMARTS pattern) occurring in a molecule (specified by SMILES pattern).
+* "substructure\_atoms.py": Uses the Open Babel chemoinformatics tool to find atoms associated with a substructure (specified by SMARTS pattern) occurring in a molecule (specified by SMILES pattern).
 
 ### Setup
 
@@ -140,4 +141,43 @@ $ python substructure_search.py -d -g FTIRgroups.csv \
 ### Additional information
 
 Patterns specified in GROUPFILE can be derived from a combination of SMARTS patterns. For instance, `ester_all` is defined as `"[CX3,CX3H1](=O)[OX2H0][#6]"`. `nitroester` is defined as `"[#6][OX2H0][CX3,CX3H1](=O)[C;$(C[N+](=O)[O-]),$(CC[N+](=O)[O-]),$(CCC[N+](=O)[O-]),$(CCCC[N+](=O)[O-]),$(CCCCC[N+](=O)[O-])]"`. `ester` can be defined as `{ester_all}-{nitroester}`. When present, such custom patterns are computed after all the SMARTS patterns have been matched and counted. 
+
+substructure_atoms.py
+===
+
+Similar to substructure\_search.py but returns atom rather than fragment abundance. Note difference in how fragments can be specified as a function of other SMARTS patterns.
+
+### Setup
+
+Required external programs:
+
+* Open Babel (http://openbabel.org/wiki/Category:Installation)
+
+Required python packages:
+
+* pybel (interface to Open Babel)
+
+### Arguments
+
+Main arguments:
+
+* `-g`: value of `GROUPFILE`. Name of file which contains columns {substructure, pattern}. An additional column, "export", consisting of 0/1 values indicating whether this substructure should be included in `OUTPUTFILE` is allowed.
+* `-i`: value of `INPUTFILE`. Name of file which contains columns {compound, SMILES}.
+* `-o`: value of `OUTPUTFILE`. Name of file which contains matrix of compound x substructure.
+* `-e`: value of `EXPORT` (optional). Name of file which contains list of substructures to include in `OUTPUTFILE`. Overrides "export" column if present in `GROUPFILE`.
+
+Flags:
+
+* `-d`: When present, indicates that `GROUPFILE` exists in the subdirectory, `SMARTSpatterns/`, distributed with "substructure_search.py".
+
+### Examples
+
+```
+$ python substructure_atoms.py -d -g FTIRgroups_foratoms.csv \
+  -i example_main.csv -o example_out.csv
+```
+
+### Additional information
+
+Patterns specified in GROUPFILE can be derived from a combination of SMARTS patterns using set operations. As with example above, `ester` can be defined as `{ester_all}-{nitroester}` (set difference). When present, such custom patterns are computed after all the SMARTS patterns have been matched and counted. 
 
