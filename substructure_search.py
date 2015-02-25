@@ -58,7 +58,7 @@ class searchgroups:
         remaining = groups.index[hasbracket].tolist()
         tokensdict = {grp:set(brackets.findall(groups[grp])) for grp in remaining}
         ##
-        maxiter = len(groups)*10        
+        maxiter = len(groups)*10 ## for safety...
         ordered = []
         i = 0
         while len(remaining) > 0:
@@ -123,7 +123,13 @@ if __name__=='__main__':
     output = inp.SMILES.apply(searchgroups(groups.pattern).count)
 
     ## export output
-    select = args.export if args.export else \
+    if args.export:
+        with open(args.export) as f:
+            export = [x for x in f]
+    else:
+        export = None
+    
+    select = export if export else \
              (groups.index[groups['export'].astype('bool')] \
               if 'export' in groups.columns else \
               [True]*len(output.columns))
