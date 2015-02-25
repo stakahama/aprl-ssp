@@ -9,9 +9,13 @@
 ################################################################################
 
 import os
+import sys
 import re
 import pybel
 import pandas as pd
+import numpy as np
+# import operator
+from collections import OrderedDict
 from argparse import ArgumentParser, RawTextHelpFormatter
 
 ## define arguments
@@ -45,23 +49,54 @@ args = parser.parse_args()
 class searchgroups:
     ##
     def __init__(self,groups):
+        prepend = lambda x,y: [x]+y
+        brackets = re.compile('\{([^{}]*)\}')
+        hasbracket = groups.map(lambda x: bool(brackets.search(str(x))))
+        ##
+        computable = set(prepend('',groups.index.tolist()))
+        computed = set(prepend('',groups.index[~hasbracket].tolist()))
+        remaining = groups.index[hasbracket].tolist()
+        tokensdict = {grp:set(brackets.findall(groups[grp])) for grp in remaining}
+        ##
+        maxiter = len(groups)*10        
+        ordered = []
+        i = 0
+        while len(remaining) > 0:
+            grp = remaining.pop()
+            tokens = tokensdict[grp]
+            if not tokens.issubset(computable):
+                undefined = ','.join(list(tokens-computable))
+                sys.exit('"{}" uncomputable: "{}" undefined'.format(grp, undefined))
+            ##
+            if tokens.issubset(computed):
+                computed = computed.union([grp])
+                ordered.append(grp)
+            else:
+                remaining = prepend(grp,remaining)
+            ##
+            i += 1
+            if i > maxiter:
+                print 'remaining:', ','.join(remaining)
+                sys.exit('exceeded maximum number of iterations {:d}'.format(maxiter))
         self.groups = groups
-        self.brackets = re.compile('\{|\}')
+        self.hasbracket = hasbracket
+        self.ordered = ordered
     ##
     def count(self,smilesstr):
         ##
         groups = self.groups
+        hasbracket = self.hasbracket
+        ordered = self.ordered
         mol = pybel.readstring('smi',smilesstr)
-        abundances = pd.Series([0]*len(groups),index=groups.index)
-        hasbracket = groups.map(lambda x: bool(self.brackets.search(str(x))))
+        abundances = pd.Series([np.nan]*len(groups),index=groups.index)
         ## SMARTS search
         for key in groups.index[~hasbracket]:
             abundances[key] = len(pybel.Smarts(groups[key]).findall(mol))
         ## evaluate expressions
-        for key in groups.index[hasbracket]:
-            abundances[key] = eval(groups[key].format(**abundances))
+        for key in ordered: #groups.index[hasbracket]:
+            abundances[key] = round(eval(groups[key].format(**abundances)))
         ##
-        return abundances
+        return abundances.astype(int)
 
 # for debugging
 # from collections import namedtuple

@@ -1,22 +1,22 @@
 substructure,pattern,export
-zero,_zero,1
+zero,"1 if True else {{}}",1
 carbon number,[#6],1
-carbon number on the acid-side of an amide (asa),_nomatch,1
-aromatic ring,_nomatch,1
-non-aromatic ring,_nomatch,1
+carbon number on the acid-side of an amide (asa),"({carbon number}-{asa aux}-1) if ({amide, primary} > 0 or {amide, secondary} > 0 or {amide, tertiary} > 0) else 0",1
+aromatic ring,"{edges}-{atoms}+1-{non-aromatic ring}",1
+non-aromatic ring,"{AC3}/3+({AC3}%3>0) + {AC4}/4+({AC4}%4>0) + {AC5}/5+({AC5}%5>0) + {AC6}/6+({AC6}%6>0) + {AC7}/7+({AC7}%7>0) + {AC8}/8+({AC8}%8>0) + {AC9}/9+({AC9}%9>0) + {AC10}/10+({AC10}%10>0)",1
 C=C (non-aromatic),C=C,1
 C=C-C=O in non-aromatic ring,[$(C=CC=O);A;R],1
 hydroxyl (alkyl),"[C;!$(C=O)][OX2H,OD1]",1
 aldehyde,[CX3H1](=O)[#6],1
 ketone,[#6][CX3](=O)[#6],1
 carboxylic acid,"[CX3](=O)[OX2H,OD1]",1
-ester,_nomatch,1
-ether,_nomatch,1
+ester,"{_ester}-{nitroester}",1
+ether,"{ether_all}-{ester}-{ether (alicyclic)}-{ether, aromatic}",1
 ether (alicyclic),[OD2;R]([C;!$(C=O)])[C;!$(C=O)],1
 "ether, aromatic","c[OD2][c,C&!$(C=O)]",1
-nitrate_all,"[$([NX3](=[OX1])(=[OX1])[O;$([X2]),$([X1-])]),$([NX3+]([OX1-])(=[OX1])[O;$([X2]),$([X1-])])]",0
+nitrate,"{_nitrate}-{carbonylperoxynitrate}",1
 nitro,"[$([NX3](=O)=O),$([NX3+](=O)[O-])][!#8]",1
-aromatic hydroxyl,"c[OX2H,OD1]",1
+aromatic hydroxyl,"{_aromatic hydroxyl}-{nitrophenol}",1
 "amine, primary",[NX3;H2;!$(NC=O);!$(Na)],1
 "amine, secondary",[NX3;H1;!$(NC=O);!$(Na)],1
 "amine, tertiary",[NX3;H0;!$(NC=O);!$(N=O);!$(Na)],1
@@ -25,10 +25,10 @@ aromatic hydroxyl,"c[OX2H,OD1]",1
 "amide, secondary",[CX3](=O)[NX3H1],1
 "amide, tertiary",[CX3](=O)[NX3H0;!$(N=O)],1
 carbonylperoxynitrate,C(=O)OO[N+](=O)[O-],1
-peroxide,"[OD2][OD2,OD1]",1
+peroxide,"{_peroxide}-{carbonylperoxynitrate}-{hydroperoxide}-{carbonylperoxyacid}",1
 hydroperoxide,"[OX2H,OD1][OD2][#6;!$(C=O)]",1
 carbonylperoxyacid,"C(=O)O[OX2H,OD1]",1
-nitrophenol,"[O-][N+](=O)[$(cc(O)cccc),$(ccc(O)ccc),$(cccc(O)cc)]",1
+nitrophenol,"1 if {_nitrophenol} > 0 else 0",1
 nitroester,"[#6][OX2H0][CX3,CX3H1](=O)[C;$(C[N+](=O)[O-]),$(CC[N+](=O)[O-]),$(CCC[N+](=O)[O-]),$(CCCC[N+](=O)[O-]),$(CCCCC[N+](=O)[O-])]",1
 ac5,[a;r5],0
 ac6,[a;r6],0
@@ -40,11 +40,14 @@ AC7,[A;r7],0
 AC8,[A;r8],0
 AC9,[A;r9],0
 AC10,[A;r10],0
+edges,"*~*",0
+atoms,"*",0
 ester_all,"[CX3,CX3H1](=O)[OX2H0][#6]",0
 ether_all,[OD2]([#6])[#6],0
+nitrate_all,"[$([NX3](=[OX1])(=[OX1])[O;$([X2]),$([X1-])]),$([NX3+]([OX1-])(=[OX1])[O;$([X2]),$([X1-])])]",0
 asa aux,"[C;$(C[NX3][CH,CC](=O)),$(CC[NX3][CH,CC](=O)),$(CCC[NX3][CH,CC](=O)),$(CCCC[NX3][CH,CC](=O)),$(CCCCC[NX3][CH,CC](=O))]",0
-CH2,[CX4H2],0
-CH3,[CX4H3],0
-edges,*~*,0
-atoms,*,0
-nitrate,_nomatch,1
+_peroxide,"[OD2][OD2,OD1]",0
+_nitrophenol,"[O-][N+](=O)[$(cc(O)cccc),$(ccc(O)ccc),$(cccc(O)cc)]",0
+_ester,"[CX3,CX3H1](=O)[OX2H0][#6]",0
+_nitrate,"[$([NX3](=[OX1])(=[OX1])[O;$([X2]),$([X1-])]),$([NX3+]([OX1-])(=[OX1])[O;$([X2]),$([X1-])])]",0
+_aromatic hydroxyl,"c[OX2H,OD1]",0
