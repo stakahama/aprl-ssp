@@ -62,7 +62,7 @@ class searchgroups:
         ordered = []
         i = 0
         while len(remaining) > 0:
-            grp = remaining.pop()
+            grp = remaining.pop(0)
             tokens = tokensdict[grp]
             if not tokens.issubset(computable):
                 undefined = ','.join(list(tokens-computable))
@@ -72,7 +72,7 @@ class searchgroups:
                 computed = computed.union([grp])
                 ordered.append(grp)
             else:
-                remaining = prepend(grp,remaining)
+                remaining.append(grp)
             ##
             i += 1
             if i > maxiter:
