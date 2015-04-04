@@ -9,14 +9,12 @@
 ################################################################################
 
 import os
-import sys
-import re
-import pybel
 import pandas as pd
 import numpy as np
 # import operator
 from collections import OrderedDict
 from argparse import ArgumentParser, RawTextHelpFormatter
+from util import searchgroups
 
 ## define arguments
 parser = ArgumentParser(description='''
@@ -45,59 +43,6 @@ parser.add_argument('-d','--default-directory',action='store_true',help='--group
 ## parse arguments
 args = parser.parse_args()
 
-## create main class/function
-class searchgroups:
-    ##
-    def __init__(self,groups):
-        prepend = lambda x,y: [x]+y
-        brackets = re.compile('\{([^{}]*)\}')
-        hasbracket = groups.map(lambda x: bool(brackets.search(str(x))))
-        ##
-        computable = set(prepend('',groups.index.tolist()))
-        computed = set(prepend('',groups.index[~hasbracket].tolist()))
-        remaining = groups.index[hasbracket].tolist()
-        tokensdict = {grp:set(brackets.findall(groups[grp])) for grp in remaining}
-        ##
-        maxiter = len(groups)*10 ## for safety...
-        ordered = []
-        i = 0
-        while len(remaining) > 0:
-            grp = remaining.pop(0)
-            tokens = tokensdict[grp]
-            if not tokens.issubset(computable):
-                undefined = ','.join(list(tokens-computable))
-                sys.exit('"{}" uncomputable: "{}" undefined'.format(grp, undefined))
-            ##
-            if tokens.issubset(computed):
-                computed = computed.union([grp])
-                ordered.append(grp)
-            else:
-                remaining.append(grp)
-            ##
-            i += 1
-            if i > maxiter:
-                print 'remaining:', ','.join(remaining)
-                sys.exit('exceeded maximum number of iterations {:d}'.format(maxiter))
-        self.groups = groups
-        self.hasbracket = hasbracket
-        self.ordered = ordered
-    ##
-    def count(self,smilesstr):
-        ##
-        groups = self.groups
-        hasbracket = self.hasbracket
-        ordered = self.ordered
-        mol = pybel.readstring('smi',smilesstr)
-        abundances = pd.Series([np.nan]*len(groups),index=groups.index)
-        ## SMARTS search
-        for key in groups.index[~hasbracket]:
-            abundances[key] = len(pybel.Smarts(groups[key]).findall(mol))
-        ## evaluate expressions
-        for key in ordered: #groups.index[hasbracket]:
-            abundances[key] = round(eval(groups[key].format(**abundances)))
-        ##
-        return abundances.astype(int)
-
 # for debugging
 # from collections import namedtuple
 # Args = namedtuple('Args',['default_directory','groupfile','inputfile','outputfile','export'])
@@ -105,6 +50,7 @@ class searchgroups:
 
 if __name__=='__main__':
 
+    ## pattern file
     if args.default_directory:
         default_directory = 'SMARTSpatterns'
         groupfile = os.path.join(os.path.dirname(__file__),
@@ -113,24 +59,24 @@ if __name__=='__main__':
     else:
         groupfile = args.groupfile
 
-    ## read SMARTS patterns        
-    groups = pd.read_csv(groupfile).set_index('substructure')
-
-    ## read SMILES strings
-    inp = pd.read_csv(args.inputfile).set_index('compound')
-
-    ## apply search function
-    output = inp.SMILES.apply(searchgroups(groups.pattern).count)
-
-    ## export output
+    ## output export
     if args.export:
         with open(args.export) as f:
             export = [x for x in f]
     else:
         export = None
-    
-    select = export if export else \
-             (groups.index[groups['export'].astype('bool')] \
-              if 'export' in groups.columns else \
-              [True]*len(output.columns))
-    output[select].to_csv(args.outputfile,index_label='compound')
+
+    ## read SMARTS patterns        
+    groups = pd.read_csv(groupfile).set_index('substructure')
+    if not export and 'export' in groups.columns:
+        export = groups.index[groups['export'].astype('bool')]
+
+    ## read SMILES strings
+    inp = pd.read_csv(args.inputfile).set_index('compound')
+
+    ## apply search function
+    search = searchgroups(groups.pattern, export)
+    output = inp.SMILES.apply(search.count)
+
+    ## export to output
+    output.to_csv(args.outputfile,index_label='compound')
