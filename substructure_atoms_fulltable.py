@@ -65,18 +65,25 @@ atomicmass = pd.DataFrame(list(reduce(set.union,masslist)),
                           columns=['atomtype','atomicmass']).set_index('atomtype')
 
 ## produce same output as previous code
-##
-# groups = master[['compound','type','atom']].groupby(['compound','type'])
-# counts = groups.aggregate(lambda x: len(x.unique())).reset_index()
-# output = counts.pivot_table(index='compound',columns='type',values='atom')
-parameters = {
-    'index':'compound',
-    'columns':'type',
-    'values':'atom',
-    'aggfunc':lambda x: len(x.unique())
-    }
-output = master.ix[master['group'].notnull(),['compound','type','atom']].pivot_table(**parameters)
+##   this method is better than alternative below
+##   as we want to subset non-null groups
+##   in the subtable rather than the full table
+def countatoms(df):
+    return len(df['atom'].ix[df['group'].notnull()].unique())
+grouped = master.groupby(['compound','type'])
+counts = grouped.apply(countatoms).reset_index(name='count')
+output = counts.pivot_table(index='compound',columns='type',values='count').ix[inp.index]
 output.fillna(0,inplace=True)
+
+# #alt method
+# parameters = {
+#     'index':'compound',
+#     'columns':'type',
+#     'values':'atom',
+#     'aggfunc':lambda x: len(x.unique())
+#     }
+# output = master.ix[master['group'].notnull(),['compound','type','atom']].pivot_table(**parameters)
+# output.fillna(0,inplace=True)
 
 ## export output
 extension = os.path.splitext(args.outputfile)[1]
