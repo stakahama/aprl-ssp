@@ -1,0 +1,4 @@
+phenol,,0
+nitro,,0
+rings, aromatic,"eval count_aromatic_rings(mol)",1
+rings, non-aromatic,"eval count_nonaromatic_rings(mol)",1

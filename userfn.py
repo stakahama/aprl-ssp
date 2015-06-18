@@ -1,0 +1,52 @@
+from itertools import chain
+
+def count_aromatic_rings(mol):
+    return len(atoms_aromatic_rings(mol))
+
+def count_nonaromatic_rings(mol):
+    return len(atoms_nonaromatic_rings(mol))
+
+def count_nitrophenols(mol, phenol, nitro):
+    ## counts nitrophenol
+    return len(atoms_nitrophenols(mol, phenol, nitro))
+
+def atoms_aromatic_rings(mol):
+    return set([tuple(a.idx for a in mol.atoms if ring.IsInRing(a.idx))
+                for ring in mol.sssr if ring.IsAromatic()])
+
+def atoms_nonaromatic_rings(mol):
+    return set([tuple(a.idx for a in mol.atoms if ring.IsInRing(a.idx))
+                for ring in mol.sssr if not ring.IsAromatic()])
+
+def atoms_nitrophenols(mol, phenol, nitro):
+    ## returns phenols for which nitro groups are found in same ring
+    def is_part_of_ring(ring, group):
+        idx_ring = atom_indices_ring(r, mol) #not the most efficient
+        return len([idx for idx in group if idx in idx_ring]) > 0
+    def atom_indices_ring(ring,mol):
+        return [a.idx for a in mol.atoms if ring.IsInRing(a.idx)]
+    def atom_indices_group(groups):
+        return list(chain.from_iterable(groups))
+    _phenol = pybel.Smarts(phenol).findall(mol)
+    _nitro = pybel.Smarts(nitro).findall(mol)
+    _rings = [ring for ring in mol.sssr if ring.IsAromatic()]
+    atomlist_ring = []        # list of rings
+    atomlist_nitrophenol = [] # list of (nitro)phenol groups
+    for r in _rings:
+        part = {'phenol':[],'nitro':[]}
+        for x in _phenol:
+            if not is_part_of_ring(r, x):
+                continue
+            part['phenol'].append(x)
+            for y in nitro:
+                if not is_part_of_ring(r, y):
+                    continue
+                part['nitro'].append(y)
+        if part['phenol'] and part['nitro']:
+            atomlist_ring.append(set(atom_indices_ring(r, mol) +
+                                     atom_indices_group(part['phenol']) +
+                                     atom_indices_group(part['nitro'])))
+            atomlist_nitrophenol += part['phenol']
+    # returning of atomlist_ring is optional
+    # but the phenol groups are what are really counted so this is what is returned
+    return atomlist_nitrophenol

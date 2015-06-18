@@ -11,12 +11,11 @@
 import os
 import pandas as pd
 import numpy as np
-# import operator
 from collections import OrderedDict
 from argparse import ArgumentParser, RawTextHelpFormatter
 from util import searchgroups
 
-## define arguments
+###_* --- Define command-line arguments
 parser = ArgumentParser(description='''
 ============================================================
 Perform substructure searches. requires 2 files: one containing SMARTS patterns
@@ -27,7 +26,7 @@ $ python substructure_search.py --groupfile SMARTSpatterns/FTIRgroups.csv --inpu
 
 ''',formatter_class=RawTextHelpFormatter)
 
-## Arguments
+###_ . Arguments
 parser.add_argument('-g','--groupfile',type=str,
                     help='file of SMARTS patterns (substructure, pattern); csv format')
 parser.add_argument('-i','--inputfile',type=str,
@@ -37,20 +36,21 @@ parser.add_argument('-o','--outputfile',type=str,default='output.csv',
 parser.add_argument('-e','--export',type=str,
                     help='text file with list of compounds to select in a single column')
 
-## Flags (on/off):
+###_ . Flags (on/off):
 parser.add_argument('-d','--default-directory',action='store_true',help='--groupfile exists in SMARTSpatterns/')
-
-## parse arguments
-args = parser.parse_args()
-
-# for debugging
-# from collections import namedtuple
-# Args = namedtuple('Args',['default_directory','groupfile','inputfile','outputfile','export'])
-# args = Args(True,'FTIRgroups.csv','example_main.csv','example_out.csv',None)
 
 if __name__=='__main__':
 
-    ## pattern file
+###_* --- Parse arguments
+    
+    args = parser.parse_args()
+
+    # for debugging
+    # from collections import namedtuple
+    # Args = namedtuple('Args',['default_directory','groupfile','inputfile','outputfile','export'])
+    # args = Args(True,'FTIRgroups.csv','example_main.csv','example_out.csv',None)
+
+    ## pattern directory
     if args.default_directory:
         default_directory = 'SMARTSpatterns'
         groupfile = os.path.join(os.path.dirname(__file__),
@@ -66,17 +66,21 @@ if __name__=='__main__':
     else:
         export = None
 
-    ## read SMARTS patterns        
-    groups = pd.read_csv(groupfile).set_index('substructure')
-    if not export and 'export' in groups.columns:
-        export = groups.index[groups['export'].astype('bool')]
+###_* --- Read patterns
 
-    ## read SMILES strings
+###_ . SMARTS       
+    groups = pd.read_csv(groupfile).set_index('substructure')
+
+###_ . SMILES
     inp = pd.read_csv(args.inputfile).set_index('compound')
 
-    ## apply search function
+###_* --- Apply search function
+
+    if not export and 'export' in groups.columns:
+        export = groups.index[groups['export'].astype('bool')]
     search = searchgroups(groups.pattern, export)
     output = inp.SMILES.apply(search.count)
 
-    ## export to output
+###_* --- Export to output
+    
     output.to_csv(args.outputfile,index_label='compound')
