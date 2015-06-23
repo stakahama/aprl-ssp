@@ -5,9 +5,9 @@ Substructure search program
 
 ## Introduction
 
-This program is made up of two parts:
+This program is made up of several parts:
 
-* "spider_query.py": Queries the ChemSpider database for SMILES strings and other properties of a molecule.
+* "spider\_query.py": Queries the ChemSpider database for SMILES strings and other properties of a molecule.
 * "substructure\_search.py": Uses the Open Babel chemoinformatics tool to find number of instances of a substructure (specified by SMARTS pattern) occurring in a molecule (specified by SMILES pattern).
 * "substructure\_atoms\_fulltable.py": Uses the Open Babel chemoinformatics tool to find atoms associated with a substructure (specified by SMARTS pattern) occurring in a molecule (specified by SMILES pattern).
 

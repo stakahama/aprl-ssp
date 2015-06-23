@@ -56,6 +56,7 @@ class searchgroups:
             include = [True]*len(groups)
         ##
         mol = pybel.readstring('smi',smilesstr)
+        mol.addh()
         abundances = pd.Series([np.nan]*len(groups),index=groups.index)
         ## SMARTS search
         for key in groups.index[~haskw & ~hasbracket & ~hasquote]:
@@ -79,6 +80,7 @@ class searchgroups:
         haskw, hasbracket, hasquote = self.matchedpatt(groups)        
         ##
         mol = pybel.readstring('smi',smilesstr)
+        mol.addh()
         tups = OrderedDict(zip(groups.index,[None]*len(groups)))
         ## SMARTS search
         for key in groups.index[~haskw & ~hasbracket & ~hasquote]:

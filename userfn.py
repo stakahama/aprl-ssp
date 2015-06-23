@@ -21,8 +21,8 @@ def atoms_nonaromatic_rings(mol):
 def atoms_nitrophenols(mol, phenol, nitro):
     ## returns phenols for which nitro groups are found in same ring
     def is_part_of_ring(ring, group):
-        idx_ring = atom_indices_ring(r, mol) #not the most efficient
-        return len([idx for idx in group if idx in idx_ring]) > 0
+        ring_atoms = atom_indices_ring(r, mol) #not the most efficient
+        return len([idx for idx in group if idx in ring_atoms]) > 0
     def atom_indices_ring(ring,mol):
         return [a.idx for a in mol.atoms if ring.IsInRing(a.idx)]
     def atom_indices_group(groups):
@@ -38,7 +38,7 @@ def atoms_nitrophenols(mol, phenol, nitro):
             if not is_part_of_ring(r, x):
                 continue
             part['phenol'].append(x)
-            for y in nitro:
+            for y in _nitro:
                 if not is_part_of_ring(r, y):
                     continue
                 part['nitro'].append(y)
