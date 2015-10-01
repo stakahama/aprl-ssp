@@ -3,8 +3,25 @@
 ################################################################################
 ##
 ## substructure_atoms_fulltable.py
-## S. Takahama (satoshi.takahama@epfl.ch)
+## Author: Satoshi Takahama (satoshi.takahama@epfl.ch)
 ## Nov. 2014
+##
+## -----------------------------------------------------------------------------
+##
+## This file is part of APRL-SSP
+##
+## APRL-SSP is free software: you can redistribute it and/or modify
+## it under the terms of the GNU General Public License as published by
+## the Free Software Foundation, either version 3 of the License, or
+## (at your option) any later version.
+##
+## APRL-SSP is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+## GNU General Public License for more details.
+##
+## You should have received a copy of the GNU General Public License
+## along with APRL-SS.  If not, see <http://www.gnu.org/licenses/>.
 ##
 ################################################################################
 
@@ -59,12 +76,13 @@ if __name__=='__main__':
         groupfile = args.groupfile
 
 ###_* --- Read patterns
+## added .drop_duplicates() # 2015.08.13
 
 ###_ . SMARTS        
-    groups = pd.read_csv(groupfile).set_index('substructure')
+    groups = pd.read_csv(groupfile).drop_duplicates().set_index('substructure')
 
 ###_ . SMILES
-    inp = pd.read_csv(args.inputfile).set_index('compound')
+    inp = pd.read_csv(args.inputfile).drop_duplicates().set_index('compound')
 
 ###_* --- Apply search function
     
@@ -111,4 +129,5 @@ if __name__=='__main__':
                       index_label='atom')
     for var in ['atom','match']:
         master[var] = master[var].map('{:.0f}'.format)
+    del master['SMILES'] # 2015.08.13
     master.to_csv(args.outputfile.replace(extension,'_fulltable'+extension),index=False)

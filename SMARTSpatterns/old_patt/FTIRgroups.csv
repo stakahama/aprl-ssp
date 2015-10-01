@@ -1,0 +1,27 @@
+substructure,pattern,export
+C,[#6],1
+O,[#8],1
+H,{h1}+2*{h2}+3*{h3}+4*{h4},1
+primary amine,[NX3;H2;!$(NC=O)],1
+secondary amine,[NX3;H1;!$(NC=O)],1
+tertiary amine,[NX3;H0;!$(NC=O);!$(N=O)],1
+CH2,[CX4H2],1
+CH3,[CX4H3],1
+tertiary C,[CX4H1],1
+alkane CH,{tertiary C}+2*{CH2}+3*{CH3},1
+alkene CH,{alkene CH1}+{alkene CH2},1
+aromatic CH,[cH],1
+carbonyl,[C;!$(CO);!$(CN)]=O,1
+alcohol,[#6;!$(C=O)][OX2H],1
+carboxylic acid,[CX3](=O)[OX2H],1
+ester_all,"[CX3,CX3H1](=O)[OX2H0][#6]",0
+ester,{ester_all}-{nitroester},1
+ether,"max({ether_all}-{ester},0)",1
+ether_all,[OD2]([#6])[#6],0
+nitroester,"[#6][OX2H0][CX3,CX3H1](=O)[C;$(C[N+](=O)[O-]),$(CC[N+](=O)[O-]),$(CCC[N+](=O)[O-]),$(CCCC[N+](=O)[O-]),$(CCCCC[N+](=O)[O-])]",0
+h1,[*h1],0
+h2,[*h2],0
+h3,[*h3],0
+h4,[*h4],0
+alkene CH1,[CX3h1]=C,0
+alkene CH2,[CX3h2]=C,0

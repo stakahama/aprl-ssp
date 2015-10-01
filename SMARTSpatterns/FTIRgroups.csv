@@ -1,27 +1,40 @@
-substructure,pattern,export
-C,[#6],1
-O,[#8],1
-H,{h1}+2*{h2}+3*{h3}+4*{h4},1
-primary amine,[NX3;H2;!$(NC=O)],1
-secondary amine,[NX3;H1;!$(NC=O)],1
-tertiary amine,[NX3;H0;!$(NC=O);!$(N=O)],1
-CH2,[CX4H2],1
-CH3,[CX4H3],1
-tertiary C,[CX4H1],1
-alkane CH,{tertiary C}+2*{CH2}+3*{CH3},1
-alkene CH,{alkene CH1}+{alkene CH2},1
-aromatic CH,[cH],1
-carbonyl,[C;!$(CO);!$(CN)]=O,1
-alcohol,[#6;!$(C=O)][OX2H],1
-carboxylic acid,[CX3](=O)[OX2H],1
-ester_all,"[CX3,CX3H1](=O)[OX2H0][#6]",0
-ester,{ester_all}-{nitroester},1
-ether,"max({ether_all}-{ester},0)",1
-ether_all,[OD2]([#6])[#6],0
-nitroester,"[#6][OX2H0][CX3,CX3H1](=O)[C;$(C[N+](=O)[O-]),$(CC[N+](=O)[O-]),$(CCC[N+](=O)[O-]),$(CCCC[N+](=O)[O-]),$(CCCCC[N+](=O)[O-])]",0
-h1,[*h1],0
-h2,[*h2],0
-h3,[*h3],0
-h4,[*h4],0
-alkene CH1,[CX3h1]=C,0
-alkene CH2,[CX3h2]=C,0
+"substructure","pattern","export"
+"quaternary carbon","[$([C]([#6])([#6])([#6])[#6])]",1
+"primary amine","[#6][NX3;H2;!$(NC=O)]([H])[H]",1
+"secondary amine","[#6][NX3;H;!$(NC=O)]([#6])[H]",1
+"tertiary amine","[#6][NX3;H0;!$(NC=O);!$(N=O)]([#6])[#6]",1
+"alkane CH","[CX4][H]",1
+"alkene CH","[CX3;$(C=C)][H]",1
+"aromatic CH","[c][H]",1
+"carbonyl","[#6,#1][CX3](=O)[#6,#1]",0
+"alcohol","[C;!$(C=O)][OX2H][H]",1
+"carboxylic acid","[CX3](=O)[OX2H][H]",1
+"ester_all","[CX3H1,CX3](=O)[OX2H0][#6]",1
+"ester","{ester_all}-{nitroester}",0
+"ether","{ether_all}-{ester}",0
+"ether_all","[OD2]([#6;!$(C=O)])[#6;!$(C=O)]",1
+"nitroester","[#6][OX2H0][CX3,CX3H1](=O)[C;$(C[N+](=O)[O-]),$(CC[N+](=O)[O-]),$(CCC[N+](=O)[O-]),$(CCCC[N+](=O)[O-]),$(CCCCC[N+](=O)[O-])]",0
+"peroxide","[#6][OD2][OD2,OD1][#6]",1
+"nitro","[#6][$([NX3](=O)=O),$([NX3+](=O)[O-])](~[O])(~[O])",1
+"phenol","[c;!$(C=O)][OX2H][H]",1
+"hydroperoxide","[H][OX2H,OD1][OD2][#6;!$(C=O)]",1
+"amide","[CX3](=O)[NX3;!$(N=O)]([#6,#1])[#6,#1]",0
+"organonitrate","[#6][O][$([NX3](=[OX1])(=[OX1])O),$([NX3+]([OX1-])(=[OX1])O)](~[O])(~[O])",1
+"organosulfate","[#6][O][$([SX4](=O)(=O)(O)O),$([SX4+2]([O-])([O-])(O)O)](~[O])(~[O])(~[O])",1
+"carbonylperoxynitrate","[C](=O)OO[N](~O)~[O]",1
+"ketone","[CX3;$(C([#6])(=[O])[#6])](=[O;!$([O][O])])",1
+"aldehyde","[CX3;$(C([#1])(=[O])[#6,#1])]([#6,#1])(=[O;!$([O][O])])[H]",1
+"primary amide","[CX3;$(C([NX3;!$(N=O)])=[O])](=[O])[N]([#1])[#1]",1
+"secondary amide","[CX3;$(C([NX3;!$(N=O)]([#6])[#1])=[O])](=[O])[N][#1]",1
+"tertiary amide","[CX3;$(C([NX3;!$(N=O)]([#6])[#6])=[O])](=[O])[N]",1
+"peroxy radical ","[O;!$([O][#6]);!$([O][H]);!$([OX2][N]);!$(O=C)][O]~[#6;!$([C](=O)~OO)]",1
+"oxy radical","[#6;!$(C=O)][OX2;!$([OX2][H]);!$([OX2][O]);!$([OX2][N]);!$([OX2]([#6])[#6]);!$([OX2][S])]",1
+"carbonylperoxyacid","C(=O)O[O][H]",1
+"carbonylperoxyacid radical","C(=O)O[O;!$([O][H]);!$([OX2][N])]",1
+"C non quaternary","[CX3;$([C]([#6])(=[#6])[C])]",1
+"Car non quaternary","[c;$([c](c)(c)[C])]",1
+"carboxylic radical","[C;$(C=O)](=O)[OX2;!$([OX2][H]);!$([OX2][O]);!$([OX2][N]);!$([OX2]([#6])[#6])]",1
+"peroxy nitrate","[#6][O;!$(OOC(=O))][O;!$(OOC(=O))][N](~O)~[O]",1
+"Carbon number","[#6]",1
+"Oxygen number","[#8]",1
+"Nitrogen number","[#7]",1

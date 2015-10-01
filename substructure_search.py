@@ -3,8 +3,25 @@
 ################################################################################
 ##
 ## substructure_search.py
-## S. Takahama (satoshi.takahama@epfl.ch)
+## Author: Satoshi Takahama (satoshi.takahama@epfl.ch)
 ## Nov. 2014
+##
+## -----------------------------------------------------------------------------
+##
+## This file is part of APRL-SSP
+##
+## APRL-SSP is free software: you can redistribute it and/or modify
+## it under the terms of the GNU General Public License as published by
+## the Free Software Foundation, either version 3 of the License, or
+## (at your option) any later version.
+##
+## APRL-SSP is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+## GNU General Public License for more details.
+##
+## You should have received a copy of the GNU General Public License
+## along with APRL-SSP.  If not, see <http://www.gnu.org/licenses/>.
 ##
 ################################################################################
 
@@ -62,22 +79,24 @@ if __name__=='__main__':
     ## output export
     if args.export:
         with open(args.export) as f:
-            export = [x for x in f]
+            export = [x.strip('"\'\n') for x in f]
+        print 'exporting ',  ', '.join('{:d}: {:s}'.format(*x) for x in zip(range(1,len(export)+1),export))
     else:
         export = None
 
 ###_* --- Read patterns
 
 ###_ . SMARTS       
-    groups = pd.read_csv(groupfile).set_index('substructure')
+    groups = pd.read_csv(groupfile).drop_duplicates().set_index('substructure')
 
 ###_ . SMILES
-    inp = pd.read_csv(args.inputfile).set_index('compound')
+    inp = pd.read_csv(args.inputfile).drop_duplicates().set_index('compound')
 
 ###_* --- Apply search function
 
     if not export and 'export' in groups.columns:
         export = groups.index[groups['export'].astype('bool')]
+
     search = searchgroups(groups.pattern, export)
     output = inp.SMILES.apply(search.count)
 

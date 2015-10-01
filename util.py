@@ -1,9 +1,27 @@
+#!/usr/bin/env python
 
 ################################################################################
 ##
 ## util.py
-## S. Takahama (satoshi.takahama@epfl.ch)
+## Author: Satoshi Takahama (satoshi.takahama@epfl.ch)
 ## Nov. 2014
+##
+## -----------------------------------------------------------------------------
+##
+## This file is part of APRL-SSP
+##
+## APRL-SSP is free software: you can redistribute it and/or modify
+## it under the terms of the GNU General Public License as published by
+## the Free Software Foundation, either version 3 of the License, or
+## (at your option) any later version.
+##
+## APRL-SSP is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+## GNU General Public License for more details.
+##
+## You should have received a copy of the GNU General Public License
+## along with APRL-SSP.  If not, see <http://www.gnu.org/licenses/>.
 ##
 ################################################################################
 
@@ -57,6 +75,7 @@ class searchgroups:
         ##
         mol = pybel.readstring('smi',smilesstr)
         mol.addh()
+        molecule = mol # copy reference; keyword for userfn.py 29.09.2015        
         abundances = pd.Series([np.nan]*len(groups),index=groups.index)
         ## SMARTS search
         for key in groups.index[~haskw & ~hasbracket & ~hasquote]:
@@ -81,6 +100,7 @@ class searchgroups:
         ##
         mol = pybel.readstring('smi',smilesstr)
         mol.addh()
+        molecule = mol # copy reference; keyword for userfn.py 29.09.2015        
         tups = OrderedDict(zip(groups.index,[None]*len(groups)))
         ## SMARTS search
         for key in groups.index[~haskw & ~hasbracket & ~hasquote]:
@@ -164,15 +184,21 @@ class searchgroups:
         columns = atomtype.columns.tolist()+['match','group']
         dflist = []
         i = 1
-        for group, tup in tuplist.items():
-            if len(tup)==0:
-                continue
-            allatoms = reduce(add,map(list,tup),[])
-            groupdf = pd.DataFrame(allatoms,columns=[idxlabel])
-            groupdf['match'] = i
-            groupdf['group'] = group
-            dflist.append(groupdf)
-            i += 1
+        for group, tups in tuplist.items():
+            for elem in tups: # 2015.08.13 edit
+                groupdf = pd.DataFrame(list(elem),columns=[idxlabel])
+                groupdf['match'] = i
+                groupdf['group'] = group
+                dflist.append(groupdf)
+                i += 1
+            # if len(tup)==0:
+            #     continue
+            # allatoms = reduce(add,map(list,tup),[])
+            # groupdf = pd.DataFrame(allatoms,columns=[idxlabel])
+            # groupdf['match'] = i
+            # groupdf['group'] = group
+            # dflist.append(groupdf)
+            # i += 1
         if len(dflist)==0:
             out = pd.DataFrame(columns=columns)
         else:
