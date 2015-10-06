@@ -1,2 +1,0 @@
-non-aromatic rings: for ring sizes from 3 to 10
-nitrophenol: assumes only 1 nitrophenol ring per molecule and no nitrodiphenols

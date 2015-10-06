@@ -1,0 +1,3225 @@
+compound,atom,type,match,group
+C4PAN6,1,O2,6,carbonylperoxynitrate
+C4PAN6,2,Ntr,6,carbonylperoxynitrate
+C4PAN6,3,O2,6,carbonylperoxynitrate
+C4PAN6,4,O2,6,carbonylperoxynitrate
+C4PAN6,5,O3,6,carbonylperoxynitrate
+C4PAN6,6,C2,6,carbonylperoxynitrate
+C4PAN6,7,O2,6,carbonylperoxynitrate
+C4PAN6,8,C3,3,alkane CH
+C4PAN6,8,C3,5,alcohol
+C4PAN6,9,O3,5,alcohol
+C4PAN6,10,C2,7,ketone
+C4PAN6,11,O2,7,ketone
+C4PAN6,12,C3,1,alkane CH
+C4PAN6,12,C3,2,alkane CH
+C4PAN6,12,C3,4,alkane CH
+C4PAN6,13,H,3,alkane CH
+C4PAN6,14,HO,5,alcohol
+C4PAN6,15,H,2,alkane CH
+C4PAN6,16,H,4,alkane CH
+C4PAN6,17,H,1,alkane CH
+TM135BPRO2,1,O3,15,peroxy radical 
+TM135BPRO2,2,O3,15,peroxy radical 
+TM135BPRO2,3,C3,1,alkane CH
+TM135BPRO2,3,C3,15,peroxy radical 
+TM135BPRO2,4,C2,16,C non quaternary
+TM135BPRO2,5,C2,12,alkene CH
+TM135BPRO2,6,C3,14,peroxide
+TM135BPRO2,7,C3,3,alkane CH
+TM135BPRO2,7,C3,4,alkane CH
+TM135BPRO2,7,C3,6,alkane CH
+TM135BPRO2,8,O3,14,peroxide
+TM135BPRO2,9,O3,14,peroxide
+TM135BPRO2,10,C3,14,peroxide
+TM135BPRO2,11,C3,8,alkane CH
+TM135BPRO2,11,C3,9,alkane CH
+TM135BPRO2,11,C3,10,alkane CH
+TM135BPRO2,12,C3,11,alkane CH
+TM135BPRO2,12,C3,13,alcohol
+TM135BPRO2,13,O3,13,alcohol
+TM135BPRO2,14,C3,2,alkane CH
+TM135BPRO2,14,C3,5,alkane CH
+TM135BPRO2,14,C3,7,alkane CH
+TM135BPRO2,15,H,1,alkane CH
+TM135BPRO2,16,H,12,alkene CH
+TM135BPRO2,17,H,3,alkane CH
+TM135BPRO2,18,H,4,alkane CH
+TM135BPRO2,19,H,6,alkane CH
+TM135BPRO2,20,H,8,alkane CH
+TM135BPRO2,21,H,10,alkane CH
+TM135BPRO2,22,H,9,alkane CH
+TM135BPRO2,23,H,11,alkane CH
+TM135BPRO2,24,HO,13,alcohol
+TM135BPRO2,25,H,2,alkane CH
+TM135BPRO2,26,H,7,alkane CH
+TM135BPRO2,27,H,5,alkane CH
+CH3NO3,1,C3,1,alkane CH
+CH3NO3,1,C3,2,alkane CH
+CH3NO3,1,C3,3,alkane CH
+CH3NO3,1,C3,4,organonitrate
+CH3NO3,2,O2,4,organonitrate
+CH3NO3,3,Ntr,4,organonitrate
+CH3NO3,4,O2,4,organonitrate
+CH3NO3,5,O2,4,organonitrate
+CH3NO3,6,H,2,alkane CH
+CH3NO3,7,H,3,alkane CH
+CH3NO3,8,H,1,alkane CH
+CHOMOHCO3H,1,C3,1,alkane CH
+CHOMOHCO3H,1,C3,2,alkane CH
+CHOMOHCO3H,1,C3,3,alkane CH
+CHOMOHCO3H,2,C3,4,alcohol
+CHOMOHCO3H,3,O3,4,alcohol
+CHOMOHCO3H,4,C2,5,aldehyde
+CHOMOHCO3H,5,O2,5,aldehyde
+CHOMOHCO3H,6,C2,6,carbonylperoxyacid
+CHOMOHCO3H,7,O2,6,carbonylperoxyacid
+CHOMOHCO3H,8,O3,6,carbonylperoxyacid
+CHOMOHCO3H,9,O3,6,carbonylperoxyacid
+CHOMOHCO3H,10,H,1,alkane CH
+CHOMOHCO3H,11,H,2,alkane CH
+CHOMOHCO3H,12,H,3,alkane CH
+CHOMOHCO3H,13,HO,4,alcohol
+CHOMOHCO3H,14,H,5,aldehyde
+CHOMOHCO3H,15,HO,6,carbonylperoxyacid
+CH3OH,1,C3,1,alkane CH
+CH3OH,1,C3,2,alkane CH
+CH3OH,1,C3,3,alkane CH
+CH3OH,1,C3,4,alcohol
+CH3OH,2,O3,4,alcohol
+CH3OH,3,H,2,alkane CH
+CH3OH,4,H,3,alkane CH
+CH3OH,5,H,1,alkane CH
+CH3OH,6,HO,4,alcohol
+HCOCH2O,1,O3,4,oxy radical
+HCOCH2O,2,C3,1,alkane CH
+HCOCH2O,2,C3,2,alkane CH
+HCOCH2O,2,C3,4,oxy radical
+HCOCH2O,3,C2,3,aldehyde
+HCOCH2O,4,O2,3,aldehyde
+HCOCH2O,5,H,1,alkane CH
+HCOCH2O,6,H,2,alkane CH
+HCOCH2O,7,H,3,aldehyde
+TMBNO3,1,O2,12,organonitrate
+TMBNO3,2,Ntr,12,organonitrate
+TMBNO3,3,O2,12,organonitrate
+TMBNO3,4,O2,12,organonitrate
+TMBNO3,5,C3,2,alkane CH
+TMBNO3,5,C3,3,alkane CH
+TMBNO3,5,C3,12,organonitrate
+TMBNO3,6,Car,15,Car non quaternary
+TMBNO3,7,Car,9,aromatic CH
+TMBNO3,8,Car,13,Car non quaternary
+TMBNO3,9,C3,4,alkane CH
+TMBNO3,9,C3,5,alkane CH
+TMBNO3,9,C3,7,alkane CH
+TMBNO3,10,Car,10,aromatic CH
+TMBNO3,11,Car,14,Car non quaternary
+TMBNO3,12,C3,1,alkane CH
+TMBNO3,12,C3,6,alkane CH
+TMBNO3,12,C3,8,alkane CH
+TMBNO3,13,Car,11,aromatic CH
+TMBNO3,14,H,2,alkane CH
+TMBNO3,15,H,3,alkane CH
+TMBNO3,16,H,9,aromatic CH
+TMBNO3,17,H,4,alkane CH
+TMBNO3,18,H,5,alkane CH
+TMBNO3,19,H,7,alkane CH
+TMBNO3,20,H,10,aromatic CH
+TMBNO3,21,H,1,alkane CH
+TMBNO3,22,H,8,alkane CH
+TMBNO3,23,H,6,alkane CH
+TMBNO3,24,H,11,aromatic CH
+PAN,1,C3,1,alkane CH
+PAN,1,C3,2,alkane CH
+PAN,1,C3,3,alkane CH
+PAN,2,C2,4,carbonylperoxynitrate
+PAN,3,O2,4,carbonylperoxynitrate
+PAN,4,O3,4,carbonylperoxynitrate
+PAN,5,O2,4,carbonylperoxynitrate
+PAN,6,Ntr,4,carbonylperoxynitrate
+PAN,7,O2,4,carbonylperoxynitrate
+PAN,8,O2,4,carbonylperoxynitrate
+PAN,9,H,3,alkane CH
+PAN,10,H,1,alkane CH
+PAN,11,H,2,alkane CH
+MXYFUOH,1,C3,1,alkane CH
+MXYFUOH,1,C3,3,alkane CH
+MXYFUOH,1,C3,4,alkane CH
+MXYFUOH,2,C3,8,alkane CH
+MXYFUOH,2,C3,11,ester
+MXYFUOH,3,O3,11,ester
+MXYFUOH,4,C2,11,ester
+MXYFUOH,5,O2,11,ester
+MXYFUOH,6,C3,10,alcohol
+MXYFUOH,7,C3,2,alkane CH
+MXYFUOH,7,C3,6,alkane CH
+MXYFUOH,7,C3,7,alkane CH
+MXYFUOH,8,O3,10,alcohol
+MXYFUOH,9,C3,5,alkane CH
+MXYFUOH,9,C3,9,alcohol
+MXYFUOH,10,O3,9,alcohol
+MXYFUOH,11,H,1,alkane CH
+MXYFUOH,12,H,3,alkane CH
+MXYFUOH,13,H,4,alkane CH
+MXYFUOH,14,H,8,alkane CH
+MXYFUOH,15,H,2,alkane CH
+MXYFUOH,16,H,6,alkane CH
+MXYFUOH,17,H,7,alkane CH
+MXYFUOH,18,HO,10,alcohol
+MXYFUOH,19,H,5,alkane CH
+MXYFUOH,20,HO,9,alcohol
+TM135BPRO,1,C3,3,alkane CH
+TM135BPRO,1,C3,4,alkane CH
+TM135BPRO,1,C3,10,alkane CH
+TM135BPRO,2,C2,16,C non quaternary
+TM135BPRO,3,C2,12,alkene CH
+TM135BPRO,4,C3,14,peroxide
+TM135BPRO,5,C3,5,alkane CH
+TM135BPRO,5,C3,6,alkane CH
+TM135BPRO,5,C3,8,alkane CH
+TM135BPRO,6,O3,14,peroxide
+TM135BPRO,7,O3,14,peroxide
+TM135BPRO,8,C3,14,peroxide
+TM135BPRO,9,C3,1,alkane CH
+TM135BPRO,9,C3,9,alkane CH
+TM135BPRO,9,C3,11,alkane CH
+TM135BPRO,10,C3,7,alkane CH
+TM135BPRO,10,C3,15,oxy radical
+TM135BPRO,11,O3,15,oxy radical
+TM135BPRO,12,C3,2,alkane CH
+TM135BPRO,12,C3,13,alcohol
+TM135BPRO,13,O3,13,alcohol
+TM135BPRO,14,H,3,alkane CH
+TM135BPRO,15,H,10,alkane CH
+TM135BPRO,16,H,4,alkane CH
+TM135BPRO,17,H,12,alkene CH
+TM135BPRO,18,H,5,alkane CH
+TM135BPRO,19,H,6,alkane CH
+TM135BPRO,20,H,8,alkane CH
+TM135BPRO,21,H,9,alkane CH
+TM135BPRO,22,H,1,alkane CH
+TM135BPRO,23,H,11,alkane CH
+TM135BPRO,24,H,7,alkane CH
+TM135BPRO,25,H,2,alkane CH
+TM135BPRO,26,HO,13,alcohol
+C6CO2M2OH,1,O2,11,aldehyde
+C6CO2M2OH,2,C2,11,aldehyde
+C6CO2M2OH,3,C3,9,alcohol
+C6CO2M2OH,4,C3,2,alkane CH
+C6CO2M2OH,4,C3,4,alkane CH
+C6CO2M2OH,4,C3,5,alkane CH
+C6CO2M2OH,5,O3,9,alcohol
+C6CO2M2OH,6,C3,7,alkane CH
+C6CO2M2OH,6,C3,8,alcohol
+C6CO2M2OH,7,O3,8,alcohol
+C6CO2M2OH,8,C2,10,ketone
+C6CO2M2OH,9,O2,10,ketone
+C6CO2M2OH,10,C3,1,alkane CH
+C6CO2M2OH,10,C3,3,alkane CH
+C6CO2M2OH,10,C3,6,alkane CH
+C6CO2M2OH,11,H,11,aldehyde
+C6CO2M2OH,12,H,5,alkane CH
+C6CO2M2OH,13,H,4,alkane CH
+C6CO2M2OH,14,H,2,alkane CH
+C6CO2M2OH,15,HO,9,alcohol
+C6CO2M2OH,16,H,7,alkane CH
+C6CO2M2OH,17,HO,8,alcohol
+C6CO2M2OH,18,H,3,alkane CH
+C6CO2M2OH,19,H,1,alkane CH
+C6CO2M2OH,20,H,6,alkane CH
+C23O3MOH,1,C3,1,alkane CH
+C23O3MOH,1,C3,6,alkane CH
+C23O3MOH,1,C3,7,alkane CH
+C23O3MOH,2,C3,4,alkane CH
+C23O3MOH,2,C3,8,alcohol
+C23O3MOH,2,C3,9,ester
+C23O3MOH,3,O3,8,alcohol
+C23O3MOH,4,O3,9,ester
+C23O3MOH,5,C2,9,ester
+C23O3MOH,6,O2,9,ester
+C23O3MOH,7,C2,10,ketone
+C23O3MOH,8,O2,10,ketone
+C23O3MOH,9,C3,2,alkane CH
+C23O3MOH,9,C3,3,alkane CH
+C23O3MOH,9,C3,5,alkane CH
+C23O3MOH,10,H,6,alkane CH
+C23O3MOH,11,H,7,alkane CH
+C23O3MOH,12,H,1,alkane CH
+C23O3MOH,13,H,4,alkane CH
+C23O3MOH,14,HO,8,alcohol
+C23O3MOH,15,H,2,alkane CH
+C23O3MOH,16,H,3,alkane CH
+C23O3MOH,17,H,5,alkane CH
+HCOCO3H,1,O3,2,carbonylperoxyacid
+HCOCO3H,2,O3,2,carbonylperoxyacid
+HCOCO3H,3,C2,2,carbonylperoxyacid
+HCOCO3H,4,O2,2,carbonylperoxyacid
+HCOCO3H,5,C2,1,aldehyde
+HCOCO3H,6,O2,1,aldehyde
+HCOCO3H,7,HO,2,carbonylperoxyacid
+HCOCO3H,8,H,1,aldehyde
+NTM135OLO2,1,O3,15,peroxy radical 
+NTM135OLO2,2,O3,15,peroxy radical 
+NTM135OLO2,3,C3,12,alcohol
+NTM135OLO2,3,C3,15,peroxy radical 
+NTM135OLO2,4,O3,12,alcohol
+NTM135OLO2,5,C2,16,C non quaternary
+NTM135OLO2,6,C2,11,alkene CH
+NTM135OLO2,7,C3,13,peroxide
+NTM135OLO2,8,C3,1,alkane CH
+NTM135OLO2,8,C3,3,alkane CH
+NTM135OLO2,8,C3,4,alkane CH
+NTM135OLO2,9,O3,13,peroxide
+NTM135OLO2,10,O3,13,peroxide
+NTM135OLO2,11,C3,13,peroxide
+NTM135OLO2,12,C3,5,alkane CH
+NTM135OLO2,12,C3,6,alkane CH
+NTM135OLO2,12,C3,9,alkane CH
+NTM135OLO2,13,C3,10,alkane CH
+NTM135OLO2,13,C3,14,organonitrate
+NTM135OLO2,14,O2,14,organonitrate
+NTM135OLO2,15,Ntr,14,organonitrate
+NTM135OLO2,16,O2,14,organonitrate
+NTM135OLO2,17,O2,14,organonitrate
+NTM135OLO2,18,C3,2,alkane CH
+NTM135OLO2,18,C3,7,alkane CH
+NTM135OLO2,18,C3,8,alkane CH
+NTM135OLO2,19,HO,12,alcohol
+NTM135OLO2,20,H,11,alkene CH
+NTM135OLO2,21,H,1,alkane CH
+NTM135OLO2,22,H,4,alkane CH
+NTM135OLO2,23,H,3,alkane CH
+NTM135OLO2,24,H,6,alkane CH
+NTM135OLO2,25,H,5,alkane CH
+NTM135OLO2,26,H,9,alkane CH
+NTM135OLO2,27,H,10,alkane CH
+NTM135OLO2,28,H,8,alkane CH
+NTM135OLO2,29,H,7,alkane CH
+NTM135OLO2,30,H,2,alkane CH
+C5CO234,1,C3,4,alkane CH
+C5CO234,1,C3,5,alkane CH
+C5CO234,1,C3,6,alkane CH
+C5CO234,2,C2,9,ketone
+C5CO234,3,O2,9,ketone
+C5CO234,4,C2,7,ketone
+C5CO234,5,O2,7,ketone
+C5CO234,6,C2,8,ketone
+C5CO234,7,O2,8,ketone
+C5CO234,8,C3,1,alkane CH
+C5CO234,8,C3,2,alkane CH
+C5CO234,8,C3,3,alkane CH
+C5CO234,9,H,4,alkane CH
+C5CO234,10,H,5,alkane CH
+C5CO234,11,H,6,alkane CH
+C5CO234,12,H,3,alkane CH
+C5CO234,13,H,2,alkane CH
+C5CO234,14,H,1,alkane CH
+ACECOCOCH3,1,C3,3,alkane CH
+ACECOCOCH3,1,C3,5,alkane CH
+ACECOCOCH3,1,C3,6,alkane CH
+ACECOCOCH3,2,C2,8,anhydride
+ACECOCOCH3,3,O2,8,anhydride
+ACECOCOCH3,4,O3,8,anhydride
+ACECOCOCH3,5,C2,8,anhydride
+ACECOCOCH3,6,O2,8,anhydride
+ACECOCOCH3,7,C2,7,ketone
+ACECOCOCH3,8,O2,7,ketone
+ACECOCOCH3,9,C3,1,alkane CH
+ACECOCOCH3,9,C3,2,alkane CH
+ACECOCOCH3,9,C3,4,alkane CH
+ACECOCOCH3,10,H,5,alkane CH
+ACECOCOCH3,11,H,6,alkane CH
+ACECOCOCH3,12,H,3,alkane CH
+ACECOCOCH3,13,H,1,alkane CH
+ACECOCOCH3,14,H,2,alkane CH
+ACECOCOCH3,15,H,4,alkane CH
+C5CODBCO3H,1,C3,1,alkane CH
+C5CODBCO3H,1,C3,2,alkane CH
+C5CODBCO3H,1,C3,4,alkane CH
+C5CODBCO3H,2,C2,10,C non quaternary
+C5CODBCO3H,3,C2,7,alkene CH
+C5CODBCO3H,4,C2,8,ketone
+C5CODBCO3H,5,O2,8,ketone
+C5CODBCO3H,6,C3,3,alkane CH
+C5CODBCO3H,6,C3,5,alkane CH
+C5CODBCO3H,6,C3,6,alkane CH
+C5CODBCO3H,7,C2,9,carbonylperoxyacid
+C5CODBCO3H,8,O2,9,carbonylperoxyacid
+C5CODBCO3H,9,O3,9,carbonylperoxyacid
+C5CODBCO3H,10,O3,9,carbonylperoxyacid
+C5CODBCO3H,11,H,4,alkane CH
+C5CODBCO3H,12,H,1,alkane CH
+C5CODBCO3H,13,H,2,alkane CH
+C5CODBCO3H,14,H,7,alkene CH
+C5CODBCO3H,15,H,5,alkane CH
+C5CODBCO3H,16,H,6,alkane CH
+C5CODBCO3H,17,H,3,alkane CH
+C5CODBCO3H,18,HO,9,carbonylperoxyacid
+HCOCH2O2,1,O3,4,peroxy radical 
+HCOCH2O2,2,O3,4,peroxy radical 
+HCOCH2O2,3,C3,1,alkane CH
+HCOCH2O2,3,C3,2,alkane CH
+HCOCH2O2,3,C3,4,peroxy radical 
+HCOCH2O2,4,C2,3,aldehyde
+HCOCH2O2,5,O2,3,aldehyde
+HCOCH2O2,6,H,2,alkane CH
+HCOCH2O2,7,H,1,alkane CH
+HCOCH2O2,8,H,3,aldehyde
+TMBCO2H,1,C3,1,alkane CH
+TMBCO2H,1,C3,3,alkane CH
+TMBCO2H,1,C3,6,alkane CH
+TMBCO2H,2,Car,12,Car non quaternary
+TMBCO2H,3,Car,8,aromatic CH
+TMBCO2H,4,Car,13,Car non quaternary
+TMBCO2H,5,C3,2,alkane CH
+TMBCO2H,5,C3,4,alkane CH
+TMBCO2H,5,C3,5,alkane CH
+TMBCO2H,6,Car,7,aromatic CH
+TMBCO2H,7,Car,11,Car non quaternary
+TMBCO2H,8,Car,9,aromatic CH
+TMBCO2H,9,C2,10,carboxylic acid
+TMBCO2H,10,O2,10,carboxylic acid
+TMBCO2H,11,O3,10,carboxylic acid
+TMBCO2H,12,H,1,alkane CH
+TMBCO2H,13,H,3,alkane CH
+TMBCO2H,14,H,6,alkane CH
+TMBCO2H,15,H,8,aromatic CH
+TMBCO2H,16,H,2,alkane CH
+TMBCO2H,17,H,4,alkane CH
+TMBCO2H,18,H,5,alkane CH
+TMBCO2H,19,H,7,aromatic CH
+TMBCO2H,20,H,9,aromatic CH
+TMBCO2H,21,HO,10,carboxylic acid
+MXYFUO,1,C3,1,alkane CH
+MXYFUO,1,C3,3,alkane CH
+MXYFUO,1,C3,4,alkane CH
+MXYFUO,2,C3,8,alkane CH
+MXYFUO,2,C3,10,ester
+MXYFUO,3,O3,10,ester
+MXYFUO,4,C2,10,ester
+MXYFUO,5,O2,10,ester
+MXYFUO,6,C3,11,oxy radical
+MXYFUO,7,C3,2,alkane CH
+MXYFUO,7,C3,5,alkane CH
+MXYFUO,7,C3,6,alkane CH
+MXYFUO,8,O3,11,oxy radical
+MXYFUO,9,C3,7,alkane CH
+MXYFUO,9,C3,9,alcohol
+MXYFUO,10,O3,9,alcohol
+MXYFUO,11,H,1,alkane CH
+MXYFUO,12,H,3,alkane CH
+MXYFUO,13,H,4,alkane CH
+MXYFUO,14,H,8,alkane CH
+MXYFUO,15,H,2,alkane CH
+MXYFUO,16,H,5,alkane CH
+MXYFUO,17,H,6,alkane CH
+MXYFUO,18,H,7,alkane CH
+MXYFUO,19,HO,9,alcohol
+EPXMKTPAN,1,O2,9,carbonylperoxynitrate
+EPXMKTPAN,2,Ntr,9,carbonylperoxynitrate
+EPXMKTPAN,3,O2,9,carbonylperoxynitrate
+EPXMKTPAN,4,O2,9,carbonylperoxynitrate
+EPXMKTPAN,5,O3,9,carbonylperoxynitrate
+EPXMKTPAN,6,C2,9,carbonylperoxynitrate
+EPXMKTPAN,7,O2,9,carbonylperoxynitrate
+EPXMKTPAN,8,C3,8,ether
+EPXMKTPAN,9,C3,1,alkane CH
+EPXMKTPAN,9,C3,3,alkane CH
+EPXMKTPAN,9,C3,4,alkane CH
+EPXMKTPAN,10,O3,8,ether
+EPXMKTPAN,11,C3,7,alkane CH
+EPXMKTPAN,11,C3,8,ether
+EPXMKTPAN,12,C2,10,ketone
+EPXMKTPAN,13,O2,10,ketone
+EPXMKTPAN,14,C3,2,alkane CH
+EPXMKTPAN,14,C3,5,alkane CH
+EPXMKTPAN,14,C3,6,alkane CH
+EPXMKTPAN,15,H,1,alkane CH
+EPXMKTPAN,16,H,3,alkane CH
+EPXMKTPAN,17,H,4,alkane CH
+EPXMKTPAN,18,H,7,alkane CH
+EPXMKTPAN,19,H,2,alkane CH
+EPXMKTPAN,20,H,6,alkane CH
+EPXMKTPAN,21,H,5,alkane CH
+C23O3MO2,1,C3,1,alkane CH
+C23O3MO2,1,C3,2,alkane CH
+C23O3MO2,1,C3,3,alkane CH
+C23O3MO2,2,C3,6,alkane CH
+C23O3MO2,2,C3,8,ester
+C23O3MO2,2,C3,10,peroxy radical 
+C23O3MO2,3,O3,8,ester
+C23O3MO2,4,C2,8,ester
+C23O3MO2,5,O2,8,ester
+C23O3MO2,6,C2,9,ketone
+C23O3MO2,7,O2,9,ketone
+C23O3MO2,8,C3,4,alkane CH
+C23O3MO2,8,C3,5,alkane CH
+C23O3MO2,8,C3,7,alkane CH
+C23O3MO2,9,O3,10,peroxy radical 
+C23O3MO2,10,O3,10,peroxy radical 
+C23O3MO2,11,H,1,alkane CH
+C23O3MO2,12,H,2,alkane CH
+C23O3MO2,13,H,3,alkane CH
+C23O3MO2,14,H,6,alkane CH
+C23O3MO2,15,H,7,alkane CH
+C23O3MO2,16,H,4,alkane CH
+C23O3MO2,17,H,5,alkane CH
+NMXYFUO,1,O2,10,organonitrate
+NMXYFUO,2,Ntr,10,organonitrate
+NMXYFUO,3,O2,10,organonitrate
+NMXYFUO,4,O2,10,organonitrate
+NMXYFUO,5,C3,4,alkane CH
+NMXYFUO,5,C3,10,organonitrate
+NMXYFUO,6,C3,8,alkane CH
+NMXYFUO,6,C3,9,ester
+NMXYFUO,7,C3,5,alkane CH
+NMXYFUO,7,C3,6,alkane CH
+NMXYFUO,7,C3,7,alkane CH
+NMXYFUO,8,O3,9,ester
+NMXYFUO,9,C2,9,ester
+NMXYFUO,10,O2,9,ester
+NMXYFUO,11,C3,11,oxy radical
+NMXYFUO,12,C3,1,alkane CH
+NMXYFUO,12,C3,2,alkane CH
+NMXYFUO,12,C3,3,alkane CH
+NMXYFUO,13,O3,11,oxy radical
+NMXYFUO,14,H,4,alkane CH
+NMXYFUO,15,H,8,alkane CH
+NMXYFUO,16,H,5,alkane CH
+NMXYFUO,17,H,7,alkane CH
+NMXYFUO,18,H,6,alkane CH
+NMXYFUO,19,H,3,alkane CH
+NMXYFUO,20,H,2,alkane CH
+NMXYFUO,21,H,1,alkane CH
+NTM135OLOH,1,O2,15,organonitrate
+NTM135OLOH,2,Ntr,15,organonitrate
+NTM135OLOH,3,O2,15,organonitrate
+NTM135OLOH,4,O2,15,organonitrate
+NTM135OLOH,5,C3,6,alkane CH
+NTM135OLOH,5,C3,15,organonitrate
+NTM135OLOH,6,C3,14,peroxide
+NTM135OLOH,7,C3,1,alkane CH
+NTM135OLOH,7,C3,2,alkane CH
+NTM135OLOH,7,C3,8,alkane CH
+NTM135OLOH,8,O3,14,peroxide
+NTM135OLOH,9,O3,14,peroxide
+NTM135OLOH,10,C3,14,peroxide
+NTM135OLOH,11,C3,4,alkane CH
+NTM135OLOH,11,C3,7,alkane CH
+NTM135OLOH,11,C3,9,alkane CH
+NTM135OLOH,12,C3,12,alcohol
+NTM135OLOH,12,C3,13,alcohol
+NTM135OLOH,13,O2,12,alcohol
+NTM135OLOH,14,O2,13,alcohol
+NTM135OLOH,15,C2,16,C non quaternary
+NTM135OLOH,16,C2,11,alkene CH
+NTM135OLOH,17,C3,3,alkane CH
+NTM135OLOH,17,C3,5,alkane CH
+NTM135OLOH,17,C3,10,alkane CH
+NTM135OLOH,18,H,6,alkane CH
+NTM135OLOH,19,H,8,alkane CH
+NTM135OLOH,20,H,1,alkane CH
+NTM135OLOH,21,H,2,alkane CH
+NTM135OLOH,22,H,7,alkane CH
+NTM135OLOH,23,H,4,alkane CH
+NTM135OLOH,24,H,9,alkane CH
+NTM135OLOH,25,HO,12,alcohol
+NTM135OLOH,26,HO,13,alcohol
+NTM135OLOH,27,H,11,alkene CH
+NTM135OLOH,28,H,3,alkane CH
+NTM135OLOH,29,H,5,alkane CH
+NTM135OLOH,30,H,10,alkane CH
+NTM135LOOH,1,O3,14,hydroperoxide
+NTM135LOOH,2,O3,14,hydroperoxide
+NTM135LOOH,3,C3,12,alcohol
+NTM135LOOH,3,C3,14,hydroperoxide
+NTM135LOOH,4,O3,12,alcohol
+NTM135LOOH,5,C2,16,C non quaternary
+NTM135LOOH,6,C2,11,alkene CH
+NTM135LOOH,7,C3,13,peroxide
+NTM135LOOH,8,C3,1,alkane CH
+NTM135LOOH,8,C3,2,alkane CH
+NTM135LOOH,8,C3,4,alkane CH
+NTM135LOOH,9,O3,13,peroxide
+NTM135LOOH,10,O3,13,peroxide
+NTM135LOOH,11,C3,13,peroxide
+NTM135LOOH,12,C3,3,alkane CH
+NTM135LOOH,12,C3,5,alkane CH
+NTM135LOOH,12,C3,8,alkane CH
+NTM135LOOH,13,C3,7,alkane CH
+NTM135LOOH,13,C3,15,organonitrate
+NTM135LOOH,14,O2,15,organonitrate
+NTM135LOOH,15,Ntr,15,organonitrate
+NTM135LOOH,16,O2,15,organonitrate
+NTM135LOOH,17,O2,15,organonitrate
+NTM135LOOH,18,C3,6,alkane CH
+NTM135LOOH,18,C3,9,alkane CH
+NTM135LOOH,18,C3,10,alkane CH
+NTM135LOOH,19,HO,14,hydroperoxide
+NTM135LOOH,20,HO,12,alcohol
+NTM135LOOH,21,H,11,alkene CH
+NTM135LOOH,22,H,4,alkane CH
+NTM135LOOH,23,H,2,alkane CH
+NTM135LOOH,24,H,1,alkane CH
+NTM135LOOH,25,H,5,alkane CH
+NTM135LOOH,26,H,8,alkane CH
+NTM135LOOH,27,H,3,alkane CH
+NTM135LOOH,28,H,7,alkane CH
+NTM135LOOH,29,H,6,alkane CH
+NTM135LOOH,30,H,10,alkane CH
+NTM135LOOH,31,H,9,alkane CH
+TM135OXMUC,1,O2,14,aldehyde
+TM135OXMUC,2,C2,14,aldehyde
+TM135OXMUC,3,C3,12,ether
+TM135OXMUC,4,C3,2,alkane CH
+TM135OXMUC,4,C3,3,alkane CH
+TM135OXMUC,4,C3,4,alkane CH
+TM135OXMUC,5,O3,12,ether
+TM135OXMUC,6,C3,7,alkane CH
+TM135OXMUC,6,C3,12,ether
+TM135OXMUC,7,C2,15,C non quaternary
+TM135OXMUC,8,C2,11,alkene CH
+TM135OXMUC,9,C2,13,ketone
+TM135OXMUC,10,O2,13,ketone
+TM135OXMUC,11,C3,5,alkane CH
+TM135OXMUC,11,C3,6,alkane CH
+TM135OXMUC,11,C3,9,alkane CH
+TM135OXMUC,12,C3,1,alkane CH
+TM135OXMUC,12,C3,8,alkane CH
+TM135OXMUC,12,C3,10,alkane CH
+TM135OXMUC,13,H,14,aldehyde
+TM135OXMUC,14,H,3,alkane CH
+TM135OXMUC,15,H,2,alkane CH
+TM135OXMUC,16,H,4,alkane CH
+TM135OXMUC,17,H,7,alkane CH
+TM135OXMUC,18,H,11,alkene CH
+TM135OXMUC,19,H,9,alkane CH
+TM135OXMUC,20,H,5,alkane CH
+TM135OXMUC,21,H,6,alkane CH
+TM135OXMUC,22,H,10,alkane CH
+TM135OXMUC,23,H,1,alkane CH
+TM135OXMUC,24,H,8,alkane CH
+EPXMALKT,1,O2,10,aldehyde
+EPXMALKT,2,C2,10,aldehyde
+EPXMALKT,3,C3,8,ether
+EPXMALKT,4,C3,2,alkane CH
+EPXMALKT,4,C3,4,alkane CH
+EPXMALKT,4,C3,6,alkane CH
+EPXMALKT,5,O3,8,ether
+EPXMALKT,6,C3,7,alkane CH
+EPXMALKT,6,C3,8,ether
+EPXMALKT,7,C2,9,ketone
+EPXMALKT,8,O2,9,ketone
+EPXMALKT,9,C3,1,alkane CH
+EPXMALKT,9,C3,3,alkane CH
+EPXMALKT,9,C3,5,alkane CH
+EPXMALKT,10,H,10,aldehyde
+EPXMALKT,11,H,6,alkane CH
+EPXMALKT,12,H,4,alkane CH
+EPXMALKT,13,H,2,alkane CH
+EPXMALKT,14,H,7,alkane CH
+EPXMALKT,15,H,1,alkane CH
+EPXMALKT,16,H,3,alkane CH
+EPXMALKT,17,H,5,alkane CH
+MXYFUO2,1,C3,1,alkane CH
+MXYFUO2,1,C3,2,alkane CH
+MXYFUO2,1,C3,3,alkane CH
+MXYFUO2,2,C3,11,peroxy radical 
+MXYFUO2,3,O3,11,peroxy radical 
+MXYFUO2,4,O3,11,peroxy radical 
+MXYFUO2,5,C3,6,alkane CH
+MXYFUO2,5,C3,9,alcohol
+MXYFUO2,6,O3,9,alcohol
+MXYFUO2,7,C3,8,alkane CH
+MXYFUO2,7,C3,10,ester
+MXYFUO2,8,C3,4,alkane CH
+MXYFUO2,8,C3,5,alkane CH
+MXYFUO2,8,C3,7,alkane CH
+MXYFUO2,9,O3,10,ester
+MXYFUO2,10,C2,10,ester
+MXYFUO2,11,O2,10,ester
+MXYFUO2,12,H,1,alkane CH
+MXYFUO2,13,H,2,alkane CH
+MXYFUO2,14,H,3,alkane CH
+MXYFUO2,15,H,6,alkane CH
+MXYFUO2,16,HO,9,alcohol
+MXYFUO2,17,H,8,alkane CH
+MXYFUO2,18,H,7,alkane CH
+MXYFUO2,19,H,5,alkane CH
+MXYFUO2,20,H,4,alkane CH
+TM135MUOH,1,O2,16,aldehyde
+TM135MUOH,2,C2,16,aldehyde
+TM135MUOH,3,C3,14,ether
+TM135MUOH,4,C3,4,alkane CH
+TM135MUOH,4,C3,5,alkane CH
+TM135MUOH,4,C3,11,alkane CH
+TM135MUOH,5,O3,14,ether
+TM135MUOH,6,C3,1,alkane CH
+TM135MUOH,6,C3,14,ether
+TM135MUOH,7,C3,13,alcohol
+TM135MUOH,8,C3,3,alkane CH
+TM135MUOH,8,C3,6,alkane CH
+TM135MUOH,8,C3,10,alkane CH
+TM135MUOH,9,O3,13,alcohol
+TM135MUOH,10,C3,8,alkane CH
+TM135MUOH,10,C3,12,alcohol
+TM135MUOH,11,O3,12,alcohol
+TM135MUOH,12,C2,15,ketone
+TM135MUOH,13,O2,15,ketone
+TM135MUOH,14,C3,2,alkane CH
+TM135MUOH,14,C3,7,alkane CH
+TM135MUOH,14,C3,9,alkane CH
+TM135MUOH,15,H,16,aldehyde
+TM135MUOH,16,H,11,alkane CH
+TM135MUOH,17,H,5,alkane CH
+TM135MUOH,18,H,4,alkane CH
+TM135MUOH,19,H,1,alkane CH
+TM135MUOH,20,H,6,alkane CH
+TM135MUOH,21,H,3,alkane CH
+TM135MUOH,22,H,10,alkane CH
+TM135MUOH,23,HO,13,alcohol
+TM135MUOH,24,H,8,alkane CH
+TM135MUOH,25,HO,12,alcohol
+TM135MUOH,26,H,9,alkane CH
+TM135MUOH,27,H,7,alkane CH
+TM135MUOH,28,H,2,alkane CH
+CH3O2,1,C3,1,alkane CH
+CH3O2,1,C3,2,alkane CH
+CH3O2,1,C3,3,alkane CH
+CH3O2,1,C3,4,peroxy radical 
+CH3O2,2,O3,4,peroxy radical 
+CH3O2,3,O3,4,peroxy radical 
+CH3O2,4,H,3,alkane CH
+CH3O2,5,H,1,alkane CH
+CH3O2,6,H,2,alkane CH
+C23O3MCO3,1,O3,10,carbonylperoxyacid radical
+C23O3MCO3,2,O3,10,carbonylperoxyacid radical
+C23O3MCO3,3,C2,10,carbonylperoxyacid radical
+C23O3MCO3,4,O2,10,carbonylperoxyacid radical
+C23O3MCO3,5,C3,1,alkane CH
+C23O3MCO3,5,C3,8,ester
+C23O3MCO3,6,C3,5,alkane CH
+C23O3MCO3,6,C3,6,alkane CH
+C23O3MCO3,6,C3,7,alkane CH
+C23O3MCO3,7,O3,8,ester
+C23O3MCO3,8,C2,8,ester
+C23O3MCO3,9,O2,8,ester
+C23O3MCO3,10,C2,9,ketone
+C23O3MCO3,11,O2,9,ketone
+C23O3MCO3,12,C3,2,alkane CH
+C23O3MCO3,12,C3,3,alkane CH
+C23O3MCO3,12,C3,4,alkane CH
+C23O3MCO3,13,H,1,alkane CH
+C23O3MCO3,14,H,7,alkane CH
+C23O3MCO3,15,H,5,alkane CH
+C23O3MCO3,16,H,6,alkane CH
+C23O3MCO3,17,H,4,alkane CH
+C23O3MCO3,18,H,3,alkane CH
+C23O3MCO3,19,H,2,alkane CH
+MMALANHY,1,O2,6,anhydride
+MMALANHY,2,C2,6,anhydride
+MMALANHY,3,C2,4,alkene CH
+MMALANHY,4,C2,5,C non quaternary
+MMALANHY,5,C3,1,alkane CH
+MMALANHY,5,C3,2,alkane CH
+MMALANHY,5,C3,3,alkane CH
+MMALANHY,6,C2,6,anhydride
+MMALANHY,7,O2,6,anhydride
+MMALANHY,8,O3,6,anhydride
+MMALANHY,9,H,4,alkene CH
+MMALANHY,10,H,2,alkane CH
+MMALANHY,11,H,3,alkane CH
+MMALANHY,12,H,1,alkane CH
+HCOCO2H,1,O2,2,aldehyde
+HCOCO2H,2,C2,2,aldehyde
+HCOCO2H,3,C2,1,carboxylic acid
+HCOCO2H,4,O2,1,carboxylic acid
+HCOCO2H,5,O3,1,carboxylic acid
+HCOCO2H,6,H,2,aldehyde
+HCOCO2H,7,HO,1,carboxylic acid
+GLYOX,1,O2,2,aldehyde
+GLYOX,2,C2,2,aldehyde
+GLYOX,3,C2,1,aldehyde
+GLYOX,4,O2,1,aldehyde
+GLYOX,5,H,2,aldehyde
+GLYOX,6,H,1,aldehyde
+TM135OBPOH,1,C3,2,alkane CH
+TM135OBPOH,1,C3,3,alkane CH
+TM135OBPOH,1,C3,8,alkane CH
+TM135OBPOH,2,C2,15,C non quaternary
+TM135OBPOH,3,C2,11,alkene CH
+TM135OBPOH,4,C3,13,peroxide
+TM135OBPOH,5,C3,4,alkane CH
+TM135OBPOH,5,C3,5,alkane CH
+TM135OBPOH,5,C3,6,alkane CH
+TM135OBPOH,6,O3,13,peroxide
+TM135OBPOH,7,O3,13,peroxide
+TM135OBPOH,8,C3,13,peroxide
+TM135OBPOH,9,C3,1,alkane CH
+TM135OBPOH,9,C3,7,alkane CH
+TM135OBPOH,9,C3,10,alkane CH
+TM135OBPOH,10,C2,14,ketone
+TM135OBPOH,11,O2,14,ketone
+TM135OBPOH,12,C3,9,alkane CH
+TM135OBPOH,12,C3,12,alcohol
+TM135OBPOH,13,O3,12,alcohol
+TM135OBPOH,14,H,2,alkane CH
+TM135OBPOH,15,H,8,alkane CH
+TM135OBPOH,16,H,3,alkane CH
+TM135OBPOH,17,H,11,alkene CH
+TM135OBPOH,18,H,4,alkane CH
+TM135OBPOH,19,H,5,alkane CH
+TM135OBPOH,20,H,6,alkane CH
+TM135OBPOH,21,H,7,alkane CH
+TM135OBPOH,22,H,1,alkane CH
+TM135OBPOH,23,H,10,alkane CH
+TM135OBPOH,24,H,9,alkane CH
+TM135OBPOH,25,HO,12,alcohol
+HCHO,1,C2,1,formaldehyde
+HCHO,2,O2,1,formaldehyde
+HCHO,3,H,1,formaldehyde
+HCHO,4,H,1,formaldehyde
+TMBO2,1,O3,12,peroxy radical 
+TMBO2,2,O3,12,peroxy radical 
+TMBO2,3,C3,1,alkane CH
+TMBO2,3,C3,3,alkane CH
+TMBO2,3,C3,12,peroxy radical 
+TMBO2,4,Car,15,Car non quaternary
+TMBO2,5,Car,9,aromatic CH
+TMBO2,6,Car,13,Car non quaternary
+TMBO2,7,C3,2,alkane CH
+TMBO2,7,C3,6,alkane CH
+TMBO2,7,C3,8,alkane CH
+TMBO2,8,Car,10,aromatic CH
+TMBO2,9,Car,14,Car non quaternary
+TMBO2,10,C3,4,alkane CH
+TMBO2,10,C3,5,alkane CH
+TMBO2,10,C3,7,alkane CH
+TMBO2,11,Car,11,aromatic CH
+TMBO2,12,H,1,alkane CH
+TMBO2,13,H,3,alkane CH
+TMBO2,14,H,9,aromatic CH
+TMBO2,15,H,2,alkane CH
+TMBO2,16,H,6,alkane CH
+TMBO2,17,H,8,alkane CH
+TMBO2,18,H,10,aromatic CH
+TMBO2,19,H,4,alkane CH
+TMBO2,20,H,7,alkane CH
+TMBO2,21,H,5,alkane CH
+TMBO2,22,H,11,aromatic CH
+C4COMOHCO3,1,O3,10,carbonylperoxyacid radical
+C4COMOHCO3,2,O3,10,carbonylperoxyacid radical
+C4COMOHCO3,3,C2,10,carbonylperoxyacid radical
+C4COMOHCO3,4,O2,10,carbonylperoxyacid radical
+C4COMOHCO3,5,C3,7,alcohol
+C4COMOHCO3,6,C3,4,alkane CH
+C4COMOHCO3,6,C3,5,alkane CH
+C4COMOHCO3,6,C3,6,alkane CH
+C4COMOHCO3,7,O3,7,alcohol
+C4COMOHCO3,8,C2,8,ketone
+C4COMOHCO3,9,O2,8,ketone
+C4COMOHCO3,10,C2,9,ketone
+C4COMOHCO3,11,O2,9,ketone
+C4COMOHCO3,12,C3,1,alkane CH
+C4COMOHCO3,12,C3,2,alkane CH
+C4COMOHCO3,12,C3,3,alkane CH
+C4COMOHCO3,13,H,4,alkane CH
+C4COMOHCO3,14,H,6,alkane CH
+C4COMOHCO3,15,H,5,alkane CH
+C4COMOHCO3,16,HO,7,alcohol
+C4COMOHCO3,17,H,3,alkane CH
+C4COMOHCO3,18,H,2,alkane CH
+C4COMOHCO3,19,H,1,alkane CH
+TM135MUOOH,1,O3,14,hydroperoxide
+TM135MUOOH,2,O3,14,hydroperoxide
+TM135MUOOH,3,C3,14,hydroperoxide
+TM135MUOOH,4,C3,1,alkane CH
+TM135MUOOH,4,C3,3,alkane CH
+TM135MUOOH,4,C3,9,alkane CH
+TM135MUOOH,5,C3,8,alkane CH
+TM135MUOOH,5,C3,12,alcohol
+TM135MUOOH,6,O3,12,alcohol
+TM135MUOOH,7,C2,15,ketone
+TM135MUOOH,8,O2,15,ketone
+TM135MUOOH,9,C3,4,alkane CH
+TM135MUOOH,9,C3,7,alkane CH
+TM135MUOOH,9,C3,10,alkane CH
+TM135MUOOH,10,C3,6,alkane CH
+TM135MUOOH,10,C3,13,ether
+TM135MUOOH,11,O3,13,ether
+TM135MUOOH,12,C3,13,ether
+TM135MUOOH,13,C3,2,alkane CH
+TM135MUOOH,13,C3,5,alkane CH
+TM135MUOOH,13,C3,11,alkane CH
+TM135MUOOH,14,C2,16,aldehyde
+TM135MUOOH,15,O2,16,aldehyde
+TM135MUOOH,16,HO,14,hydroperoxide
+TM135MUOOH,17,H,9,alkane CH
+TM135MUOOH,18,H,3,alkane CH
+TM135MUOOH,19,H,1,alkane CH
+TM135MUOOH,20,H,8,alkane CH
+TM135MUOOH,21,HO,12,alcohol
+TM135MUOOH,22,H,4,alkane CH
+TM135MUOOH,23,H,7,alkane CH
+TM135MUOOH,24,H,10,alkane CH
+TM135MUOOH,25,H,6,alkane CH
+TM135MUOOH,26,H,2,alkane CH
+TM135MUOOH,27,H,11,alkane CH
+TM135MUOOH,28,H,5,alkane CH
+TM135MUOOH,29,H,16,aldehyde
+TM135OLOOH,1,O3,15,hydroperoxide
+TM135OLOOH,2,O3,15,hydroperoxide
+TM135OLOOH,3,C3,13,alcohol
+TM135OLOOH,3,C3,15,hydroperoxide
+TM135OLOOH,4,O3,13,alcohol
+TM135OLOOH,5,C2,16,C non quaternary
+TM135OLOOH,6,C2,11,alkene CH
+TM135OLOOH,7,C3,14,peroxide
+TM135OLOOH,8,C3,3,alkane CH
+TM135OLOOH,8,C3,6,alkane CH
+TM135OLOOH,8,C3,9,alkane CH
+TM135OLOOH,9,O3,14,peroxide
+TM135OLOOH,10,O3,14,peroxide
+TM135OLOOH,11,C3,14,peroxide
+TM135OLOOH,12,C3,4,alkane CH
+TM135OLOOH,12,C3,8,alkane CH
+TM135OLOOH,12,C3,10,alkane CH
+TM135OLOOH,13,C3,2,alkane CH
+TM135OLOOH,13,C3,12,alcohol
+TM135OLOOH,14,O3,12,alcohol
+TM135OLOOH,15,C3,1,alkane CH
+TM135OLOOH,15,C3,5,alkane CH
+TM135OLOOH,15,C3,7,alkane CH
+TM135OLOOH,16,HO,15,hydroperoxide
+TM135OLOOH,17,HO,13,alcohol
+TM135OLOOH,18,H,11,alkene CH
+TM135OLOOH,19,H,6,alkane CH
+TM135OLOOH,20,H,9,alkane CH
+TM135OLOOH,21,H,3,alkane CH
+TM135OLOOH,22,H,10,alkane CH
+TM135OLOOH,23,H,8,alkane CH
+TM135OLOOH,24,H,4,alkane CH
+TM135OLOOH,25,H,2,alkane CH
+TM135OLOOH,26,HO,12,alcohol
+TM135OLOOH,27,H,1,alkane CH
+TM135OLOOH,28,H,5,alkane CH
+TM135OLOOH,29,H,7,alkane CH
+C7M3CO,1,C3,2,alkane CH
+C7M3CO,1,C3,3,alkane CH
+C7M3CO,1,C3,4,alkane CH
+C7M3CO,2,C2,13,ketone
+C7M3CO,3,O2,13,ketone
+C7M3CO,4,C2,10,alkene CH
+C7M3CO,5,C2,14,C non quaternary
+C7M3CO,6,C3,1,alkane CH
+C7M3CO,6,C3,8,alkane CH
+C7M3CO,6,C3,9,alkane CH
+C7M3CO,7,C2,12,ketone
+C7M3CO,8,O2,12,ketone
+C7M3CO,9,C2,11,ketone
+C7M3CO,10,O2,11,ketone
+C7M3CO,11,C3,5,alkane CH
+C7M3CO,11,C3,6,alkane CH
+C7M3CO,11,C3,7,alkane CH
+C7M3CO,12,H,2,alkane CH
+C7M3CO,13,H,3,alkane CH
+C7M3CO,14,H,4,alkane CH
+C7M3CO,15,H,10,alkene CH
+C7M3CO,16,H,9,alkane CH
+C7M3CO,17,H,8,alkane CH
+C7M3CO,18,H,1,alkane CH
+C7M3CO,19,H,5,alkane CH
+C7M3CO,20,H,6,alkane CH
+C7M3CO,21,H,7,alkane CH
+CO24C53O2,1,O3,10,peroxy radical 
+CO24C53O2,2,O3,10,peroxy radical 
+CO24C53O2,3,C3,4,alkane CH
+CO24C53O2,3,C3,10,peroxy radical 
+CO24C53O2,4,C2,8,ketone
+CO24C53O2,5,O2,8,ketone
+CO24C53O2,6,C3,3,alkane CH
+CO24C53O2,6,C3,6,alkane CH
+CO24C53O2,6,C3,7,alkane CH
+CO24C53O2,7,C2,9,ketone
+CO24C53O2,8,O2,9,ketone
+CO24C53O2,9,C3,1,alkane CH
+CO24C53O2,9,C3,2,alkane CH
+CO24C53O2,9,C3,5,alkane CH
+CO24C53O2,10,H,4,alkane CH
+CO24C53O2,11,H,3,alkane CH
+CO24C53O2,12,H,7,alkane CH
+CO24C53O2,13,H,6,alkane CH
+CO24C53O2,14,H,1,alkane CH
+CO24C53O2,15,H,2,alkane CH
+CO24C53O2,16,H,5,alkane CH
+MMALANHYO2,1,C3,1,alkane CH
+MMALANHYO2,1,C3,3,alkane CH
+MMALANHYO2,1,C3,4,alkane CH
+MMALANHYO2,2,C3,6,peroxy radical 
+MMALANHYO2,3,O3,6,peroxy radical 
+MMALANHYO2,4,O3,6,peroxy radical 
+MMALANHYO2,5,C3,2,alkane CH
+MMALANHYO2,5,C3,5,alcohol
+MMALANHYO2,6,O3,5,alcohol
+MMALANHYO2,7,C2,7,anhydride
+MMALANHYO2,8,O2,7,anhydride
+MMALANHYO2,9,O3,7,anhydride
+MMALANHYO2,10,C2,7,anhydride
+MMALANHYO2,11,O2,7,anhydride
+MMALANHYO2,12,H,4,alkane CH
+MMALANHYO2,13,H,1,alkane CH
+MMALANHYO2,14,H,3,alkane CH
+MMALANHYO2,15,H,2,alkane CH
+MMALANHYO2,16,HO,5,alcohol
+HOCH2CHO,1,O3,3,alcohol
+HOCH2CHO,2,C3,1,alkane CH
+HOCH2CHO,2,C3,2,alkane CH
+HOCH2CHO,2,C3,3,alcohol
+HOCH2CHO,3,C2,4,aldehyde
+HOCH2CHO,4,O2,4,aldehyde
+HOCH2CHO,5,HO,3,alcohol
+HOCH2CHO,6,H,2,alkane CH
+HOCH2CHO,7,H,1,alkane CH
+HOCH2CHO,8,H,4,aldehyde
+TM135O,1,C3,3,alkane CH
+TM135O,1,C3,5,alkane CH
+TM135O,1,C3,9,alkane CH
+TM135O,2,Car,13,Car non quaternary
+TM135O,3,Car,11,aromatic CH
+TM135O,4,Car,15,Car non quaternary
+TM135O,5,C3,4,alkane CH
+TM135O,5,C3,6,alkane CH
+TM135O,5,C3,7,alkane CH
+TM135O,6,Car,12,oxy radical
+TM135O,7,O3,12,oxy radical
+TM135O,8,Car,14,Car non quaternary
+TM135O,9,C3,1,alkane CH
+TM135O,9,C3,2,alkane CH
+TM135O,9,C3,8,alkane CH
+TM135O,10,Car,10,aromatic CH
+TM135O,11,H,9,alkane CH
+TM135O,12,H,3,alkane CH
+TM135O,13,H,5,alkane CH
+TM135O,14,H,11,aromatic CH
+TM135O,15,H,6,alkane CH
+TM135O,16,H,4,alkane CH
+TM135O,17,H,7,alkane CH
+TM135O,18,H,8,alkane CH
+TM135O,19,H,2,alkane CH
+TM135O,20,H,1,alkane CH
+TM135O,21,H,10,aromatic CH
+DMPHO,1,C3,1,alkane CH
+DMPHO,1,C3,5,alkane CH
+DMPHO,1,C3,6,alkane CH
+DMPHO,2,Car,11,Car non quaternary
+DMPHO,3,Car,9,aromatic CH
+DMPHO,4,Car,12,Car non quaternary
+DMPHO,5,C3,2,alkane CH
+DMPHO,5,C3,3,alkane CH
+DMPHO,5,C3,4,alkane CH
+DMPHO,6,Car,8,aromatic CH
+DMPHO,7,Car,10,oxy radical
+DMPHO,8,O3,10,oxy radical
+DMPHO,9,Car,7,aromatic CH
+DMPHO,10,H,5,alkane CH
+DMPHO,11,H,6,alkane CH
+DMPHO,12,H,1,alkane CH
+DMPHO,13,H,9,aromatic CH
+DMPHO,14,H,3,alkane CH
+DMPHO,15,H,4,alkane CH
+DMPHO,16,H,2,alkane CH
+DMPHO,17,H,8,aromatic CH
+DMPHO,18,H,7,aromatic CH
+TM135B,1,C3,1,alkane CH
+TM135B,1,C3,8,alkane CH
+TM135B,1,C3,9,alkane CH
+TM135B,2,Car,14,Car non quaternary
+TM135B,3,Car,12,aromatic CH
+TM135B,4,Car,15,Car non quaternary
+TM135B,5,C3,2,alkane CH
+TM135B,5,C3,4,alkane CH
+TM135B,5,C3,6,alkane CH
+TM135B,6,Car,11,aromatic CH
+TM135B,7,Car,13,Car non quaternary
+TM135B,8,C3,3,alkane CH
+TM135B,8,C3,5,alkane CH
+TM135B,8,C3,7,alkane CH
+TM135B,9,Car,10,aromatic CH
+TM135B,10,H,8,alkane CH
+TM135B,11,H,9,alkane CH
+TM135B,12,H,1,alkane CH
+TM135B,13,H,12,aromatic CH
+TM135B,14,H,4,alkane CH
+TM135B,15,H,6,alkane CH
+TM135B,16,H,2,alkane CH
+TM135B,17,H,11,aromatic CH
+TM135B,18,H,7,alkane CH
+TM135B,19,H,5,alkane CH
+TM135B,20,H,3,alkane CH
+TM135B,21,H,10,aromatic CH
+C4MCODBCO2,1,C3,1,alkane CH
+C4MCODBCO2,1,C3,2,alkane CH
+C4MCODBCO2,1,C3,3,alkane CH
+C4MCODBCO2,2,C2,8,ketone
+C4MCODBCO2,3,O2,8,ketone
+C4MCODBCO2,4,C2,7,alkene CH
+C4MCODBCO2,5,C2,9,C non quaternary
+C4MCODBCO2,6,C3,4,alkane CH
+C4MCODBCO2,6,C3,5,alkane CH
+C4MCODBCO2,6,C3,6,alkane CH
+C4MCODBCO2,7,Cac,10,carboxylic radical
+C4MCODBCO2,8,O.co2,10,carboxylic radical
+C4MCODBCO2,9,O.co2,10,carboxylic radical
+C4MCODBCO2,10,H,2,alkane CH
+C4MCODBCO2,11,H,3,alkane CH
+C4MCODBCO2,12,H,1,alkane CH
+C4MCODBCO2,13,H,7,alkene CH
+C4MCODBCO2,14,H,6,alkane CH
+C4MCODBCO2,15,H,4,alkane CH
+C4MCODBCO2,16,H,5,alkane CH
+MXYOHNO2O2,1,O3,13,peroxy radical 
+MXYOHNO2O2,2,O3,13,peroxy radical 
+MXYOHNO2O2,3,C3,9,alcohol
+MXYOHNO2O2,3,C3,13,peroxy radical 
+MXYOHNO2O2,4,O3,9,alcohol
+MXYOHNO2O2,5,C2,14,C non quaternary
+MXYOHNO2O2,6,C2,8,alkene CH
+MXYOHNO2O2,7,C3,11,peroxide
+MXYOHNO2O2,8,C3,2,alkane CH
+MXYOHNO2O2,8,C3,3,alkane CH
+MXYOHNO2O2,8,C3,4,alkane CH
+MXYOHNO2O2,9,O3,11,peroxide
+MXYOHNO2O2,10,O3,11,peroxide
+MXYOHNO2O2,11,C3,11,peroxide
+MXYOHNO2O2,11,C3,12,nitro
+MXYOHNO2O2,12,Ntr,12,nitro
+MXYOHNO2O2,13,O2,12,nitro
+MXYOHNO2O2,14,O2,12,nitro
+MXYOHNO2O2,15,C3,1,alkane CH
+MXYOHNO2O2,15,C3,10,alcohol
+MXYOHNO2O2,16,O3,10,alcohol
+MXYOHNO2O2,17,C3,5,alkane CH
+MXYOHNO2O2,17,C3,6,alkane CH
+MXYOHNO2O2,17,C3,7,alkane CH
+MXYOHNO2O2,18,HO,9,alcohol
+MXYOHNO2O2,19,H,8,alkene CH
+MXYOHNO2O2,20,H,4,alkane CH
+MXYOHNO2O2,21,H,3,alkane CH
+MXYOHNO2O2,22,H,2,alkane CH
+MXYOHNO2O2,23,H,1,alkane CH
+MXYOHNO2O2,24,HO,10,alcohol
+MXYOHNO2O2,25,H,5,alkane CH
+MXYOHNO2O2,26,H,6,alkane CH
+MXYOHNO2O2,27,H,7,alkane CH
+TM135OLO2,1,O3,15,peroxy radical 
+TM135OLO2,2,O3,15,peroxy radical 
+TM135OLO2,3,C3,13,alcohol
+TM135OLO2,3,C3,15,peroxy radical 
+TM135OLO2,4,O3,13,alcohol
+TM135OLO2,5,C2,16,C non quaternary
+TM135OLO2,6,C2,11,alkene CH
+TM135OLO2,7,C3,14,peroxide
+TM135OLO2,8,C3,4,alkane CH
+TM135OLO2,8,C3,6,alkane CH
+TM135OLO2,8,C3,7,alkane CH
+TM135OLO2,9,O3,14,peroxide
+TM135OLO2,10,O3,14,peroxide
+TM135OLO2,11,C3,14,peroxide
+TM135OLO2,12,C3,1,alkane CH
+TM135OLO2,12,C3,8,alkane CH
+TM135OLO2,12,C3,9,alkane CH
+TM135OLO2,13,C3,3,alkane CH
+TM135OLO2,13,C3,12,alcohol
+TM135OLO2,14,O3,12,alcohol
+TM135OLO2,15,C3,2,alkane CH
+TM135OLO2,15,C3,5,alkane CH
+TM135OLO2,15,C3,10,alkane CH
+TM135OLO2,16,HO,13,alcohol
+TM135OLO2,17,H,11,alkene CH
+TM135OLO2,18,H,7,alkane CH
+TM135OLO2,19,H,6,alkane CH
+TM135OLO2,20,H,4,alkane CH
+TM135OLO2,21,H,1,alkane CH
+TM135OLO2,22,H,9,alkane CH
+TM135OLO2,23,H,8,alkane CH
+TM135OLO2,24,H,3,alkane CH
+TM135OLO2,25,HO,12,alcohol
+TM135OLO2,26,H,10,alkane CH
+TM135OLO2,27,H,2,alkane CH
+TM135OLO2,28,H,5,alkane CH
+C4MCODBCO3,1,C3,1,alkane CH
+C4MCODBCO3,1,C3,2,alkane CH
+C4MCODBCO3,1,C3,4,alkane CH
+C4MCODBCO3,2,C2,10,C non quaternary
+C4MCODBCO3,3,C2,7,alkene CH
+C4MCODBCO3,4,C2,8,ketone
+C4MCODBCO3,5,O2,8,ketone
+C4MCODBCO3,6,C3,3,alkane CH
+C4MCODBCO3,6,C3,5,alkane CH
+C4MCODBCO3,6,C3,6,alkane CH
+C4MCODBCO3,7,C2,9,carbonylperoxyacid radical
+C4MCODBCO3,8,O2,9,carbonylperoxyacid radical
+C4MCODBCO3,9,O3,9,carbonylperoxyacid radical
+C4MCODBCO3,10,O3,9,carbonylperoxyacid radical
+C4MCODBCO3,11,H,4,alkane CH
+C4MCODBCO3,12,H,1,alkane CH
+C4MCODBCO3,13,H,2,alkane CH
+C4MCODBCO3,14,H,7,alkene CH
+C4MCODBCO3,15,H,5,alkane CH
+C4MCODBCO3,16,H,6,alkane CH
+C4MCODBCO3,17,H,3,alkane CH
+TM135MUCO2,1,O3,16,peroxy radical 
+TM135MUCO2,2,O3,16,peroxy radical 
+TM135MUCO2,3,C3,16,peroxy radical 
+TM135MUCO2,4,C3,2,alkane CH
+TM135MUCO2,4,C3,7,alkane CH
+TM135MUCO2,4,C3,9,alkane CH
+TM135MUCO2,5,C3,4,alkane CH
+TM135MUCO2,5,C3,12,alcohol
+TM135MUCO2,6,O3,12,alcohol
+TM135MUCO2,7,C2,14,ketone
+TM135MUCO2,8,O2,14,ketone
+TM135MUCO2,9,C3,3,alkane CH
+TM135MUCO2,9,C3,8,alkane CH
+TM135MUCO2,9,C3,11,alkane CH
+TM135MUCO2,10,C3,5,alkane CH
+TM135MUCO2,10,C3,13,ether
+TM135MUCO2,11,O3,13,ether
+TM135MUCO2,12,C3,13,ether
+TM135MUCO2,13,C3,1,alkane CH
+TM135MUCO2,13,C3,6,alkane CH
+TM135MUCO2,13,C3,10,alkane CH
+TM135MUCO2,14,C2,15,aldehyde
+TM135MUCO2,15,O2,15,aldehyde
+TM135MUCO2,16,H,9,alkane CH
+TM135MUCO2,17,H,7,alkane CH
+TM135MUCO2,18,H,2,alkane CH
+TM135MUCO2,19,H,4,alkane CH
+TM135MUCO2,20,HO,12,alcohol
+TM135MUCO2,21,H,8,alkane CH
+TM135MUCO2,22,H,3,alkane CH
+TM135MUCO2,23,H,11,alkane CH
+TM135MUCO2,24,H,5,alkane CH
+TM135MUCO2,25,H,10,alkane CH
+TM135MUCO2,26,H,6,alkane CH
+TM135MUCO2,27,H,1,alkane CH
+TM135MUCO2,28,H,15,aldehyde
+TM135MUCO3,1,O3,14,carbonylperoxyacid radical
+TM135MUCO3,2,O3,14,carbonylperoxyacid radical
+TM135MUCO3,3,C2,14,carbonylperoxyacid radical
+TM135MUCO3,4,O2,14,carbonylperoxyacid radical
+TM135MUCO3,5,C3,12,ether
+TM135MUCO3,6,C3,5,alkane CH
+TM135MUCO3,6,C3,8,alkane CH
+TM135MUCO3,6,C3,9,alkane CH
+TM135MUCO3,7,O3,12,ether
+TM135MUCO3,8,C3,7,alkane CH
+TM135MUCO3,8,C3,12,ether
+TM135MUCO3,9,C2,15,C non quaternary
+TM135MUCO3,10,C2,11,alkene CH
+TM135MUCO3,11,C2,13,ketone
+TM135MUCO3,12,O2,13,ketone
+TM135MUCO3,13,C3,1,alkane CH
+TM135MUCO3,13,C3,6,alkane CH
+TM135MUCO3,13,C3,10,alkane CH
+TM135MUCO3,14,C3,2,alkane CH
+TM135MUCO3,14,C3,3,alkane CH
+TM135MUCO3,14,C3,4,alkane CH
+TM135MUCO3,15,H,9,alkane CH
+TM135MUCO3,16,H,5,alkane CH
+TM135MUCO3,17,H,8,alkane CH
+TM135MUCO3,18,H,7,alkane CH
+TM135MUCO3,19,H,11,alkene CH
+TM135MUCO3,20,H,6,alkane CH
+TM135MUCO3,21,H,10,alkane CH
+TM135MUCO3,22,H,1,alkane CH
+TM135MUCO3,23,H,2,alkane CH
+TM135MUCO3,24,H,4,alkane CH
+TM135MUCO3,25,H,3,alkane CH
+TM135OLO,1,O3,12,alcohol
+TM135OLO,2,C3,1,alkane CH
+TM135OLO,2,C3,12,alcohol
+TM135OLO,3,C3,14,peroxide
+TM135OLO,4,C3,2,alkane CH
+TM135OLO,4,C3,3,alkane CH
+TM135OLO,4,C3,10,alkane CH
+TM135OLO,5,O3,14,peroxide
+TM135OLO,6,O3,14,peroxide
+TM135OLO,7,C3,14,peroxide
+TM135OLO,8,C3,5,alkane CH
+TM135OLO,8,C3,6,alkane CH
+TM135OLO,8,C3,7,alkane CH
+TM135OLO,9,C3,13,alcohol
+TM135OLO,9,C3,15,oxy radical
+TM135OLO,10,O2,15,oxy radical
+TM135OLO,11,O2,13,alcohol
+TM135OLO,12,C2,16,C non quaternary
+TM135OLO,13,C2,11,alkene CH
+TM135OLO,14,C3,4,alkane CH
+TM135OLO,14,C3,8,alkane CH
+TM135OLO,14,C3,9,alkane CH
+TM135OLO,15,HO,12,alcohol
+TM135OLO,16,H,1,alkane CH
+TM135OLO,17,H,3,alkane CH
+TM135OLO,18,H,10,alkane CH
+TM135OLO,19,H,2,alkane CH
+TM135OLO,20,H,7,alkane CH
+TM135OLO,21,H,6,alkane CH
+TM135OLO,22,H,5,alkane CH
+TM135OLO,23,HO,13,alcohol
+TM135OLO,24,H,11,alkene CH
+TM135OLO,25,H,4,alkane CH
+TM135OLO,26,H,9,alkane CH
+TM135OLO,27,H,8,alkane CH
+TM135MUO2H,1,C3,4,alkane CH
+TM135MUO2H,1,C3,5,alkane CH
+TM135MUO2H,1,C3,6,alkane CH
+TM135MUO2H,2,C2,14,ketone
+TM135MUO2H,3,O2,14,ketone
+TM135MUO2H,4,C2,11,alkene CH
+TM135MUO2H,5,C2,15,C non quaternary
+TM135MUO2H,6,C3,1,alkane CH
+TM135MUO2H,6,C3,2,alkane CH
+TM135MUO2H,6,C3,7,alkane CH
+TM135MUO2H,7,C3,8,alkane CH
+TM135MUO2H,7,C3,13,ether
+TM135MUO2H,8,O3,13,ether
+TM135MUO2H,9,C3,13,ether
+TM135MUO2H,10,C3,3,alkane CH
+TM135MUO2H,10,C3,9,alkane CH
+TM135MUO2H,10,C3,10,alkane CH
+TM135MUO2H,11,C2,12,carboxylic acid
+TM135MUO2H,12,O2,12,carboxylic acid
+TM135MUO2H,13,O3,12,carboxylic acid
+TM135MUO2H,14,H,5,alkane CH
+TM135MUO2H,15,H,6,alkane CH
+TM135MUO2H,16,H,4,alkane CH
+TM135MUO2H,17,H,11,alkene CH
+TM135MUO2H,18,H,2,alkane CH
+TM135MUO2H,19,H,1,alkane CH
+TM135MUO2H,20,H,7,alkane CH
+TM135MUO2H,21,H,8,alkane CH
+TM135MUO2H,22,H,10,alkane CH
+TM135MUO2H,23,H,9,alkane CH
+TM135MUO2H,24,H,3,alkane CH
+TM135MUO2H,25,HO,12,carboxylic acid
+C6CO3MOH,1,O2,10,aldehyde
+C6CO3MOH,2,C2,10,aldehyde
+C6CO3MOH,3,C3,7,alcohol
+C6CO3MOH,4,C3,3,alkane CH
+C6CO3MOH,4,C3,5,alkane CH
+C6CO3MOH,4,C3,6,alkane CH
+C6CO3MOH,5,O3,7,alcohol
+C6CO3MOH,6,C2,9,ketone
+C6CO3MOH,7,O2,9,ketone
+C6CO3MOH,8,C2,8,ketone
+C6CO3MOH,9,O2,8,ketone
+C6CO3MOH,10,C3,1,alkane CH
+C6CO3MOH,10,C3,2,alkane CH
+C6CO3MOH,10,C3,4,alkane CH
+C6CO3MOH,11,H,10,aldehyde
+C6CO3MOH,12,H,6,alkane CH
+C6CO3MOH,13,H,5,alkane CH
+C6CO3MOH,14,H,3,alkane CH
+C6CO3MOH,15,HO,7,alcohol
+C6CO3MOH,16,H,2,alkane CH
+C6CO3MOH,17,H,1,alkane CH
+C6CO3MOH,18,H,4,alkane CH
+HOCH2CO3,1,O3,3,alcohol
+HOCH2CO3,2,C3,1,alkane CH
+HOCH2CO3,2,C3,2,alkane CH
+HOCH2CO3,2,C3,3,alcohol
+HOCH2CO3,3,C2,4,carbonylperoxyacid radical
+HOCH2CO3,4,O2,4,carbonylperoxyacid radical
+HOCH2CO3,5,O3,4,carbonylperoxyacid radical
+HOCH2CO3,6,O3,4,carbonylperoxyacid radical
+HOCH2CO3,7,HO,3,alcohol
+HOCH2CO3,8,H,1,alkane CH
+HOCH2CO3,9,H,2,alkane CH
+C7M2CO5O,1,C3,2,alkane CH
+C7M2CO5O,1,C3,3,alkane CH
+C7M2CO5O,1,C3,4,alkane CH
+C7M2CO5O,2,C2,13,ketone
+C7M2CO5O,3,O2,13,ketone
+C7M2CO5O,4,C2,11,alkene CH
+C7M2CO5O,5,C2,15,C non quaternary
+C7M2CO5O,6,C3,1,alkane CH
+C7M2CO5O,6,C3,9,alkane CH
+C7M2CO5O,6,C3,10,alkane CH
+C7M2CO5O,7,C3,6,alkane CH
+C7M2CO5O,7,C3,14,oxy radical
+C7M2CO5O,8,O3,14,oxy radical
+C7M2CO5O,9,C2,12,ketone
+C7M2CO5O,10,O2,12,ketone
+C7M2CO5O,11,C3,5,alkane CH
+C7M2CO5O,11,C3,7,alkane CH
+C7M2CO5O,11,C3,8,alkane CH
+C7M2CO5O,12,H,2,alkane CH
+C7M2CO5O,13,H,3,alkane CH
+C7M2CO5O,14,H,4,alkane CH
+C7M2CO5O,15,H,11,alkene CH
+C7M2CO5O,16,H,10,alkane CH
+C7M2CO5O,17,H,9,alkane CH
+C7M2CO5O,18,H,1,alkane CH
+C7M2CO5O,19,H,6,alkane CH
+C7M2CO5O,20,H,7,alkane CH
+C7M2CO5O,21,H,8,alkane CH
+C7M2CO5O,22,H,5,alkane CH
+TM135MUNO3,1,O2,16,aldehyde
+TM135MUNO3,2,C2,16,aldehyde
+TM135MUNO3,3,C3,13,ether
+TM135MUNO3,4,C3,3,alkane CH
+TM135MUNO3,4,C3,9,alkane CH
+TM135MUNO3,4,C3,10,alkane CH
+TM135MUNO3,5,O3,13,ether
+TM135MUNO3,6,C3,8,alkane CH
+TM135MUNO3,6,C3,13,ether
+TM135MUNO3,7,C3,14,organonitrate
+TM135MUNO3,8,C3,1,alkane CH
+TM135MUNO3,8,C3,2,alkane CH
+TM135MUNO3,8,C3,4,alkane CH
+TM135MUNO3,9,O2,14,organonitrate
+TM135MUNO3,10,Ntr,14,organonitrate
+TM135MUNO3,11,O2,14,organonitrate
+TM135MUNO3,12,O2,14,organonitrate
+TM135MUNO3,13,C3,6,alkane CH
+TM135MUNO3,13,C3,12,alcohol
+TM135MUNO3,14,O3,12,alcohol
+TM135MUNO3,15,C2,15,ketone
+TM135MUNO3,16,O2,15,ketone
+TM135MUNO3,17,C3,5,alkane CH
+TM135MUNO3,17,C3,7,alkane CH
+TM135MUNO3,17,C3,11,alkane CH
+TM135MUNO3,18,H,16,aldehyde
+TM135MUNO3,19,H,3,alkane CH
+TM135MUNO3,20,H,10,alkane CH
+TM135MUNO3,21,H,9,alkane CH
+TM135MUNO3,22,H,8,alkane CH
+TM135MUNO3,23,H,4,alkane CH
+TM135MUNO3,24,H,2,alkane CH
+TM135MUNO3,25,H,1,alkane CH
+TM135MUNO3,26,H,6,alkane CH
+TM135MUNO3,27,HO,12,alcohol
+TM135MUNO3,28,H,7,alkane CH
+TM135MUNO3,29,H,5,alkane CH
+TM135MUNO3,30,H,11,alkane CH
+ACCOCOMEO,1,C3,1,alkane CH
+ACCOCOMEO,1,C3,2,alkane CH
+ACCOCOMEO,1,C3,4,alkane CH
+ACCOCOMEO,2,C2,8,anhydride
+ACCOCOMEO,3,O2,8,anhydride
+ACCOCOMEO,4,O3,8,anhydride
+ACCOCOMEO,5,C2,8,anhydride
+ACCOCOMEO,6,O2,8,anhydride
+ACCOCOMEO,7,C2,6,ketone
+ACCOCOMEO,8,O2,6,ketone
+ACCOCOMEO,9,C3,3,alkane CH
+ACCOCOMEO,9,C3,5,alkane CH
+ACCOCOMEO,9,C3,7,oxy radical
+ACCOCOMEO,10,O3,7,oxy radical
+ACCOCOMEO,11,H,2,alkane CH
+ACCOCOMEO,12,H,4,alkane CH
+ACCOCOMEO,13,H,1,alkane CH
+ACCOCOMEO,14,H,3,alkane CH
+ACCOCOMEO,15,H,5,alkane CH
+DMPHOHNO2,1,C3,1,alkane CH
+DMPHOHNO2,1,C3,2,alkane CH
+DMPHOHNO2,1,C3,5,alkane CH
+DMPHOHNO2,2,Car,11,Car non quaternary
+DMPHOHNO2,3,Car,7,aromatic CH
+DMPHOHNO2,4,Car,12,Car non quaternary
+DMPHOHNO2,5,C3,3,alkane CH
+DMPHOHNO2,5,C3,4,alkane CH
+DMPHOHNO2,5,C3,6,alkane CH
+DMPHOHNO2,6,Car,9,nitro
+DMPHOHNO2,7,Ntr,9,nitro
+DMPHOHNO2,8,O2,9,nitro
+DMPHOHNO2,9,O2,9,nitro
+DMPHOHNO2,10,Car,10,phenol
+DMPHOHNO2,11,O3,10,phenol
+DMPHOHNO2,12,Car,8,aromatic CH
+DMPHOHNO2,13,H,1,alkane CH
+DMPHOHNO2,14,H,2,alkane CH
+DMPHOHNO2,15,H,5,alkane CH
+DMPHOHNO2,16,H,7,aromatic CH
+DMPHOHNO2,17,H,4,alkane CH
+DMPHOHNO2,18,H,6,alkane CH
+DMPHOHNO2,19,H,3,alkane CH
+DMPHOHNO2,20,HO,10,phenol
+DMPHOHNO2,21,H,8,aromatic CH
+C23O3MCHO,1,O2,10,aldehyde
+C23O3MCHO,2,C2,10,aldehyde
+C23O3MCHO,3,C3,1,alkane CH
+C23O3MCHO,3,C3,8,ester
+C23O3MCHO,4,C3,4,alkane CH
+C23O3MCHO,4,C3,5,alkane CH
+C23O3MCHO,4,C3,7,alkane CH
+C23O3MCHO,5,O3,8,ester
+C23O3MCHO,6,C2,8,ester
+C23O3MCHO,7,O2,8,ester
+C23O3MCHO,8,C2,9,ketone
+C23O3MCHO,9,O2,9,ketone
+C23O3MCHO,10,C3,2,alkane CH
+C23O3MCHO,10,C3,3,alkane CH
+C23O3MCHO,10,C3,6,alkane CH
+C23O3MCHO,11,H,10,aldehyde
+C23O3MCHO,12,H,1,alkane CH
+C23O3MCHO,13,H,7,alkane CH
+C23O3MCHO,14,H,5,alkane CH
+C23O3MCHO,15,H,4,alkane CH
+C23O3MCHO,16,H,3,alkane CH
+C23O3MCHO,17,H,2,alkane CH
+C23O3MCHO,18,H,6,alkane CH
+C5CO234OOH,1,C3,1,alkane CH
+C5CO234OOH,1,C3,2,alkane CH
+C5CO234OOH,1,C3,4,alkane CH
+C5CO234OOH,2,C2,9,ketone
+C5CO234OOH,3,O2,9,ketone
+C5CO234OOH,4,C2,7,ketone
+C5CO234OOH,5,O2,7,ketone
+C5CO234OOH,6,C2,8,ketone
+C5CO234OOH,7,O2,8,ketone
+C5CO234OOH,8,C3,3,alkane CH
+C5CO234OOH,8,C3,5,alkane CH
+C5CO234OOH,8,C3,6,hydroperoxide
+C5CO234OOH,9,O3,6,hydroperoxide
+C5CO234OOH,10,O3,6,hydroperoxide
+C5CO234OOH,11,H,2,alkane CH
+C5CO234OOH,12,H,4,alkane CH
+C5CO234OOH,13,H,1,alkane CH
+C5CO234OOH,14,H,5,alkane CH
+C5CO234OOH,15,H,3,alkane CH
+C5CO234OOH,16,HO,6,hydroperoxide
+TM135OLOH,1,O3,12,alcohol
+TM135OLOH,2,C3,1,alkane CH
+TM135OLOH,2,C3,12,alcohol
+TM135OLOH,3,C3,15,peroxide
+TM135OLOH,4,C3,2,alkane CH
+TM135OLOH,4,C3,4,alkane CH
+TM135OLOH,4,C3,10,alkane CH
+TM135OLOH,5,O3,15,peroxide
+TM135OLOH,6,O3,15,peroxide
+TM135OLOH,7,C3,15,peroxide
+TM135OLOH,8,C3,5,alkane CH
+TM135OLOH,8,C3,6,alkane CH
+TM135OLOH,8,C3,7,alkane CH
+TM135OLOH,9,C3,13,alcohol
+TM135OLOH,9,C3,14,alcohol
+TM135OLOH,10,O2,13,alcohol
+TM135OLOH,11,O2,14,alcohol
+TM135OLOH,12,C2,16,C non quaternary
+TM135OLOH,13,C2,11,alkene CH
+TM135OLOH,14,C3,3,alkane CH
+TM135OLOH,14,C3,8,alkane CH
+TM135OLOH,14,C3,9,alkane CH
+TM135OLOH,15,HO,12,alcohol
+TM135OLOH,16,H,1,alkane CH
+TM135OLOH,17,H,4,alkane CH
+TM135OLOH,18,H,10,alkane CH
+TM135OLOH,19,H,2,alkane CH
+TM135OLOH,20,H,7,alkane CH
+TM135OLOH,21,H,6,alkane CH
+TM135OLOH,22,H,5,alkane CH
+TM135OLOH,23,HO,13,alcohol
+TM135OLOH,24,HO,14,alcohol
+TM135OLOH,25,H,11,alkene CH
+TM135OLOH,26,H,9,alkane CH
+TM135OLOH,27,H,8,alkane CH
+TM135OLOH,28,H,3,alkane CH
+CO2H3CO3H,1,C3,1,alkane CH
+CO2H3CO3H,1,C3,3,alkane CH
+CO2H3CO3H,1,C3,4,alkane CH
+CO2H3CO3H,2,C2,6,ketone
+CO2H3CO3H,3,O2,6,ketone
+CO2H3CO3H,4,C3,2,alkane CH
+CO2H3CO3H,4,C3,5,alcohol
+CO2H3CO3H,5,O3,5,alcohol
+CO2H3CO3H,6,C2,7,carbonylperoxyacid
+CO2H3CO3H,7,O2,7,carbonylperoxyacid
+CO2H3CO3H,8,O3,7,carbonylperoxyacid
+CO2H3CO3H,9,O3,7,carbonylperoxyacid
+CO2H3CO3H,10,H,1,alkane CH
+CO2H3CO3H,11,H,3,alkane CH
+CO2H3CO3H,12,H,4,alkane CH
+CO2H3CO3H,13,H,2,alkane CH
+CO2H3CO3H,14,HO,5,alcohol
+CO2H3CO3H,15,HO,7,carbonylperoxyacid
+CH3CHO,1,C3,1,alkane CH
+CH3CHO,1,C3,2,alkane CH
+CH3CHO,1,C3,3,alkane CH
+CH3CHO,2,C2,4,aldehyde
+CH3CHO,3,O2,4,aldehyde
+CH3CHO,4,H,3,alkane CH
+CH3CHO,5,H,1,alkane CH
+CH3CHO,6,H,2,alkane CH
+CH3CHO,7,H,4,aldehyde
+CH3O,1,C3,1,alkane CH
+CH3O,1,C3,2,alkane CH
+CH3O,1,C3,3,alkane CH
+CH3O,1,C3,4,oxy radical
+CH3O,2,O3,4,oxy radical
+CH3O,3,H,2,alkane CH
+CH3O,4,H,3,alkane CH
+CH3O,5,H,1,alkane CH
+DMPHOOH,1,O3,10,hydroperoxide
+DMPHOOH,2,O3,10,hydroperoxide
+DMPHOOH,3,Car,10,hydroperoxide
+DMPHOOH,4,Car,7,aromatic CH
+DMPHOOH,5,Car,11,Car non quaternary
+DMPHOOH,6,C3,2,alkane CH
+DMPHOOH,6,C3,5,alkane CH
+DMPHOOH,6,C3,6,alkane CH
+DMPHOOH,7,Car,8,aromatic CH
+DMPHOOH,8,Car,12,Car non quaternary
+DMPHOOH,9,C3,1,alkane CH
+DMPHOOH,9,C3,3,alkane CH
+DMPHOOH,9,C3,4,alkane CH
+DMPHOOH,10,Car,9,aromatic CH
+DMPHOOH,11,HO,10,hydroperoxide
+DMPHOOH,12,H,7,aromatic CH
+DMPHOOH,13,H,2,alkane CH
+DMPHOOH,14,H,6,alkane CH
+DMPHOOH,15,H,5,alkane CH
+DMPHOOH,16,H,8,aromatic CH
+DMPHOOH,17,H,1,alkane CH
+DMPHOOH,18,H,3,alkane CH
+DMPHOOH,19,H,4,alkane CH
+DMPHOOH,20,H,9,aromatic CH
+DMPHO2,1,O3,10,peroxy radical 
+DMPHO2,2,O3,10,peroxy radical 
+DMPHO2,3,Car,10,peroxy radical 
+DMPHO2,4,Car,9,aromatic CH
+DMPHO2,5,Car,11,Car non quaternary
+DMPHO2,6,C3,3,alkane CH
+DMPHO2,6,C3,5,alkane CH
+DMPHO2,6,C3,6,alkane CH
+DMPHO2,7,Car,8,aromatic CH
+DMPHO2,8,Car,12,Car non quaternary
+DMPHO2,9,C3,1,alkane CH
+DMPHO2,9,C3,2,alkane CH
+DMPHO2,9,C3,4,alkane CH
+DMPHO2,10,Car,7,aromatic CH
+DMPHO2,11,H,9,aromatic CH
+DMPHO2,12,H,5,alkane CH
+DMPHO2,13,H,3,alkane CH
+DMPHO2,14,H,6,alkane CH
+DMPHO2,15,H,8,aromatic CH
+DMPHO2,16,H,1,alkane CH
+DMPHO2,17,H,2,alkane CH
+DMPHO2,18,H,4,alkane CH
+DMPHO2,19,H,7,aromatic CH
+CHOMOHCO3,1,C3,1,alkane CH
+CHOMOHCO3,1,C3,2,alkane CH
+CHOMOHCO3,1,C3,3,alkane CH
+CHOMOHCO3,2,C3,4,alcohol
+CHOMOHCO3,3,O3,4,alcohol
+CHOMOHCO3,4,C2,5,aldehyde
+CHOMOHCO3,5,O2,5,aldehyde
+CHOMOHCO3,6,C2,6,carbonylperoxyacid radical
+CHOMOHCO3,7,O2,6,carbonylperoxyacid radical
+CHOMOHCO3,8,O3,6,carbonylperoxyacid radical
+CHOMOHCO3,9,O3,6,carbonylperoxyacid radical
+CHOMOHCO3,10,H,1,alkane CH
+CHOMOHCO3,11,H,2,alkane CH
+CHOMOHCO3,12,H,3,alkane CH
+CHOMOHCO3,13,HO,4,alcohol
+CHOMOHCO3,14,H,5,aldehyde
+C5CO234O2,1,C3,1,alkane CH
+C5CO234O2,1,C3,2,alkane CH
+C5CO234O2,1,C3,4,alkane CH
+C5CO234O2,2,C2,8,ketone
+C5CO234O2,3,O2,8,ketone
+C5CO234O2,4,C2,6,ketone
+C5CO234O2,5,O2,6,ketone
+C5CO234O2,6,C2,7,ketone
+C5CO234O2,7,O2,7,ketone
+C5CO234O2,8,C3,3,alkane CH
+C5CO234O2,8,C3,5,alkane CH
+C5CO234O2,8,C3,9,peroxy radical 
+C5CO234O2,9,O3,9,peroxy radical 
+C5CO234O2,10,O3,9,peroxy radical 
+C5CO234O2,11,H,2,alkane CH
+C5CO234O2,12,H,4,alkane CH
+C5CO234O2,13,H,1,alkane CH
+C5CO234O2,14,H,5,alkane CH
+C5CO234O2,15,H,3,alkane CH
+CO2H3CO3,1,C3,1,alkane CH
+CO2H3CO3,1,C3,3,alkane CH
+CO2H3CO3,1,C3,4,alkane CH
+CO2H3CO3,2,C2,6,ketone
+CO2H3CO3,3,O2,6,ketone
+CO2H3CO3,4,C3,2,alkane CH
+CO2H3CO3,4,C3,5,alcohol
+CO2H3CO3,5,O3,5,alcohol
+CO2H3CO3,6,C2,7,carbonylperoxyacid radical
+CO2H3CO3,7,O2,7,carbonylperoxyacid radical
+CO2H3CO3,8,O3,7,carbonylperoxyacid radical
+CO2H3CO3,9,O3,7,carbonylperoxyacid radical
+CO2H3CO3,10,H,1,alkane CH
+CO2H3CO3,11,H,3,alkane CH
+CO2H3CO3,12,H,4,alkane CH
+CO2H3CO3,13,H,2,alkane CH
+CO2H3CO3,14,HO,5,alcohol
+MGLYOOA,1,O-,5,C=O-O group
+MGLYOOA,2,O2,5,C=O-O group
+MGLYOOA,3,C2,5,C=O-O group
+MGLYOOA,4,C3,1,alkane CH
+MGLYOOA,4,C3,2,alkane CH
+MGLYOOA,4,C3,3,alkane CH
+MGLYOOA,4,C3,5,C=O-O group
+MGLYOOA,5,C2,4,aldehyde
+MGLYOOA,5,C2,5,C=O-O group
+MGLYOOA,6,O2,4,aldehyde
+MGLYOOA,7,H,1,alkane CH
+MGLYOOA,8,H,3,alkane CH
+MGLYOOA,9,H,2,alkane CH
+MGLYOOA,10,H,4,aldehyde
+MGLYOO,1,O-,5,C=O-O group
+MGLYOO,2,O2,5,C=O-O group
+MGLYOO,3,C2,5,C=O-O group
+MGLYOO,4,C3,1,alkane CH
+MGLYOO,4,C3,2,alkane CH
+MGLYOO,4,C3,3,alkane CH
+MGLYOO,4,C3,5,C=O-O group
+MGLYOO,5,C2,4,aldehyde
+MGLYOO,5,C2,5,C=O-O group
+MGLYOO,6,O2,4,aldehyde
+MGLYOO,7,H,1,alkane CH
+MGLYOO,8,H,3,alkane CH
+MGLYOO,9,H,2,alkane CH
+MGLYOO,10,H,4,aldehyde
+TM135MUO3H,1,O3,14,carbonylperoxyacid
+TM135MUO3H,2,O3,14,carbonylperoxyacid
+TM135MUO3H,3,C2,14,carbonylperoxyacid
+TM135MUO3H,4,O2,14,carbonylperoxyacid
+TM135MUO3H,5,C3,12,ether
+TM135MUO3H,6,C3,2,alkane CH
+TM135MUO3H,6,C3,9,alkane CH
+TM135MUO3H,6,C3,10,alkane CH
+TM135MUO3H,7,O3,12,ether
+TM135MUO3H,8,C3,7,alkane CH
+TM135MUO3H,8,C3,12,ether
+TM135MUO3H,9,C2,15,C non quaternary
+TM135MUO3H,10,C2,11,alkene CH
+TM135MUO3H,11,C2,13,ketone
+TM135MUO3H,12,O2,13,ketone
+TM135MUO3H,13,C3,1,alkane CH
+TM135MUO3H,13,C3,6,alkane CH
+TM135MUO3H,13,C3,8,alkane CH
+TM135MUO3H,14,C3,3,alkane CH
+TM135MUO3H,14,C3,4,alkane CH
+TM135MUO3H,14,C3,5,alkane CH
+TM135MUO3H,15,HO,14,carbonylperoxyacid
+TM135MUO3H,16,H,10,alkane CH
+TM135MUO3H,17,H,9,alkane CH
+TM135MUO3H,18,H,2,alkane CH
+TM135MUO3H,19,H,7,alkane CH
+TM135MUO3H,20,H,11,alkene CH
+TM135MUO3H,21,H,6,alkane CH
+TM135MUO3H,22,H,1,alkane CH
+TM135MUO3H,23,H,8,alkane CH
+TM135MUO3H,24,H,5,alkane CH
+TM135MUO3H,25,H,4,alkane CH
+TM135MUO3H,26,H,3,alkane CH
+CH3OOH,1,C3,1,alkane CH
+CH3OOH,1,C3,2,alkane CH
+CH3OOH,1,C3,3,alkane CH
+CH3OOH,1,C3,4,hydroperoxide
+CH3OOH,2,O3,4,hydroperoxide
+CH3OOH,3,O3,4,hydroperoxide
+CH3OOH,4,H,3,alkane CH
+CH3OOH,5,H,1,alkane CH
+CH3OOH,6,H,2,alkane CH
+CH3OOH,7,HO,4,hydroperoxide
+TMBOH,1,O3,12,alcohol
+TMBOH,2,C3,3,alkane CH
+TMBOH,2,C3,4,alkane CH
+TMBOH,2,C3,12,alcohol
+TMBOH,3,Car,15,Car non quaternary
+TMBOH,4,Car,10,aromatic CH
+TMBOH,5,Car,13,Car non quaternary
+TMBOH,6,C3,5,alkane CH
+TMBOH,6,C3,7,alkane CH
+TMBOH,6,C3,8,alkane CH
+TMBOH,7,Car,11,aromatic CH
+TMBOH,8,Car,14,Car non quaternary
+TMBOH,9,C3,1,alkane CH
+TMBOH,9,C3,2,alkane CH
+TMBOH,9,C3,6,alkane CH
+TMBOH,10,Car,9,aromatic CH
+TMBOH,11,HO,12,alcohol
+TMBOH,12,H,4,alkane CH
+TMBOH,13,H,3,alkane CH
+TMBOH,14,H,10,aromatic CH
+TMBOH,15,H,7,alkane CH
+TMBOH,16,H,8,alkane CH
+TMBOH,17,H,5,alkane CH
+TMBOH,18,H,11,aromatic CH
+TMBOH,19,H,6,alkane CH
+TMBOH,20,H,1,alkane CH
+TMBOH,21,H,2,alkane CH
+TMBOH,22,H,9,aromatic CH
+NMXYFUOOH,1,O3,10,hydroperoxide
+NMXYFUOOH,2,O3,10,hydroperoxide
+NMXYFUOOH,3,C3,10,hydroperoxide
+NMXYFUOOH,4,C3,2,alkane CH
+NMXYFUOOH,4,C3,4,alkane CH
+NMXYFUOOH,4,C3,5,alkane CH
+NMXYFUOOH,5,C2,9,ester
+NMXYFUOOH,6,O2,9,ester
+NMXYFUOOH,7,O3,9,ester
+NMXYFUOOH,8,C3,6,alkane CH
+NMXYFUOOH,8,C3,9,ester
+NMXYFUOOH,9,C3,1,alkane CH
+NMXYFUOOH,9,C3,3,alkane CH
+NMXYFUOOH,9,C3,7,alkane CH
+NMXYFUOOH,10,C3,8,alkane CH
+NMXYFUOOH,10,C3,11,organonitrate
+NMXYFUOOH,11,O2,11,organonitrate
+NMXYFUOOH,12,Ntr,11,organonitrate
+NMXYFUOOH,13,O2,11,organonitrate
+NMXYFUOOH,14,O2,11,organonitrate
+NMXYFUOOH,15,HO,10,hydroperoxide
+NMXYFUOOH,16,H,5,alkane CH
+NMXYFUOOH,17,H,4,alkane CH
+NMXYFUOOH,18,H,2,alkane CH
+NMXYFUOOH,19,H,6,alkane CH
+NMXYFUOOH,20,H,1,alkane CH
+NMXYFUOOH,21,H,7,alkane CH
+NMXYFUOOH,22,H,3,alkane CH
+NMXYFUOOH,23,H,8,alkane CH
+CO24C53O,1,C3,4,alkane CH
+CO24C53O,1,C3,5,alkane CH
+CO24C53O,1,C3,6,alkane CH
+CO24C53O,2,C2,9,ketone
+CO24C53O,3,O2,9,ketone
+CO24C53O,4,C3,3,alkane CH
+CO24C53O,4,C3,10,oxy radical
+CO24C53O,5,O3,10,oxy radical
+CO24C53O,6,C2,8,ketone
+CO24C53O,7,O2,8,ketone
+CO24C53O,8,C3,1,alkane CH
+CO24C53O,8,C3,2,alkane CH
+CO24C53O,8,C3,7,alkane CH
+CO24C53O,9,H,4,alkane CH
+CO24C53O,10,H,5,alkane CH
+CO24C53O,11,H,6,alkane CH
+CO24C53O,12,H,3,alkane CH
+CO24C53O,13,H,2,alkane CH
+CO24C53O,14,H,1,alkane CH
+CO24C53O,15,H,7,alkane CH
+CHOMOHPAN,1,O2,6,aldehyde
+CHOMOHPAN,2,C2,6,aldehyde
+CHOMOHPAN,3,C3,4,alcohol
+CHOMOHPAN,4,C3,1,alkane CH
+CHOMOHPAN,4,C3,2,alkane CH
+CHOMOHPAN,4,C3,3,alkane CH
+CHOMOHPAN,5,O3,4,alcohol
+CHOMOHPAN,6,C2,5,carbonylperoxynitrate
+CHOMOHPAN,7,O2,5,carbonylperoxynitrate
+CHOMOHPAN,8,O3,5,carbonylperoxynitrate
+CHOMOHPAN,9,O2,5,carbonylperoxynitrate
+CHOMOHPAN,10,Ntr,5,carbonylperoxynitrate
+CHOMOHPAN,11,O2,5,carbonylperoxynitrate
+CHOMOHPAN,12,O2,5,carbonylperoxynitrate
+CHOMOHPAN,13,H,6,aldehyde
+CHOMOHPAN,14,H,2,alkane CH
+CHOMOHPAN,15,H,1,alkane CH
+CHOMOHPAN,16,H,3,alkane CH
+CHOMOHPAN,17,HO,4,alcohol
+C23O3MO,1,C3,2,alkane CH
+C23O3MO,1,C3,6,alkane CH
+C23O3MO,1,C3,7,alkane CH
+C23O3MO,2,C3,5,alkane CH
+C23O3MO,2,C3,8,ester
+C23O3MO,2,C3,10,oxy radical
+C23O3MO,3,O3,10,oxy radical
+C23O3MO,4,O3,8,ester
+C23O3MO,5,C2,8,ester
+C23O3MO,6,O2,8,ester
+C23O3MO,7,C2,9,ketone
+C23O3MO,8,O2,9,ketone
+C23O3MO,9,C3,1,alkane CH
+C23O3MO,9,C3,3,alkane CH
+C23O3MO,9,C3,4,alkane CH
+C23O3MO,10,H,6,alkane CH
+C23O3MO,11,H,7,alkane CH
+C23O3MO,12,H,2,alkane CH
+C23O3MO,13,H,5,alkane CH
+C23O3MO,14,H,1,alkane CH
+C23O3MO,15,H,3,alkane CH
+C23O3MO,16,H,4,alkane CH
+NTM135OLO,1,O2,14,organonitrate
+NTM135OLO,2,Ntr,14,organonitrate
+NTM135OLO,3,O2,14,organonitrate
+NTM135OLO,4,O2,14,organonitrate
+NTM135OLO,5,C3,6,alkane CH
+NTM135OLO,5,C3,14,organonitrate
+NTM135OLO,6,C3,13,peroxide
+NTM135OLO,7,C3,1,alkane CH
+NTM135OLO,7,C3,2,alkane CH
+NTM135OLO,7,C3,8,alkane CH
+NTM135OLO,8,O3,13,peroxide
+NTM135OLO,9,O3,13,peroxide
+NTM135OLO,10,C3,13,peroxide
+NTM135OLO,11,C3,4,alkane CH
+NTM135OLO,11,C3,7,alkane CH
+NTM135OLO,11,C3,9,alkane CH
+NTM135OLO,12,C3,12,alcohol
+NTM135OLO,12,C3,15,oxy radical
+NTM135OLO,13,O2,12,alcohol
+NTM135OLO,14,O2,15,oxy radical
+NTM135OLO,15,C2,16,C non quaternary
+NTM135OLO,16,C2,11,alkene CH
+NTM135OLO,17,C3,3,alkane CH
+NTM135OLO,17,C3,5,alkane CH
+NTM135OLO,17,C3,10,alkane CH
+NTM135OLO,18,H,6,alkane CH
+NTM135OLO,19,H,8,alkane CH
+NTM135OLO,20,H,1,alkane CH
+NTM135OLO,21,H,2,alkane CH
+NTM135OLO,22,H,7,alkane CH
+NTM135OLO,23,H,4,alkane CH
+NTM135OLO,24,H,9,alkane CH
+NTM135OLO,25,HO,12,alcohol
+NTM135OLO,26,H,11,alkene CH
+NTM135OLO,27,H,10,alkane CH
+NTM135OLO,28,H,3,alkane CH
+NTM135OLO,29,H,5,alkane CH
+MXOHNO2OOH,1,O3,13,hydroperoxide
+MXOHNO2OOH,2,O3,13,hydroperoxide
+MXOHNO2OOH,3,C3,9,alcohol
+MXOHNO2OOH,3,C3,13,hydroperoxide
+MXOHNO2OOH,4,O3,9,alcohol
+MXOHNO2OOH,5,C2,14,C non quaternary
+MXOHNO2OOH,6,C2,8,alkene CH
+MXOHNO2OOH,7,C3,11,peroxide
+MXOHNO2OOH,8,C3,3,alkane CH
+MXOHNO2OOH,8,C3,4,alkane CH
+MXOHNO2OOH,8,C3,5,alkane CH
+MXOHNO2OOH,9,O3,11,peroxide
+MXOHNO2OOH,10,O3,11,peroxide
+MXOHNO2OOH,11,C3,11,peroxide
+MXOHNO2OOH,11,C3,12,nitro
+MXOHNO2OOH,12,Ntr,12,nitro
+MXOHNO2OOH,13,O2,12,nitro
+MXOHNO2OOH,14,O2,12,nitro
+MXOHNO2OOH,15,C3,1,alkane CH
+MXOHNO2OOH,15,C3,10,alcohol
+MXOHNO2OOH,16,O3,10,alcohol
+MXOHNO2OOH,17,C3,2,alkane CH
+MXOHNO2OOH,17,C3,6,alkane CH
+MXOHNO2OOH,17,C3,7,alkane CH
+MXOHNO2OOH,18,HO,13,hydroperoxide
+MXOHNO2OOH,19,HO,9,alcohol
+MXOHNO2OOH,20,H,8,alkene CH
+MXOHNO2OOH,21,H,5,alkane CH
+MXOHNO2OOH,22,H,4,alkane CH
+MXOHNO2OOH,23,H,3,alkane CH
+MXOHNO2OOH,24,H,1,alkane CH
+MXOHNO2OOH,25,HO,10,alcohol
+MXOHNO2OOH,26,H,6,alkane CH
+MXOHNO2OOH,27,H,7,alkane CH
+MXOHNO2OOH,28,H,2,alkane CH
+TM135BPOOH,1,O3,15,hydroperoxide
+TM135BPOOH,2,O3,15,hydroperoxide
+TM135BPOOH,3,C3,11,alkane CH
+TM135BPOOH,3,C3,15,hydroperoxide
+TM135BPOOH,4,C2,16,C non quaternary
+TM135BPOOH,5,C2,12,alkene CH
+TM135BPOOH,6,C3,14,peroxide
+TM135BPOOH,7,C3,1,alkane CH
+TM135BPOOH,7,C3,7,alkane CH
+TM135BPOOH,7,C3,9,alkane CH
+TM135BPOOH,8,O3,14,peroxide
+TM135BPOOH,9,O3,14,peroxide
+TM135BPOOH,10,C3,14,peroxide
+TM135BPOOH,11,C3,3,alkane CH
+TM135BPOOH,11,C3,4,alkane CH
+TM135BPOOH,11,C3,10,alkane CH
+TM135BPOOH,12,C3,5,alkane CH
+TM135BPOOH,12,C3,13,alcohol
+TM135BPOOH,13,O3,13,alcohol
+TM135BPOOH,14,C3,2,alkane CH
+TM135BPOOH,14,C3,6,alkane CH
+TM135BPOOH,14,C3,8,alkane CH
+TM135BPOOH,15,HO,15,hydroperoxide
+TM135BPOOH,16,H,11,alkane CH
+TM135BPOOH,17,H,12,alkene CH
+TM135BPOOH,18,H,9,alkane CH
+TM135BPOOH,19,H,7,alkane CH
+TM135BPOOH,20,H,1,alkane CH
+TM135BPOOH,21,H,10,alkane CH
+TM135BPOOH,22,H,4,alkane CH
+TM135BPOOH,23,H,3,alkane CH
+TM135BPOOH,24,H,5,alkane CH
+TM135BPOOH,25,HO,13,alcohol
+TM135BPOOH,26,H,8,alkane CH
+TM135BPOOH,27,H,6,alkane CH
+TM135BPOOH,28,H,2,alkane CH
+MMALNHY2OH,1,O2,7,anhydride
+MMALNHY2OH,2,C2,7,anhydride
+MMALNHY2OH,3,O3,7,anhydride
+MMALNHY2OH,4,C2,7,anhydride
+MMALNHY2OH,5,O2,7,anhydride
+MMALNHY2OH,6,C3,6,alcohol
+MMALNHY2OH,7,C3,1,alkane CH
+MMALNHY2OH,7,C3,2,alkane CH
+MMALNHY2OH,7,C3,3,alkane CH
+MMALNHY2OH,8,O3,6,alcohol
+MMALNHY2OH,9,C3,4,alkane CH
+MMALNHY2OH,9,C3,5,alcohol
+MMALNHY2OH,10,O3,5,alcohol
+MMALNHY2OH,11,H,2,alkane CH
+MMALNHY2OH,12,H,1,alkane CH
+MMALNHY2OH,13,H,3,alkane CH
+MMALNHY2OH,14,HO,6,alcohol
+MMALNHY2OH,15,H,4,alkane CH
+MMALNHY2OH,16,HO,5,alcohol
+MXYFUONE,1,C3,3,alkane CH
+MXYFUONE,1,C3,4,alkane CH
+MXYFUONE,1,C3,5,alkane CH
+MXYFUONE,2,C3,7,alkane CH
+MXYFUONE,2,C3,9,ester
+MXYFUONE,3,O3,9,ester
+MXYFUONE,4,C2,9,ester
+MXYFUONE,5,O2,9,ester
+MXYFUONE,6,C2,10,C non quaternary
+MXYFUONE,7,C2,8,alkene CH
+MXYFUONE,8,C3,1,alkane CH
+MXYFUONE,8,C3,2,alkane CH
+MXYFUONE,8,C3,6,alkane CH
+MXYFUONE,9,H,3,alkane CH
+MXYFUONE,10,H,4,alkane CH
+MXYFUONE,11,H,5,alkane CH
+MXYFUONE,12,H,7,alkane CH
+MXYFUONE,13,H,8,alkene CH
+MXYFUONE,14,H,1,alkane CH
+MXYFUONE,15,H,6,alkane CH
+MXYFUONE,16,H,2,alkane CH
+C23O3MCPAN,1,O2,9,carbonylperoxynitrate
+C23O3MCPAN,2,Ntr,9,carbonylperoxynitrate
+C23O3MCPAN,3,O2,9,carbonylperoxynitrate
+C23O3MCPAN,4,O2,9,carbonylperoxynitrate
+C23O3MCPAN,5,O3,9,carbonylperoxynitrate
+C23O3MCPAN,6,C2,9,carbonylperoxynitrate
+C23O3MCPAN,7,O2,9,carbonylperoxynitrate
+C23O3MCPAN,8,C3,2,alkane CH
+C23O3MCPAN,8,C3,8,ester
+C23O3MCPAN,9,C3,5,alkane CH
+C23O3MCPAN,9,C3,6,alkane CH
+C23O3MCPAN,9,C3,7,alkane CH
+C23O3MCPAN,10,O3,8,ester
+C23O3MCPAN,11,C2,8,ester
+C23O3MCPAN,12,O2,8,ester
+C23O3MCPAN,13,C2,10,ketone
+C23O3MCPAN,14,O2,10,ketone
+C23O3MCPAN,15,C3,1,alkane CH
+C23O3MCPAN,15,C3,3,alkane CH
+C23O3MCPAN,15,C3,4,alkane CH
+C23O3MCPAN,16,H,2,alkane CH
+C23O3MCPAN,17,H,5,alkane CH
+C23O3MCPAN,18,H,6,alkane CH
+C23O3MCPAN,19,H,7,alkane CH
+C23O3MCPAN,20,H,3,alkane CH
+C23O3MCPAN,21,H,4,alkane CH
+C23O3MCPAN,22,H,1,alkane CH
+HOCH2CO2H,1,O3,3,alcohol
+HOCH2CO2H,2,C3,1,alkane CH
+HOCH2CO2H,2,C3,2,alkane CH
+HOCH2CO2H,2,C3,3,alcohol
+HOCH2CO2H,3,C2,4,carboxylic acid
+HOCH2CO2H,4,O2,4,carboxylic acid
+HOCH2CO2H,5,O3,4,carboxylic acid
+HOCH2CO2H,6,HO,3,alcohol
+HOCH2CO2H,7,H,1,alkane CH
+HOCH2CO2H,8,H,2,alkane CH
+HOCH2CO2H,9,HO,4,carboxylic acid
+TM135BZOL,1,C3,3,alkane CH
+TM135BZOL,1,C3,5,alkane CH
+TM135BZOL,1,C3,9,alkane CH
+TM135BZOL,2,Car,13,Car non quaternary
+TM135BZOL,3,Car,11,aromatic CH
+TM135BZOL,4,Car,15,Car non quaternary
+TM135BZOL,5,C3,4,alkane CH
+TM135BZOL,5,C3,6,alkane CH
+TM135BZOL,5,C3,8,alkane CH
+TM135BZOL,6,Car,12,phenol
+TM135BZOL,7,O3,12,phenol
+TM135BZOL,8,Car,14,Car non quaternary
+TM135BZOL,9,C3,1,alkane CH
+TM135BZOL,9,C3,2,alkane CH
+TM135BZOL,9,C3,7,alkane CH
+TM135BZOL,10,Car,10,aromatic CH
+TM135BZOL,11,H,9,alkane CH
+TM135BZOL,12,H,3,alkane CH
+TM135BZOL,13,H,5,alkane CH
+TM135BZOL,14,H,11,aromatic CH
+TM135BZOL,15,H,6,alkane CH
+TM135BZOL,16,H,4,alkane CH
+TM135BZOL,17,H,8,alkane CH
+TM135BZOL,18,HO,12,phenol
+TM135BZOL,19,H,2,alkane CH
+TM135BZOL,20,H,1,alkane CH
+TM135BZOL,21,H,7,alkane CH
+TM135BZOL,22,H,10,aromatic CH
+MGLOO,1,O-,5,C=O-O group
+MGLOO,2,O2,5,C=O-O group
+MGLOO,3,C2,5,C=O-O group
+MGLOO,4,C2,4,ketone
+MGLOO,4,C2,5,C=O-O group
+MGLOO,5,O2,4,ketone
+MGLOO,6,C3,1,alkane CH
+MGLOO,6,C3,2,alkane CH
+MGLOO,6,C3,3,alkane CH
+MGLOO,7,H,5,C=O-O group
+MGLOO,8,H,3,alkane CH
+MGLOO,9,H,1,alkane CH
+MGLOO,10,H,2,alkane CH
+MGLOOC,1,O-,5,C=O-O group
+MGLOOC,2,O2,5,C=O-O group
+MGLOOC,3,C2,5,C=O-O group
+MGLOOC,4,C2,4,ketone
+MGLOOC,4,C2,5,C=O-O group
+MGLOOC,5,O2,4,ketone
+MGLOOC,6,C3,1,alkane CH
+MGLOOC,6,C3,2,alkane CH
+MGLOOC,6,C3,3,alkane CH
+MGLOOC,7,H,5,C=O-O group
+MGLOOC,8,H,3,alkane CH
+MGLOOC,9,H,1,alkane CH
+MGLOOC,10,H,2,alkane CH
+PHAN,1,O3,3,alcohol
+PHAN,2,C3,1,alkane CH
+PHAN,2,C3,2,alkane CH
+PHAN,2,C3,3,alcohol
+PHAN,3,C2,4,carbonylperoxynitrate
+PHAN,4,O2,4,carbonylperoxynitrate
+PHAN,5,O3,4,carbonylperoxynitrate
+PHAN,6,O2,4,carbonylperoxynitrate
+PHAN,7,Ntr,4,carbonylperoxynitrate
+PHAN,8,O2,4,carbonylperoxynitrate
+PHAN,9,O2,4,carbonylperoxynitrate
+PHAN,10,HO,3,alcohol
+PHAN,11,H,1,alkane CH
+PHAN,12,H,2,alkane CH
+TMBO,1,O3,12,oxy radical
+TMBO,2,C3,2,alkane CH
+TMBO,2,C3,3,alkane CH
+TMBO,2,C3,12,oxy radical
+TMBO,3,Car,15,Car non quaternary
+TMBO,4,Car,9,aromatic CH
+TMBO,5,Car,13,Car non quaternary
+TMBO,6,C3,6,alkane CH
+TMBO,6,C3,7,alkane CH
+TMBO,6,C3,8,alkane CH
+TMBO,7,Car,11,aromatic CH
+TMBO,8,Car,14,Car non quaternary
+TMBO,9,C3,1,alkane CH
+TMBO,9,C3,4,alkane CH
+TMBO,9,C3,5,alkane CH
+TMBO,10,Car,10,aromatic CH
+TMBO,11,H,2,alkane CH
+TMBO,12,H,3,alkane CH
+TMBO,13,H,9,aromatic CH
+TMBO,14,H,8,alkane CH
+TMBO,15,H,6,alkane CH
+TMBO,16,H,7,alkane CH
+TMBO,17,H,11,aromatic CH
+TMBO,18,H,4,alkane CH
+TMBO,19,H,5,alkane CH
+TMBO,20,H,1,alkane CH
+TMBO,21,H,10,aromatic CH
+EPXMKTCO3,1,C3,1,alkane CH
+EPXMKTCO3,1,C3,2,alkane CH
+EPXMKTCO3,1,C3,4,alkane CH
+EPXMKTCO3,2,C3,8,ether
+EPXMKTCO3,3,O3,8,ether
+EPXMKTCO3,4,C3,3,alkane CH
+EPXMKTCO3,4,C3,8,ether
+EPXMKTCO3,5,C2,9,ketone
+EPXMKTCO3,6,O2,9,ketone
+EPXMKTCO3,7,C3,5,alkane CH
+EPXMKTCO3,7,C3,6,alkane CH
+EPXMKTCO3,7,C3,7,alkane CH
+EPXMKTCO3,8,C2,10,carbonylperoxyacid radical
+EPXMKTCO3,9,O2,10,carbonylperoxyacid radical
+EPXMKTCO3,10,O3,10,carbonylperoxyacid radical
+EPXMKTCO3,11,O3,10,carbonylperoxyacid radical
+EPXMKTCO3,12,H,1,alkane CH
+EPXMKTCO3,13,H,2,alkane CH
+EPXMKTCO3,14,H,4,alkane CH
+EPXMKTCO3,15,H,3,alkane CH
+EPXMKTCO3,16,H,6,alkane CH
+EPXMKTCO3,17,H,7,alkane CH
+EPXMKTCO3,18,H,5,alkane CH
+CH3CO2H,1,C3,1,alkane CH
+CH3CO2H,1,C3,2,alkane CH
+CH3CO2H,1,C3,3,alkane CH
+CH3CO2H,2,C2,4,carboxylic acid
+CH3CO2H,3,O2,4,carboxylic acid
+CH3CO2H,4,O3,4,carboxylic acid
+CH3CO2H,5,H,1,alkane CH
+CH3CO2H,6,H,2,alkane CH
+CH3CO2H,7,H,3,alkane CH
+CH3CO2H,8,HO,4,carboxylic acid
+C5MDICARB,1,O2,9,aldehyde
+C5MDICARB,2,C2,9,aldehyde
+C5MDICARB,3,C2,10,C non quaternary
+C5MDICARB,4,C2,7,alkene CH
+C5MDICARB,5,C2,8,ketone
+C5MDICARB,6,O2,8,ketone
+C5MDICARB,7,C3,2,alkane CH
+C5MDICARB,7,C3,3,alkane CH
+C5MDICARB,7,C3,4,alkane CH
+C5MDICARB,8,C3,1,alkane CH
+C5MDICARB,8,C3,5,alkane CH
+C5MDICARB,8,C3,6,alkane CH
+C5MDICARB,9,H,9,aldehyde
+C5MDICARB,10,H,7,alkene CH
+C5MDICARB,11,H,4,alkane CH
+C5MDICARB,12,H,2,alkane CH
+C5MDICARB,13,H,3,alkane CH
+C5MDICARB,14,H,1,alkane CH
+C5MDICARB,15,H,6,alkane CH
+C5MDICARB,16,H,5,alkane CH
+MMALNHYOOH,1,C3,1,alkane CH
+MMALNHYOOH,1,C3,2,alkane CH
+MMALNHYOOH,1,C3,4,alkane CH
+MMALNHYOOH,2,C3,6,hydroperoxide
+MMALNHYOOH,3,O3,6,hydroperoxide
+MMALNHYOOH,4,O3,6,hydroperoxide
+MMALNHYOOH,5,C3,3,alkane CH
+MMALNHYOOH,5,C3,5,alcohol
+MMALNHYOOH,6,O3,5,alcohol
+MMALNHYOOH,7,C2,7,anhydride
+MMALNHYOOH,8,O2,7,anhydride
+MMALNHYOOH,9,O3,7,anhydride
+MMALNHYOOH,10,C2,7,anhydride
+MMALNHYOOH,11,O2,7,anhydride
+MMALNHYOOH,12,H,4,alkane CH
+MMALNHYOOH,13,H,1,alkane CH
+MMALNHYOOH,14,H,2,alkane CH
+MMALNHYOOH,15,HO,6,hydroperoxide
+MMALNHYOOH,16,H,3,alkane CH
+MMALNHYOOH,17,HO,5,alcohol
+GLYPAN,1,O2,2,aldehyde
+GLYPAN,2,C2,2,aldehyde
+GLYPAN,3,C2,1,carbonylperoxynitrate
+GLYPAN,4,O2,1,carbonylperoxynitrate
+GLYPAN,5,O3,1,carbonylperoxynitrate
+GLYPAN,6,O2,1,carbonylperoxynitrate
+GLYPAN,7,Ntr,1,carbonylperoxynitrate
+GLYPAN,8,O2,1,carbonylperoxynitrate
+GLYPAN,9,O2,1,carbonylperoxynitrate
+GLYPAN,10,H,2,aldehyde
+TM135MUCO,1,O2,15,aldehyde
+TM135MUCO,2,C2,15,aldehyde
+TM135MUCO,3,C3,13,ether
+TM135MUCO,4,C3,3,alkane CH
+TM135MUCO,4,C3,5,alkane CH
+TM135MUCO,4,C3,11,alkane CH
+TM135MUCO,5,O3,13,ether
+TM135MUCO,6,C3,1,alkane CH
+TM135MUCO,6,C3,13,ether
+TM135MUCO,7,C3,16,oxy radical
+TM135MUCO,8,C3,2,alkane CH
+TM135MUCO,8,C3,6,alkane CH
+TM135MUCO,8,C3,9,alkane CH
+TM135MUCO,9,O3,16,oxy radical
+TM135MUCO,10,C3,10,alkane CH
+TM135MUCO,10,C3,12,alcohol
+TM135MUCO,11,O3,12,alcohol
+TM135MUCO,12,C2,14,ketone
+TM135MUCO,13,O2,14,ketone
+TM135MUCO,14,C3,4,alkane CH
+TM135MUCO,14,C3,7,alkane CH
+TM135MUCO,14,C3,8,alkane CH
+TM135MUCO,15,H,15,aldehyde
+TM135MUCO,16,H,11,alkane CH
+TM135MUCO,17,H,5,alkane CH
+TM135MUCO,18,H,3,alkane CH
+TM135MUCO,19,H,1,alkane CH
+TM135MUCO,20,H,6,alkane CH
+TM135MUCO,21,H,2,alkane CH
+TM135MUCO,22,H,9,alkane CH
+TM135MUCO,23,H,10,alkane CH
+TM135MUCO,24,HO,12,alcohol
+TM135MUCO,25,H,4,alkane CH
+TM135MUCO,26,H,8,alkane CH
+TM135MUCO,27,H,7,alkane CH
+MGLYOX,1,O2,5,aldehyde
+MGLYOX,2,C2,5,aldehyde
+MGLYOX,3,C2,4,ketone
+MGLYOX,4,O2,4,ketone
+MGLYOX,5,C3,1,alkane CH
+MGLYOX,5,C3,2,alkane CH
+MGLYOX,5,C3,3,alkane CH
+MGLYOX,6,H,5,aldehyde
+MGLYOX,7,H,2,alkane CH
+MGLYOX,8,H,3,alkane CH
+MGLYOX,9,H,1,alkane CH
+HCOCO3,1,O3,2,carbonylperoxyacid radical
+HCOCO3,2,O3,2,carbonylperoxyacid radical
+HCOCO3,3,C2,2,carbonylperoxyacid radical
+HCOCO3,4,O2,2,carbonylperoxyacid radical
+HCOCO3,5,C2,1,aldehyde
+HCOCO3,6,O2,1,aldehyde
+HCOCO3,7,H,1,aldehyde
+C4COMOHPAN,1,O2,8,carbonylperoxynitrate
+C4COMOHPAN,2,Ntr,8,carbonylperoxynitrate
+C4COMOHPAN,3,O2,8,carbonylperoxynitrate
+C4COMOHPAN,4,O2,8,carbonylperoxynitrate
+C4COMOHPAN,5,O3,8,carbonylperoxynitrate
+C4COMOHPAN,6,C2,8,carbonylperoxynitrate
+C4COMOHPAN,7,O2,8,carbonylperoxynitrate
+C4COMOHPAN,8,C3,7,alcohol
+C4COMOHPAN,9,C3,4,alkane CH
+C4COMOHPAN,9,C3,5,alkane CH
+C4COMOHPAN,9,C3,6,alkane CH
+C4COMOHPAN,10,O3,7,alcohol
+C4COMOHPAN,11,C2,10,ketone
+C4COMOHPAN,12,O2,10,ketone
+C4COMOHPAN,13,C2,9,ketone
+C4COMOHPAN,14,O2,9,ketone
+C4COMOHPAN,15,C3,1,alkane CH
+C4COMOHPAN,15,C3,2,alkane CH
+C4COMOHPAN,15,C3,3,alkane CH
+C4COMOHPAN,16,H,4,alkane CH
+C4COMOHPAN,17,H,5,alkane CH
+C4COMOHPAN,18,H,6,alkane CH
+C4COMOHPAN,19,HO,7,alcohol
+C4COMOHPAN,20,H,2,alkane CH
+C4COMOHPAN,21,H,3,alkane CH
+C4COMOHPAN,22,H,1,alkane CH
+TM135BP2OH,1,C3,2,alkane CH
+TM135BP2OH,1,C3,3,alkane CH
+TM135BP2OH,1,C3,10,alkane CH
+TM135BP2OH,2,C2,16,C non quaternary
+TM135BP2OH,3,C2,12,alkene CH
+TM135BP2OH,4,C3,15,peroxide
+TM135BP2OH,5,C3,4,alkane CH
+TM135BP2OH,5,C3,5,alkane CH
+TM135BP2OH,5,C3,7,alkane CH
+TM135BP2OH,6,O3,15,peroxide
+TM135BP2OH,7,O3,15,peroxide
+TM135BP2OH,8,C3,15,peroxide
+TM135BP2OH,9,C3,1,alkane CH
+TM135BP2OH,9,C3,9,alkane CH
+TM135BP2OH,9,C3,11,alkane CH
+TM135BP2OH,10,C3,6,alkane CH
+TM135BP2OH,10,C3,13,alcohol
+TM135BP2OH,11,O3,13,alcohol
+TM135BP2OH,12,C3,8,alkane CH
+TM135BP2OH,12,C3,14,alcohol
+TM135BP2OH,13,O3,14,alcohol
+TM135BP2OH,14,H,2,alkane CH
+TM135BP2OH,15,H,10,alkane CH
+TM135BP2OH,16,H,3,alkane CH
+TM135BP2OH,17,H,12,alkene CH
+TM135BP2OH,18,H,4,alkane CH
+TM135BP2OH,19,H,5,alkane CH
+TM135BP2OH,20,H,7,alkane CH
+TM135BP2OH,21,H,9,alkane CH
+TM135BP2OH,22,H,1,alkane CH
+TM135BP2OH,23,H,11,alkane CH
+TM135BP2OH,24,H,6,alkane CH
+TM135BP2OH,25,HO,13,alcohol
+TM135BP2OH,26,H,8,alkane CH
+TM135BP2OH,27,HO,14,alcohol
+TMBCO3,1,O3,10,carbonylperoxyacid radical
+TMBCO3,2,O3,10,carbonylperoxyacid radical
+TMBCO3,3,C2,10,carbonylperoxyacid radical
+TMBCO3,4,O2,10,carbonylperoxyacid radical
+TMBCO3,5,Car,13,Car non quaternary
+TMBCO3,6,Car,9,aromatic CH
+TMBCO3,7,Car,11,Car non quaternary
+TMBCO3,8,C3,1,alkane CH
+TMBCO3,8,C3,4,alkane CH
+TMBCO3,8,C3,6,alkane CH
+TMBCO3,9,Car,8,aromatic CH
+TMBCO3,10,Car,12,Car non quaternary
+TMBCO3,11,C3,2,alkane CH
+TMBCO3,11,C3,3,alkane CH
+TMBCO3,11,C3,5,alkane CH
+TMBCO3,12,Car,7,aromatic CH
+TMBCO3,13,H,9,aromatic CH
+TMBCO3,14,H,1,alkane CH
+TMBCO3,15,H,6,alkane CH
+TMBCO3,16,H,4,alkane CH
+TMBCO3,17,H,8,aromatic CH
+TMBCO3,18,H,3,alkane CH
+TMBCO3,19,H,5,alkane CH
+TMBCO3,20,H,2,alkane CH
+TMBCO3,21,H,7,aromatic CH
+TMBPAN,1,O2,10,carbonylperoxynitrate
+TMBPAN,2,Ntr,10,carbonylperoxynitrate
+TMBPAN,3,O2,10,carbonylperoxynitrate
+TMBPAN,4,O2,10,carbonylperoxynitrate
+TMBPAN,5,O3,10,carbonylperoxynitrate
+TMBPAN,6,C2,10,carbonylperoxynitrate
+TMBPAN,7,O2,10,carbonylperoxynitrate
+TMBPAN,8,Car,13,Car non quaternary
+TMBPAN,9,Car,7,aromatic CH
+TMBPAN,10,Car,11,Car non quaternary
+TMBPAN,11,C3,1,alkane CH
+TMBPAN,11,C3,3,alkane CH
+TMBPAN,11,C3,5,alkane CH
+TMBPAN,12,Car,8,aromatic CH
+TMBPAN,13,Car,12,Car non quaternary
+TMBPAN,14,C3,2,alkane CH
+TMBPAN,14,C3,4,alkane CH
+TMBPAN,14,C3,6,alkane CH
+TMBPAN,15,Car,9,aromatic CH
+TMBPAN,16,H,7,aromatic CH
+TMBPAN,17,H,1,alkane CH
+TMBPAN,18,H,3,alkane CH
+TMBPAN,19,H,5,alkane CH
+TMBPAN,20,H,8,aromatic CH
+TMBPAN,21,H,2,alkane CH
+TMBPAN,22,H,6,alkane CH
+TMBPAN,23,H,4,alkane CH
+TMBPAN,24,H,9,aromatic CH
+MXYOHNO2O,1,O2,12,nitro
+MXYOHNO2O,2,Ntr,12,nitro
+MXYOHNO2O,3,O2,12,nitro
+MXYOHNO2O,4,C3,11,peroxide
+MXYOHNO2O,4,C3,12,nitro
+MXYOHNO2O,5,O3,11,peroxide
+MXYOHNO2O,6,O3,11,peroxide
+MXYOHNO2O,7,C3,11,peroxide
+MXYOHNO2O,8,C3,4,alkane CH
+MXYOHNO2O,8,C3,5,alkane CH
+MXYOHNO2O,8,C3,7,alkane CH
+MXYOHNO2O,9,C2,8,alkene CH
+MXYOHNO2O,10,C2,14,C non quaternary
+MXYOHNO2O,11,C3,2,alkane CH
+MXYOHNO2O,11,C3,3,alkane CH
+MXYOHNO2O,11,C3,6,alkane CH
+MXYOHNO2O,12,C3,9,alcohol
+MXYOHNO2O,12,C3,13,oxy radical
+MXYOHNO2O,13,O2,13,oxy radical
+MXYOHNO2O,14,O2,9,alcohol
+MXYOHNO2O,15,C3,1,alkane CH
+MXYOHNO2O,15,C3,10,alcohol
+MXYOHNO2O,16,O3,10,alcohol
+MXYOHNO2O,17,H,7,alkane CH
+MXYOHNO2O,18,H,5,alkane CH
+MXYOHNO2O,19,H,4,alkane CH
+MXYOHNO2O,20,H,8,alkene CH
+MXYOHNO2O,21,H,6,alkane CH
+MXYOHNO2O,22,H,2,alkane CH
+MXYOHNO2O,23,H,3,alkane CH
+MXYOHNO2O,24,HO,9,alcohol
+MXYOHNO2O,25,H,1,alkane CH
+MXYOHNO2O,26,HO,10,alcohol
+C5CO234O,1,O3,9,oxy radical
+C5CO234O,2,C3,3,alkane CH
+C5CO234O,2,C3,5,alkane CH
+C5CO234O,2,C3,9,oxy radical
+C5CO234O,3,C2,8,ketone
+C5CO234O,4,O2,8,ketone
+C5CO234O,5,C2,6,ketone
+C5CO234O,6,O2,6,ketone
+C5CO234O,7,C2,7,ketone
+C5CO234O,8,O2,7,ketone
+C5CO234O,9,C3,1,alkane CH
+C5CO234O,9,C3,2,alkane CH
+C5CO234O,9,C3,4,alkane CH
+C5CO234O,10,H,5,alkane CH
+C5CO234O,11,H,3,alkane CH
+C5CO234O,12,H,4,alkane CH
+C5CO234O,13,H,2,alkane CH
+C5CO234O,14,H,1,alkane CH
+C7M2CO5O2,1,O3,14,peroxy radical 
+C7M2CO5O2,2,O3,14,peroxy radical 
+C7M2CO5O2,3,C3,2,alkane CH
+C7M2CO5O2,3,C3,14,peroxy radical 
+C7M2CO5O2,4,C2,12,ketone
+C7M2CO5O2,5,O2,12,ketone
+C7M2CO5O2,6,C3,4,alkane CH
+C7M2CO5O2,6,C3,7,alkane CH
+C7M2CO5O2,6,C3,10,alkane CH
+C7M2CO5O2,7,C2,15,C non quaternary
+C7M2CO5O2,8,C2,11,alkene CH
+C7M2CO5O2,9,C2,13,ketone
+C7M2CO5O2,10,O2,13,ketone
+C7M2CO5O2,11,C3,5,alkane CH
+C7M2CO5O2,11,C3,6,alkane CH
+C7M2CO5O2,11,C3,8,alkane CH
+C7M2CO5O2,12,C3,1,alkane CH
+C7M2CO5O2,12,C3,3,alkane CH
+C7M2CO5O2,12,C3,9,alkane CH
+C7M2CO5O2,13,H,2,alkane CH
+C7M2CO5O2,14,H,10,alkane CH
+C7M2CO5O2,15,H,7,alkane CH
+C7M2CO5O2,16,H,4,alkane CH
+C7M2CO5O2,17,H,11,alkene CH
+C7M2CO5O2,18,H,6,alkane CH
+C7M2CO5O2,19,H,8,alkane CH
+C7M2CO5O2,20,H,5,alkane CH
+C7M2CO5O2,21,H,1,alkane CH
+C7M2CO5O2,22,H,9,alkane CH
+C7M2CO5O2,23,H,3,alkane CH
+C3MDIALO2,1,O3,6,peroxy radical 
+C3MDIALO2,2,O3,6,peroxy radical 
+C3MDIALO2,3,C3,6,peroxy radical 
+C3MDIALO2,4,C3,1,alkane CH
+C3MDIALO2,4,C3,2,alkane CH
+C3MDIALO2,4,C3,3,alkane CH
+C3MDIALO2,5,C2,5,aldehyde
+C3MDIALO2,6,O2,5,aldehyde
+C3MDIALO2,7,C2,4,aldehyde
+C3MDIALO2,8,O2,4,aldehyde
+C3MDIALO2,9,H,2,alkane CH
+C3MDIALO2,10,H,1,alkane CH
+C3MDIALO2,11,H,3,alkane CH
+C3MDIALO2,12,H,5,aldehyde
+C3MDIALO2,13,H,4,aldehyde
+C5MCO2OHO,1,O2,10,aldehyde
+C5MCO2OHO,2,C2,10,aldehyde
+C5MCO2OHO,3,C3,11,oxy radical
+C5MCO2OHO,4,C3,3,alkane CH
+C5MCO2OHO,4,C3,5,alkane CH
+C5MCO2OHO,4,C3,6,alkane CH
+C5MCO2OHO,5,O3,11,oxy radical
+C5MCO2OHO,6,C3,7,alkane CH
+C5MCO2OHO,6,C3,8,alcohol
+C5MCO2OHO,7,O3,8,alcohol
+C5MCO2OHO,8,C2,9,ketone
+C5MCO2OHO,9,O2,9,ketone
+C5MCO2OHO,10,C3,1,alkane CH
+C5MCO2OHO,10,C3,2,alkane CH
+C5MCO2OHO,10,C3,4,alkane CH
+C5MCO2OHO,11,H,10,aldehyde
+C5MCO2OHO,12,H,6,alkane CH
+C5MCO2OHO,13,H,5,alkane CH
+C5MCO2OHO,14,H,3,alkane CH
+C5MCO2OHO,15,H,7,alkane CH
+C5MCO2OHO,16,HO,8,alcohol
+C5MCO2OHO,17,H,1,alkane CH
+C5MCO2OHO,18,H,4,alkane CH
+C5MCO2OHO,19,H,2,alkane CH
+TMBCO3H,1,O3,10,carbonylperoxyacid
+TMBCO3H,2,O3,10,carbonylperoxyacid
+TMBCO3H,3,C2,10,carbonylperoxyacid
+TMBCO3H,4,O2,10,carbonylperoxyacid
+TMBCO3H,5,Car,13,Car non quaternary
+TMBCO3H,6,Car,9,aromatic CH
+TMBCO3H,7,Car,11,Car non quaternary
+TMBCO3H,8,C3,3,alkane CH
+TMBCO3H,8,C3,4,alkane CH
+TMBCO3H,8,C3,6,alkane CH
+TMBCO3H,9,Car,7,aromatic CH
+TMBCO3H,10,Car,12,Car non quaternary
+TMBCO3H,11,C3,1,alkane CH
+TMBCO3H,11,C3,2,alkane CH
+TMBCO3H,11,C3,5,alkane CH
+TMBCO3H,12,Car,8,aromatic CH
+TMBCO3H,13,HO,10,carbonylperoxyacid
+TMBCO3H,14,H,9,aromatic CH
+TMBCO3H,15,H,6,alkane CH
+TMBCO3H,16,H,4,alkane CH
+TMBCO3H,17,H,3,alkane CH
+TMBCO3H,18,H,7,aromatic CH
+TMBCO3H,19,H,5,alkane CH
+TMBCO3H,20,H,1,alkane CH
+TMBCO3H,21,H,2,alkane CH
+TMBCO3H,22,H,8,aromatic CH
+C5COHOCO3H,1,O3,10,carbonylperoxyacid
+C5COHOCO3H,2,O3,10,carbonylperoxyacid
+C5COHOCO3H,3,C2,10,carbonylperoxyacid
+C5COHOCO3H,4,O2,10,carbonylperoxyacid
+C5COHOCO3H,5,C3,7,alcohol
+C5COHOCO3H,6,C3,4,alkane CH
+C5COHOCO3H,6,C3,5,alkane CH
+C5COHOCO3H,6,C3,6,alkane CH
+C5COHOCO3H,7,O3,7,alcohol
+C5COHOCO3H,8,C2,8,ketone
+C5COHOCO3H,9,O2,8,ketone
+C5COHOCO3H,10,C2,9,ketone
+C5COHOCO3H,11,O2,9,ketone
+C5COHOCO3H,12,C3,1,alkane CH
+C5COHOCO3H,12,C3,2,alkane CH
+C5COHOCO3H,12,C3,3,alkane CH
+C5COHOCO3H,13,HO,10,carbonylperoxyacid
+C5COHOCO3H,14,H,6,alkane CH
+C5COHOCO3H,15,H,4,alkane CH
+C5COHOCO3H,16,H,5,alkane CH
+C5COHOCO3H,17,HO,7,alcohol
+C5COHOCO3H,18,H,3,alkane CH
+C5COHOCO3H,19,H,2,alkane CH
+C5COHOCO3H,20,H,1,alkane CH
+EPXMKTCO2H,1,C3,2,alkane CH
+EPXMKTCO2H,1,C3,3,alkane CH
+EPXMKTCO2H,1,C3,7,alkane CH
+EPXMKTCO2H,2,C2,10,ketone
+EPXMKTCO2H,3,O2,10,ketone
+EPXMKTCO2H,4,C3,4,alkane CH
+EPXMKTCO2H,4,C3,9,ether
+EPXMKTCO2H,5,O3,9,ether
+EPXMKTCO2H,6,C3,9,ether
+EPXMKTCO2H,7,C3,1,alkane CH
+EPXMKTCO2H,7,C3,5,alkane CH
+EPXMKTCO2H,7,C3,6,alkane CH
+EPXMKTCO2H,8,C2,8,carboxylic acid
+EPXMKTCO2H,9,O2,8,carboxylic acid
+EPXMKTCO2H,10,O3,8,carboxylic acid
+EPXMKTCO2H,11,H,7,alkane CH
+EPXMKTCO2H,12,H,2,alkane CH
+EPXMKTCO2H,13,H,3,alkane CH
+EPXMKTCO2H,14,H,4,alkane CH
+EPXMKTCO2H,15,H,1,alkane CH
+EPXMKTCO2H,16,H,5,alkane CH
+EPXMKTCO2H,17,H,6,alkane CH
+EPXMKTCO2H,18,HO,8,carboxylic acid
+C23O3MCOOH,1,C3,1,alkane CH
+C23O3MCOOH,1,C3,2,alkane CH
+C23O3MCOOH,1,C3,3,alkane CH
+C23O3MCOOH,2,C3,6,alkane CH
+C23O3MCOOH,2,C3,8,ester
+C23O3MCOOH,2,C3,9,hydroperoxide
+C23O3MCOOH,3,O3,8,ester
+C23O3MCOOH,4,C2,8,ester
+C23O3MCOOH,5,O2,8,ester
+C23O3MCOOH,6,C2,10,ketone
+C23O3MCOOH,7,O2,10,ketone
+C23O3MCOOH,8,C3,4,alkane CH
+C23O3MCOOH,8,C3,5,alkane CH
+C23O3MCOOH,8,C3,7,alkane CH
+C23O3MCOOH,9,O3,9,hydroperoxide
+C23O3MCOOH,10,O3,9,hydroperoxide
+C23O3MCOOH,11,H,1,alkane CH
+C23O3MCOOH,12,H,2,alkane CH
+C23O3MCOOH,13,H,3,alkane CH
+C23O3MCOOH,14,H,6,alkane CH
+C23O3MCOOH,15,H,7,alkane CH
+C23O3MCOOH,16,H,4,alkane CH
+C23O3MCOOH,17,H,5,alkane CH
+C23O3MCOOH,18,HO,9,hydroperoxide
+HCOCH2OOH,1,O3,3,hydroperoxide
+HCOCH2OOH,2,O3,3,hydroperoxide
+HCOCH2OOH,3,C3,1,alkane CH
+HCOCH2OOH,3,C3,2,alkane CH
+HCOCH2OOH,3,C3,3,hydroperoxide
+HCOCH2OOH,4,C2,4,aldehyde
+HCOCH2OOH,5,O2,4,aldehyde
+HCOCH2OOH,6,HO,3,hydroperoxide
+HCOCH2OOH,7,H,2,alkane CH
+HCOCH2OOH,8,H,1,alkane CH
+HCOCH2OOH,9,H,4,aldehyde
+CH3COCO2H,1,O3,4,carboxylic acid
+CH3COCO2H,2,C2,4,carboxylic acid
+CH3COCO2H,3,O2,4,carboxylic acid
+CH3COCO2H,4,C2,5,ketone
+CH3COCO2H,5,O2,5,ketone
+CH3COCO2H,6,C3,1,alkane CH
+CH3COCO2H,6,C3,2,alkane CH
+CH3COCO2H,6,C3,3,alkane CH
+CH3COCO2H,7,HO,4,carboxylic acid
+CH3COCO2H,8,H,3,alkane CH
+CH3COCO2H,9,H,1,alkane CH
+CH3COCO2H,10,H,2,alkane CH
+C23O3MCO2H,1,C3,1,alkane CH
+C23O3MCO2H,1,C3,2,alkane CH
+C23O3MCO2H,1,C3,3,alkane CH
+C23O3MCO2H,2,C3,6,alkane CH
+C23O3MCO2H,2,C3,9,ester
+C23O3MCO2H,3,O3,9,ester
+C23O3MCO2H,4,C2,9,ester
+C23O3MCO2H,5,O2,9,ester
+C23O3MCO2H,6,C2,10,ketone
+C23O3MCO2H,7,O2,10,ketone
+C23O3MCO2H,8,C3,4,alkane CH
+C23O3MCO2H,8,C3,5,alkane CH
+C23O3MCO2H,8,C3,7,alkane CH
+C23O3MCO2H,9,C2,8,carboxylic acid
+C23O3MCO2H,10,O2,8,carboxylic acid
+C23O3MCO2H,11,O3,8,carboxylic acid
+C23O3MCO2H,12,H,1,alkane CH
+C23O3MCO2H,13,H,2,alkane CH
+C23O3MCO2H,14,H,3,alkane CH
+C23O3MCO2H,15,H,6,alkane CH
+C23O3MCO2H,16,H,7,alkane CH
+C23O3MCO2H,17,H,4,alkane CH
+C23O3MCO2H,18,H,5,alkane CH
+C23O3MCO2H,19,HO,8,carboxylic acid
+CO24C53OOH,1,O3,8,hydroperoxide
+CO24C53OOH,2,O3,8,hydroperoxide
+CO24C53OOH,3,C3,2,alkane CH
+CO24C53OOH,3,C3,8,hydroperoxide
+CO24C53OOH,4,C2,9,ketone
+CO24C53OOH,5,O2,9,ketone
+CO24C53OOH,6,C3,5,alkane CH
+CO24C53OOH,6,C3,6,alkane CH
+CO24C53OOH,6,C3,7,alkane CH
+CO24C53OOH,7,C2,10,ketone
+CO24C53OOH,8,O2,10,ketone
+CO24C53OOH,9,C3,1,alkane CH
+CO24C53OOH,9,C3,3,alkane CH
+CO24C53OOH,9,C3,4,alkane CH
+CO24C53OOH,10,HO,8,hydroperoxide
+CO24C53OOH,11,H,2,alkane CH
+CO24C53OOH,12,H,6,alkane CH
+CO24C53OOH,13,H,5,alkane CH
+CO24C53OOH,14,H,7,alkane CH
+CO24C53OOH,15,H,1,alkane CH
+CO24C53OOH,16,H,3,alkane CH
+CO24C53OOH,17,H,4,alkane CH
+TM135MUPAN,1,O2,13,carbonylperoxynitrate
+TM135MUPAN,2,Ntr,13,carbonylperoxynitrate
+TM135MUPAN,3,O2,13,carbonylperoxynitrate
+TM135MUPAN,4,O2,13,carbonylperoxynitrate
+TM135MUPAN,5,O3,13,carbonylperoxynitrate
+TM135MUPAN,6,C2,13,carbonylperoxynitrate
+TM135MUPAN,7,O2,13,carbonylperoxynitrate
+TM135MUPAN,8,C3,12,ether
+TM135MUPAN,9,C3,4,alkane CH
+TM135MUPAN,9,C3,8,alkane CH
+TM135MUPAN,9,C3,10,alkane CH
+TM135MUPAN,10,O3,12,ether
+TM135MUPAN,11,C3,7,alkane CH
+TM135MUPAN,11,C3,12,ether
+TM135MUPAN,12,C2,15,C non quaternary
+TM135MUPAN,13,C2,11,alkene CH
+TM135MUPAN,14,C2,14,ketone
+TM135MUPAN,15,O2,14,ketone
+TM135MUPAN,16,C3,2,alkane CH
+TM135MUPAN,16,C3,5,alkane CH
+TM135MUPAN,16,C3,6,alkane CH
+TM135MUPAN,17,C3,1,alkane CH
+TM135MUPAN,17,C3,3,alkane CH
+TM135MUPAN,17,C3,9,alkane CH
+TM135MUPAN,18,H,8,alkane CH
+TM135MUPAN,19,H,10,alkane CH
+TM135MUPAN,20,H,4,alkane CH
+TM135MUPAN,21,H,7,alkane CH
+TM135MUPAN,22,H,11,alkene CH
+TM135MUPAN,23,H,5,alkane CH
+TM135MUPAN,24,H,2,alkane CH
+TM135MUPAN,25,H,6,alkane CH
+TM135MUPAN,26,H,9,alkane CH
+TM135MUPAN,27,H,1,alkane CH
+TM135MUPAN,28,H,3,alkane CH
+C7M2CO5OOH,1,O3,12,hydroperoxide
+C7M2CO5OOH,2,O3,12,hydroperoxide
+C7M2CO5OOH,3,C3,10,alkane CH
+C7M2CO5OOH,3,C3,12,hydroperoxide
+C7M2CO5OOH,4,C2,13,ketone
+C7M2CO5OOH,5,O2,13,ketone
+C7M2CO5OOH,6,C3,6,alkane CH
+C7M2CO5OOH,6,C3,8,alkane CH
+C7M2CO5OOH,6,C3,9,alkane CH
+C7M2CO5OOH,7,C2,15,C non quaternary
+C7M2CO5OOH,8,C2,11,alkene CH
+C7M2CO5OOH,9,C2,14,ketone
+C7M2CO5OOH,10,O2,14,ketone
+C7M2CO5OOH,11,C3,3,alkane CH
+C7M2CO5OOH,11,C3,4,alkane CH
+C7M2CO5OOH,11,C3,5,alkane CH
+C7M2CO5OOH,12,C3,1,alkane CH
+C7M2CO5OOH,12,C3,2,alkane CH
+C7M2CO5OOH,12,C3,7,alkane CH
+C7M2CO5OOH,13,HO,12,hydroperoxide
+C7M2CO5OOH,14,H,10,alkane CH
+C7M2CO5OOH,15,H,8,alkane CH
+C7M2CO5OOH,16,H,9,alkane CH
+C7M2CO5OOH,17,H,6,alkane CH
+C7M2CO5OOH,18,H,11,alkene CH
+C7M2CO5OOH,19,H,3,alkane CH
+C7M2CO5OOH,20,H,4,alkane CH
+C7M2CO5OOH,21,H,5,alkane CH
+C7M2CO5OOH,22,H,1,alkane CH
+C7M2CO5OOH,23,H,2,alkane CH
+C7M2CO5OOH,24,H,7,alkane CH
+ACCOCOMEO2,1,O3,7,peroxy radical 
+ACCOCOMEO2,2,O3,7,peroxy radical 
+ACCOCOMEO2,3,C3,3,alkane CH
+ACCOCOMEO2,3,C3,5,alkane CH
+ACCOCOMEO2,3,C3,7,peroxy radical 
+ACCOCOMEO2,4,C2,6,ketone
+ACCOCOMEO2,5,O2,6,ketone
+ACCOCOMEO2,6,C2,8,anhydride
+ACCOCOMEO2,7,O2,8,anhydride
+ACCOCOMEO2,8,O3,8,anhydride
+ACCOCOMEO2,9,C2,8,anhydride
+ACCOCOMEO2,10,O2,8,anhydride
+ACCOCOMEO2,11,C3,1,alkane CH
+ACCOCOMEO2,11,C3,2,alkane CH
+ACCOCOMEO2,11,C3,4,alkane CH
+ACCOCOMEO2,12,H,3,alkane CH
+ACCOCOMEO2,13,H,5,alkane CH
+ACCOCOMEO2,14,H,4,alkane CH
+ACCOCOMEO2,15,H,2,alkane CH
+ACCOCOMEO2,16,H,1,alkane CH
+TMBCHO,1,O2,10,aldehyde
+TMBCHO,2,C2,10,aldehyde
+TMBCHO,3,Car,13,Car non quaternary
+TMBCHO,4,Car,7,aromatic CH
+TMBCHO,5,Car,11,Car non quaternary
+TMBCHO,6,C3,2,alkane CH
+TMBCHO,6,C3,5,alkane CH
+TMBCHO,6,C3,6,alkane CH
+TMBCHO,7,Car,8,aromatic CH
+TMBCHO,8,Car,12,Car non quaternary
+TMBCHO,9,C3,1,alkane CH
+TMBCHO,9,C3,3,alkane CH
+TMBCHO,9,C3,4,alkane CH
+TMBCHO,10,Car,9,aromatic CH
+TMBCHO,11,H,10,aldehyde
+TMBCHO,12,H,7,aromatic CH
+TMBCHO,13,H,2,alkane CH
+TMBCHO,14,H,6,alkane CH
+TMBCHO,15,H,5,alkane CH
+TMBCHO,16,H,8,aromatic CH
+TMBCHO,17,H,1,alkane CH
+TMBCHO,18,H,3,alkane CH
+TMBCHO,19,H,4,alkane CH
+TMBCHO,20,H,9,aromatic CH
+EPXMKTCO3H,1,C3,1,alkane CH
+EPXMKTCO3H,1,C3,2,alkane CH
+EPXMKTCO3H,1,C3,4,alkane CH
+EPXMKTCO3H,2,C3,8,ether
+EPXMKTCO3H,3,O3,8,ether
+EPXMKTCO3H,4,C3,3,alkane CH
+EPXMKTCO3H,4,C3,8,ether
+EPXMKTCO3H,5,C2,9,ketone
+EPXMKTCO3H,6,O2,9,ketone
+EPXMKTCO3H,7,C3,5,alkane CH
+EPXMKTCO3H,7,C3,6,alkane CH
+EPXMKTCO3H,7,C3,7,alkane CH
+EPXMKTCO3H,8,C2,10,carbonylperoxyacid
+EPXMKTCO3H,9,O2,10,carbonylperoxyacid
+EPXMKTCO3H,10,O3,10,carbonylperoxyacid
+EPXMKTCO3H,11,O3,10,carbonylperoxyacid
+EPXMKTCO3H,12,H,1,alkane CH
+EPXMKTCO3H,13,H,2,alkane CH
+EPXMKTCO3H,14,H,4,alkane CH
+EPXMKTCO3H,15,H,3,alkane CH
+EPXMKTCO3H,16,H,6,alkane CH
+EPXMKTCO3H,17,H,7,alkane CH
+EPXMKTCO3H,18,H,5,alkane CH
+EPXMKTCO3H,19,HO,10,carbonylperoxyacid
+C6CO2OHOOH,1,O3,9,hydroperoxide
+C6CO2OHOOH,2,O3,9,hydroperoxide
+C6CO2OHOOH,3,C3,9,hydroperoxide
+C6CO2OHOOH,4,C3,1,alkane CH
+C6CO2OHOOH,4,C3,3,alkane CH
+C6CO2OHOOH,4,C3,4,alkane CH
+C6CO2OHOOH,5,C2,11,aldehyde
+C6CO2OHOOH,6,O2,11,aldehyde
+C6CO2OHOOH,7,C3,6,alkane CH
+C6CO2OHOOH,7,C3,8,alcohol
+C6CO2OHOOH,8,O3,8,alcohol
+C6CO2OHOOH,9,C2,10,ketone
+C6CO2OHOOH,10,O2,10,ketone
+C6CO2OHOOH,11,C3,2,alkane CH
+C6CO2OHOOH,11,C3,5,alkane CH
+C6CO2OHOOH,11,C3,7,alkane CH
+C6CO2OHOOH,12,HO,9,hydroperoxide
+C6CO2OHOOH,13,H,4,alkane CH
+C6CO2OHOOH,14,H,3,alkane CH
+C6CO2OHOOH,15,H,1,alkane CH
+C6CO2OHOOH,16,H,11,aldehyde
+C6CO2OHOOH,17,H,6,alkane CH
+C6CO2OHOOH,18,HO,8,alcohol
+C6CO2OHOOH,19,H,7,alkane CH
+C6CO2OHOOH,20,H,5,alkane CH
+C6CO2OHOOH,21,H,2,alkane CH
+CH3CO3,1,C3,1,alkane CH
+CH3CO3,1,C3,2,alkane CH
+CH3CO3,1,C3,3,alkane CH
+CH3CO3,2,C2,4,carbonylperoxyacid radical
+CH3CO3,3,O2,4,carbonylperoxyacid radical
+CH3CO3,4,O3,4,carbonylperoxyacid radical
+CH3CO3,5,O3,4,carbonylperoxyacid radical
+CH3CO3,6,H,2,alkane CH
+CH3CO3,7,H,3,alkane CH
+CH3CO3,8,H,1,alkane CH
+NMXYFUO2,1,O3,11,peroxy radical 
+NMXYFUO2,2,O3,11,peroxy radical 
+NMXYFUO2,3,C3,11,peroxy radical 
+NMXYFUO2,4,C3,4,alkane CH
+NMXYFUO2,4,C3,5,alkane CH
+NMXYFUO2,4,C3,6,alkane CH
+NMXYFUO2,5,C2,9,ester
+NMXYFUO2,6,O2,9,ester
+NMXYFUO2,7,O3,9,ester
+NMXYFUO2,8,C3,7,alkane CH
+NMXYFUO2,8,C3,9,ester
+NMXYFUO2,9,C3,2,alkane CH
+NMXYFUO2,9,C3,3,alkane CH
+NMXYFUO2,9,C3,8,alkane CH
+NMXYFUO2,10,C3,1,alkane CH
+NMXYFUO2,10,C3,10,organonitrate
+NMXYFUO2,11,O2,10,organonitrate
+NMXYFUO2,12,Ntr,10,organonitrate
+NMXYFUO2,13,O2,10,organonitrate
+NMXYFUO2,14,O2,10,organonitrate
+NMXYFUO2,15,H,4,alkane CH
+NMXYFUO2,16,H,6,alkane CH
+NMXYFUO2,17,H,5,alkane CH
+NMXYFUO2,18,H,7,alkane CH
+NMXYFUO2,19,H,8,alkane CH
+NMXYFUO2,20,H,2,alkane CH
+NMXYFUO2,21,H,3,alkane CH
+NMXYFUO2,22,H,1,alkane CH
+C5MCO2OHO2,1,O3,11,peroxy radical 
+C5MCO2OHO2,2,O3,11,peroxy radical 
+C5MCO2OHO2,3,C3,11,peroxy radical 
+C5MCO2OHO2,4,C3,1,alkane CH
+C5MCO2OHO2,4,C3,2,alkane CH
+C5MCO2OHO2,4,C3,3,alkane CH
+C5MCO2OHO2,5,C2,10,aldehyde
+C5MCO2OHO2,6,O2,10,aldehyde
+C5MCO2OHO2,7,C3,4,alkane CH
+C5MCO2OHO2,7,C3,8,alcohol
+C5MCO2OHO2,8,O3,8,alcohol
+C5MCO2OHO2,9,C2,9,ketone
+C5MCO2OHO2,10,O2,9,ketone
+C5MCO2OHO2,11,C3,5,alkane CH
+C5MCO2OHO2,11,C3,6,alkane CH
+C5MCO2OHO2,11,C3,7,alkane CH
+C5MCO2OHO2,12,H,3,alkane CH
+C5MCO2OHO2,13,H,2,alkane CH
+C5MCO2OHO2,14,H,1,alkane CH
+C5MCO2OHO2,15,H,10,aldehyde
+C5MCO2OHO2,16,H,4,alkane CH
+C5MCO2OHO2,17,HO,8,alcohol
+C5MCO2OHO2,18,H,6,alkane CH
+C5MCO2OHO2,19,H,7,alkane CH
+C5MCO2OHO2,20,H,5,alkane CH
+C3MDIALO,1,O2,5,aldehyde
+C3MDIALO,2,C2,5,aldehyde
+C3MDIALO,3,C3,6,oxy radical
+C3MDIALO,4,C3,1,alkane CH
+C3MDIALO,4,C3,2,alkane CH
+C3MDIALO,4,C3,3,alkane CH
+C3MDIALO,5,O3,6,oxy radical
+C3MDIALO,6,C2,4,aldehyde
+C3MDIALO,7,O2,4,aldehyde
+C3MDIALO,8,H,5,aldehyde
+C3MDIALO,9,H,2,alkane CH
+C3MDIALO,10,H,1,alkane CH
+C3MDIALO,11,H,3,alkane CH
+C3MDIALO,12,H,4,aldehyde
+C4MCODBPAN,1,O2,8,carbonylperoxynitrate
+C4MCODBPAN,2,Ntr,8,carbonylperoxynitrate
+C4MCODBPAN,3,O2,8,carbonylperoxynitrate
+C4MCODBPAN,4,O2,8,carbonylperoxynitrate
+C4MCODBPAN,5,O3,8,carbonylperoxynitrate
+C4MCODBPAN,6,C2,8,carbonylperoxynitrate
+C4MCODBPAN,7,O2,8,carbonylperoxynitrate
+C4MCODBPAN,8,C2,10,C non quaternary
+C4MCODBPAN,9,C2,7,alkene CH
+C4MCODBPAN,10,C2,9,ketone
+C4MCODBPAN,11,O2,9,ketone
+C4MCODBPAN,12,C3,1,alkane CH
+C4MCODBPAN,12,C3,2,alkane CH
+C4MCODBPAN,12,C3,5,alkane CH
+C4MCODBPAN,13,C3,3,alkane CH
+C4MCODBPAN,13,C3,4,alkane CH
+C4MCODBPAN,13,C3,6,alkane CH
+C4MCODBPAN,14,H,7,alkene CH
+C4MCODBPAN,15,H,1,alkane CH
+C4MCODBPAN,16,H,2,alkane CH
+C4MCODBPAN,17,H,5,alkane CH
+C4MCODBPAN,18,H,3,alkane CH
+C4MCODBPAN,19,H,4,alkane CH
+C4MCODBPAN,20,H,6,alkane CH
+TM135BPNO3,1,O2,15,organonitrate
+TM135BPNO3,2,Ntr,15,organonitrate
+TM135BPNO3,3,O2,15,organonitrate
+TM135BPNO3,4,O2,15,organonitrate
+TM135BPNO3,5,C3,5,alkane CH
+TM135BPNO3,5,C3,15,organonitrate
+TM135BPNO3,6,C2,16,C non quaternary
+TM135BPNO3,7,C2,12,alkene CH
+TM135BPNO3,8,C3,14,peroxide
+TM135BPNO3,9,C3,4,alkane CH
+TM135BPNO3,9,C3,10,alkane CH
+TM135BPNO3,9,C3,11,alkane CH
+TM135BPNO3,10,O3,14,peroxide
+TM135BPNO3,11,O3,14,peroxide
+TM135BPNO3,12,C3,14,peroxide
+TM135BPNO3,13,C3,1,alkane CH
+TM135BPNO3,13,C3,2,alkane CH
+TM135BPNO3,13,C3,3,alkane CH
+TM135BPNO3,14,C3,6,alkane CH
+TM135BPNO3,14,C3,13,alcohol
+TM135BPNO3,15,O3,13,alcohol
+TM135BPNO3,16,C3,7,alkane CH
+TM135BPNO3,16,C3,8,alkane CH
+TM135BPNO3,16,C3,9,alkane CH
+TM135BPNO3,17,H,5,alkane CH
+TM135BPNO3,18,H,12,alkene CH
+TM135BPNO3,19,H,11,alkane CH
+TM135BPNO3,20,H,4,alkane CH
+TM135BPNO3,21,H,10,alkane CH
+TM135BPNO3,22,H,1,alkane CH
+TM135BPNO3,23,H,2,alkane CH
+TM135BPNO3,24,H,3,alkane CH
+TM135BPNO3,25,H,6,alkane CH
+TM135BPNO3,26,HO,13,alcohol
+TM135BPNO3,27,H,9,alkane CH
+TM135BPNO3,28,H,8,alkane CH
+TM135BPNO3,29,H,7,alkane CH
+C23O3MCO3H,1,O3,10,carbonylperoxyacid
+C23O3MCO3H,2,O3,10,carbonylperoxyacid
+C23O3MCO3H,3,C2,10,carbonylperoxyacid
+C23O3MCO3H,4,O2,10,carbonylperoxyacid
+C23O3MCO3H,5,C3,3,alkane CH
+C23O3MCO3H,5,C3,8,ester
+C23O3MCO3H,6,C3,5,alkane CH
+C23O3MCO3H,6,C3,6,alkane CH
+C23O3MCO3H,6,C3,7,alkane CH
+C23O3MCO3H,7,O3,8,ester
+C23O3MCO3H,8,C2,8,ester
+C23O3MCO3H,9,O2,8,ester
+C23O3MCO3H,10,C2,9,ketone
+C23O3MCO3H,11,O2,9,ketone
+C23O3MCO3H,12,C3,1,alkane CH
+C23O3MCO3H,12,C3,2,alkane CH
+C23O3MCO3H,12,C3,4,alkane CH
+C23O3MCO3H,13,HO,10,carbonylperoxyacid
+C23O3MCO3H,14,H,3,alkane CH
+C23O3MCO3H,15,H,6,alkane CH
+C23O3MCO3H,16,H,7,alkane CH
+C23O3MCO3H,17,H,5,alkane CH
+C23O3MCO3H,18,H,4,alkane CH
+C23O3MCO3H,19,H,2,alkane CH
+C23O3MCO3H,20,H,1,alkane CH
+HOCH2CO3H,1,O3,3,alcohol
+HOCH2CO3H,2,C3,1,alkane CH
+HOCH2CO3H,2,C3,2,alkane CH
+HOCH2CO3H,2,C3,3,alcohol
+HOCH2CO3H,3,C2,4,carbonylperoxyacid
+HOCH2CO3H,4,O2,4,carbonylperoxyacid
+HOCH2CO3H,5,O3,4,carbonylperoxyacid
+HOCH2CO3H,6,O3,4,carbonylperoxyacid
+HOCH2CO3H,7,HO,3,alcohol
+HOCH2CO3H,8,H,1,alkane CH
+HOCH2CO3H,9,H,2,alkane CH
+HOCH2CO3H,10,HO,4,carbonylperoxyacid
+C3MDIALOOH,1,O3,4,hydroperoxide
+C3MDIALOOH,2,O3,4,hydroperoxide
+C3MDIALOOH,3,C3,4,hydroperoxide
+C3MDIALOOH,4,C3,1,alkane CH
+C3MDIALOOH,4,C3,2,alkane CH
+C3MDIALOOH,4,C3,3,alkane CH
+C3MDIALOOH,5,C2,6,aldehyde
+C3MDIALOOH,6,O2,6,aldehyde
+C3MDIALOOH,7,C2,5,aldehyde
+C3MDIALOOH,8,O2,5,aldehyde
+C3MDIALOOH,9,HO,4,hydroperoxide
+C3MDIALOOH,10,H,1,alkane CH
+C3MDIALOOH,11,H,3,alkane CH
+C3MDIALOOH,12,H,2,alkane CH
+C3MDIALOOH,13,H,6,aldehyde
+C3MDIALOOH,14,H,5,aldehyde
+CH3O2NO2,1,C3,1,alkane CH
+CH3O2NO2,1,C3,2,alkane CH
+CH3O2NO2,1,C3,3,alkane CH
+CH3O2NO2,1,C3,4,peroxy nitrate
+CH3O2NO2,2,O3,4,peroxy nitrate
+CH3O2NO2,3,O2,4,peroxy nitrate
+CH3O2NO2,4,Ntr,4,peroxy nitrate
+CH3O2NO2,5,O2,4,peroxy nitrate
+CH3O2NO2,6,O2,4,peroxy nitrate
+CH3O2NO2,7,H,3,alkane CH
+CH3O2NO2,8,H,1,alkane CH
+CH3O2NO2,9,H,2,alkane CH
+ACCOCOMOOH,1,O3,6,hydroperoxide
+ACCOCOMOOH,2,O3,6,hydroperoxide
+ACCOCOMOOH,3,C3,4,alkane CH
+ACCOCOMOOH,3,C3,5,alkane CH
+ACCOCOMOOH,3,C3,6,hydroperoxide
+ACCOCOMOOH,4,C2,7,ketone
+ACCOCOMOOH,5,O2,7,ketone
+ACCOCOMOOH,6,C2,8,anhydride
+ACCOCOMOOH,7,O2,8,anhydride
+ACCOCOMOOH,8,O3,8,anhydride
+ACCOCOMOOH,9,C2,8,anhydride
+ACCOCOMOOH,10,O2,8,anhydride
+ACCOCOMOOH,11,C3,1,alkane CH
+ACCOCOMOOH,11,C3,2,alkane CH
+ACCOCOMOOH,11,C3,3,alkane CH
+ACCOCOMOOH,12,HO,6,hydroperoxide
+ACCOCOMOOH,13,H,5,alkane CH
+ACCOCOMOOH,14,H,4,alkane CH
+ACCOCOMOOH,15,H,2,alkane CH
+ACCOCOMOOH,16,H,1,alkane CH
+ACCOCOMOOH,17,H,3,alkane CH
+MMALANHYO,1,O2,7,anhydride
+MMALANHYO,2,C2,7,anhydride
+MMALANHYO,3,O3,7,anhydride
+MMALANHYO,4,C2,7,anhydride
+MMALANHYO,5,O2,7,anhydride
+MMALANHYO,6,C3,6,oxy radical
+MMALANHYO,7,C3,1,alkane CH
+MMALANHYO,7,C3,2,alkane CH
+MMALANHYO,7,C3,3,alkane CH
+MMALANHYO,8,O3,6,oxy radical
+MMALANHYO,9,C3,4,alkane CH
+MMALANHYO,9,C3,5,alcohol
+MMALANHYO,10,O3,5,alcohol
+MMALANHYO,11,H,2,alkane CH
+MMALANHYO,12,H,1,alkane CH
+MMALANHYO,13,H,3,alkane CH
+MMALANHYO,14,H,4,alkane CH
+MMALANHYO,15,HO,5,alcohol
+MXYFUOOH,1,C3,2,alkane CH
+MXYFUOOH,1,C3,4,alkane CH
+MXYFUOOH,1,C3,5,alkane CH
+MXYFUOOH,2,C3,11,hydroperoxide
+MXYFUOOH,3,O3,11,hydroperoxide
+MXYFUOOH,4,O3,11,hydroperoxide
+MXYFUOOH,5,C3,3,alkane CH
+MXYFUOOH,5,C3,9,alcohol
+MXYFUOOH,6,O3,9,alcohol
+MXYFUOOH,7,C3,6,alkane CH
+MXYFUOOH,7,C3,10,ester
+MXYFUOOH,8,C3,1,alkane CH
+MXYFUOOH,8,C3,7,alkane CH
+MXYFUOOH,8,C3,8,alkane CH
+MXYFUOOH,9,O3,10,ester
+MXYFUOOH,10,C2,10,ester
+MXYFUOOH,11,O2,10,ester
+MXYFUOOH,12,H,2,alkane CH
+MXYFUOOH,13,H,4,alkane CH
+MXYFUOOH,14,H,5,alkane CH
+MXYFUOOH,15,HO,11,hydroperoxide
+MXYFUOOH,16,H,3,alkane CH
+MXYFUOOH,17,HO,9,alcohol
+MXYFUOOH,18,H,6,alkane CH
+MXYFUOOH,19,H,8,alkane CH
+MXYFUOOH,20,H,7,alkane CH
+MXYFUOOH,21,H,1,alkane CH
+C5CO243OH,1,C3,4,alkane CH
+C5CO243OH,1,C3,5,alkane CH
+C5CO243OH,1,C3,6,alkane CH
+C5CO243OH,2,C2,10,ketone
+C5CO243OH,3,O2,10,ketone
+C5CO243OH,4,C3,3,alkane CH
+C5CO243OH,4,C3,8,alcohol
+C5CO243OH,5,O3,8,alcohol
+C5CO243OH,6,C2,9,ketone
+C5CO243OH,7,O2,9,ketone
+C5CO243OH,8,C3,1,alkane CH
+C5CO243OH,8,C3,2,alkane CH
+C5CO243OH,8,C3,7,alkane CH
+C5CO243OH,9,H,4,alkane CH
+C5CO243OH,10,H,5,alkane CH
+C5CO243OH,11,H,6,alkane CH
+C5CO243OH,12,H,3,alkane CH
+C5CO243OH,13,HO,8,alcohol
+C5CO243OH,14,H,1,alkane CH
+C5CO243OH,15,H,7,alkane CH
+C5CO243OH,16,H,2,alkane CH
+C5CODBCO2H,1,C3,1,alkane CH
+C5CODBCO2H,1,C3,2,alkane CH
+C5CODBCO2H,1,C3,3,alkane CH
+C5CODBCO2H,2,C2,9,ketone
+C5CODBCO2H,3,O2,9,ketone
+C5CODBCO2H,4,C2,7,alkene CH
+C5CODBCO2H,5,C2,10,C non quaternary
+C5CODBCO2H,6,C3,4,alkane CH
+C5CODBCO2H,6,C3,5,alkane CH
+C5CODBCO2H,6,C3,6,alkane CH
+C5CODBCO2H,7,C2,8,carboxylic acid
+C5CODBCO2H,8,O2,8,carboxylic acid
+C5CODBCO2H,9,O3,8,carboxylic acid
+C5CODBCO2H,10,H,2,alkane CH
+C5CODBCO2H,11,H,3,alkane CH
+C5CODBCO2H,12,H,1,alkane CH
+C5CODBCO2H,13,H,7,alkene CH
+C5CODBCO2H,14,H,6,alkane CH
+C5CODBCO2H,15,H,4,alkane CH
+C5CODBCO2H,16,H,5,alkane CH
+C5CODBCO2H,17,HO,8,carboxylic acid
+C3MDIALOH,1,O2,6,aldehyde
+C3MDIALOH,2,C2,6,aldehyde
+C3MDIALOH,3,C3,4,alcohol
+C3MDIALOH,4,C3,1,alkane CH
+C3MDIALOH,4,C3,2,alkane CH
+C3MDIALOH,4,C3,3,alkane CH
+C3MDIALOH,5,O3,4,alcohol
+C3MDIALOH,6,C2,5,aldehyde
+C3MDIALOH,7,O2,5,aldehyde
+C3MDIALOH,8,H,6,aldehyde
+C3MDIALOH,9,H,2,alkane CH
+C3MDIALOH,10,H,1,alkane CH
+C3MDIALOH,11,H,3,alkane CH
+C3MDIALOH,12,HO,4,alcohol
+C3MDIALOH,13,H,5,aldehyde
+C7M2CO5OH,1,C3,2,alkane CH
+C7M2CO5OH,1,C3,4,alkane CH
+C7M2CO5OH,1,C3,5,alkane CH
+C7M2CO5OH,2,C2,14,ketone
+C7M2CO5OH,3,O2,14,ketone
+C7M2CO5OH,4,C2,11,alkene CH
+C7M2CO5OH,5,C2,15,C non quaternary
+C7M2CO5OH,6,C3,1,alkane CH
+C7M2CO5OH,6,C3,9,alkane CH
+C7M2CO5OH,6,C3,10,alkane CH
+C7M2CO5OH,7,C3,7,alkane CH
+C7M2CO5OH,7,C3,12,alcohol
+C7M2CO5OH,8,O3,12,alcohol
+C7M2CO5OH,9,C2,13,ketone
+C7M2CO5OH,10,O2,13,ketone
+C7M2CO5OH,11,C3,3,alkane CH
+C7M2CO5OH,11,C3,6,alkane CH
+C7M2CO5OH,11,C3,8,alkane CH
+C7M2CO5OH,12,H,2,alkane CH
+C7M2CO5OH,13,H,4,alkane CH
+C7M2CO5OH,14,H,5,alkane CH
+C7M2CO5OH,15,H,11,alkene CH
+C7M2CO5OH,16,H,10,alkane CH
+C7M2CO5OH,17,H,9,alkane CH
+C7M2CO5OH,18,H,1,alkane CH
+C7M2CO5OH,19,H,7,alkane CH
+C7M2CO5OH,20,HO,12,alcohol
+C7M2CO5OH,21,H,8,alkane CH
+C7M2CO5OH,22,H,6,alkane CH
+C7M2CO5OH,23,H,3,alkane CH
+CH3CO3H,1,C3,1,alkane CH
+CH3CO3H,1,C3,2,alkane CH
+CH3CO3H,1,C3,3,alkane CH
+CH3CO3H,2,C2,4,carbonylperoxyacid
+CH3CO3H,3,O2,4,carbonylperoxyacid
+CH3CO3H,4,O3,4,carbonylperoxyacid
+CH3CO3H,5,O3,4,carbonylperoxyacid
+CH3CO3H,6,H,2,alkane CH
+CH3CO3H,7,H,3,alkane CH
+CH3CO3H,8,H,1,alkane CH
+CH3CO3H,9,HO,4,carbonylperoxyacid
+TMBOOH,1,O3,12,hydroperoxide
+TMBOOH,2,O3,12,hydroperoxide
+TMBOOH,3,C3,1,alkane CH
+TMBOOH,3,C3,8,alkane CH
+TMBOOH,3,C3,12,hydroperoxide
+TMBOOH,4,Car,15,Car non quaternary
+TMBOOH,5,Car,11,aromatic CH
+TMBOOH,6,Car,13,Car non quaternary
+TMBOOH,7,C3,2,alkane CH
+TMBOOH,7,C3,4,alkane CH
+TMBOOH,7,C3,6,alkane CH
+TMBOOH,8,Car,10,aromatic CH
+TMBOOH,9,Car,14,Car non quaternary
+TMBOOH,10,C3,3,alkane CH
+TMBOOH,10,C3,5,alkane CH
+TMBOOH,10,C3,7,alkane CH
+TMBOOH,11,Car,9,aromatic CH
+TMBOOH,12,HO,12,hydroperoxide
+TMBOOH,13,H,1,alkane CH
+TMBOOH,14,H,8,alkane CH
+TMBOOH,15,H,11,aromatic CH
+TMBOOH,16,H,4,alkane CH
+TMBOOH,17,H,6,alkane CH
+TMBOOH,18,H,2,alkane CH
+TMBOOH,19,H,10,aromatic CH
+TMBOOH,20,H,5,alkane CH
+TMBOOH,21,H,3,alkane CH
+TMBOOH,22,H,7,alkane CH
+TMBOOH,23,H,9,aromatic CH

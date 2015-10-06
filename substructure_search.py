@@ -45,9 +45,9 @@ $ python substructure_search.py --groupfile SMARTSpatterns/FTIRgroups.csv --inpu
 
 ###_ . Arguments
 parser.add_argument('-g','--groupfile',type=str,
-                    help='file of SMARTS patterns (substructure, pattern); csv format')
+                    help='file of SMARTS patterns (substructure, pattern, [export]); csv format')
 parser.add_argument('-i','--inputfile',type=str,
-                    help='file of SMILES strings (label, SMILES); csv format')
+                    help='file of SMILES strings (compound, SMILES); csv format')
 parser.add_argument('-o','--outputfile',type=str,default='output.csv',
                     help='output file; csv format')
 parser.add_argument('-e','--export',type=str,
@@ -62,31 +62,26 @@ if __name__=='__main__':
     
     args = parser.parse_args()
 
-    # for debugging
-    # from collections import namedtuple
-    # Args = namedtuple('Args',['default_directory','groupfile','inputfile','outputfile','export'])
-    # args = Args(True,'FTIRgroups.csv','example_main.csv','example_out.csv',None)
-
     ## pattern directory
-    if args.default_directory:
-        default_directory = 'SMARTSpatterns'
-        groupfile = os.path.join(os.path.dirname(__file__),
-                                 default_directory,
-                                 args.groupfile)
+    if args.default_directory: 
+        ddirectory = os.path.join(os.path.dirname(__file__),'SMARTSpatterns')
     else:
-        groupfile = args.groupfile
+        ddirectory = ''
 
     ## output export
     if args.export:
-        with open(args.export) as f:
+        exportfile = os.path.join(ddirectory,args.export) ## looks in same directory
+        with open(exportfile) as f:
             export = [x.strip('"\'\n') for x in f]
-        print 'exporting ',  ', '.join('{:d}: {:s}'.format(*x) for x in zip(range(1,len(export)+1),export))
+        print 'exporting ',\
+              ', '.join('{:d}: {:s}'.format(*x) for x in zip(range(1,len(export)+1),export))
     else:
         export = None
 
 ###_* --- Read patterns
 
-###_ . SMARTS       
+###_ . SMARTS
+    groupfile = os.path.join(ddirectory,args.groupfile)
     groups = pd.read_csv(groupfile).drop_duplicates().set_index('substructure')
 
 ###_ . SMILES

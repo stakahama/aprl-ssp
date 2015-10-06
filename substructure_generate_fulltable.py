@@ -2,7 +2,7 @@
 
 ################################################################################
 ##
-## substructure_atoms_fulltable.py
+## substructure_generate_fulltable.py
 ## Author: Satoshi Takahama (satoshi.takahama@epfl.ch)
 ## Nov. 2014
 ##
@@ -34,28 +34,31 @@ from argparse import ArgumentParser, RawTextHelpFormatter
 from util import searchgroups
 
 ###_* --- Define command-line arguments
+
 parser = ArgumentParser(description='''
 ============================================================
-Perform substructure searches. requires 2 files: one containing SMARTS patterns
-and another containing SMILES strings; creates single output of substructure
-counts. Example usage:
+Perform substructure searches at atom level. Requires 2 files: one containing SMARTS patterns
+and another containing SMILES strings; creates several output files of substructure
+counts, atom counts, atomic masses of matched atoms, table of atoms and matched groups. Example usage:
 
-$ python substructure_atoms.py -d --groupfile FTIRgroups_foratoms.csv --inputfile examples_2/example_main.csv --outputfile examples_2/example_out.csv
+$ python substructure_generate_fulltable.py -d -g MCMgroups.csv -i apinenemech.csv -o apinenemech
 
 ''',formatter_class=RawTextHelpFormatter)
 
 ###_ . Arguments
+
 parser.add_argument('-g','--groupfile',type=str,
                     help='file of SMARTS patterns (substructure, pattern); csv format')
 parser.add_argument('-i','--inputfile',type=str,
                     help='file of SMILES strings (label, SMILES); csv format')
-parser.add_argument('-o','--outputfile',type=str,default='output.csv',
-                    help='output file; csv format')
+parser.add_argument('-o','--outputprefix',type=str,default='output',
+                    help='output prefix')
 parser.add_argument('-e','--export',type=str,
                     help='text file with list of compounds to select in a single column')
 
 ###_ . Flags (on/off):
-parser.add_argument('-d','--default-directory',action='store_true',help='--groupfile exists in SMARTSpatterns/')
+parser.add_argument('-d','--default-directory',action='store_true',
+                    help='--groupfile exists in SMARTSpatterns/')
 
 if __name__=='__main__':
 
@@ -64,25 +67,23 @@ if __name__=='__main__':
     args = parser.parse_args()
 
     ## for debugging
-    ## args = parser.parse_args('-g ../../SMARTSpatterns/FTIRgroups_foratoms_complete.csv -i ../../data/inputs/testcompounds.csv -o ../../example_out.csv'.split())
+    ## args = parser.parse_args('-g SMARTSpatterns/FTIRextra.csv -i examples/example_main.csv -o output'.split())
 
     ## pattern directory
-    if args.default_directory:
-        default_directory = 'SMARTSpatterns'
-        groupfile = os.path.join(os.path.dirname(__file__),
-                                 default_directory,
-                                 args.groupfile)
+    if args.default_directory: 
+        ddirectory = os.path.join(os.path.dirname(__file__),'SMARTSpatterns')
     else:
-        groupfile = args.groupfile
+        ddirectory = ''
 
 ###_* --- Read patterns
 ## added .drop_duplicates() # 2015.08.13
 
-###_ . SMARTS        
+###_ . SMARTS
+    groupfile = os.path.join(ddirectory,args.groupfile)        
     groups = pd.read_csv(groupfile).drop_duplicates().set_index('substructure')
 
 ###_ . SMILES
-    inp = pd.read_csv(args.inputfile).drop_duplicates().set_index('compound')
+    inp = pd.read_csv(args.inputfile).drop_duplicates().set_index('compound')[['SMILES']]
 
 ###_* --- Apply search function
     
@@ -97,37 +98,45 @@ if __name__=='__main__':
         masslist.append(masstable)
     master = pd.merge(inp.reset_index(),pd.concat(dflist),
                       on='SMILES',how='outer')
+    del master['SMILES']    
     atomicmass = pd.DataFrame(list(reduce(set.union,masslist)),
                               columns=['atomtype','atomicmass']).set_index('atomtype')
 
-    ## produce same output as previous code
-    ##   this method is better than alternative ('alt method') below
-    ##   as we want to subset non-null groups
-    ##   in the subtable rather than the full table
-    def countatoms(df):
-        return len(df['atom'].ix[df['group'].notnull()].unique())
-    grouped = master.groupby(['compound','type'])
-    counts = grouped.apply(countatoms).reset_index(name='count')
-    output = counts.pivot_table(index='compound',columns='type',values='count').ix[inp.index]
-    output.fillna(0,inplace=True)
-
-    # #alt method
-    # parameters = {
-    #     'index':'compound',
-    #     'columns':'type',
-    #     'values':'atom',
-    #     'aggfunc':lambda x: len(x.unique())
-    #     }
-    # output = master.ix[master['group'].notnull(),['compound','type','atom']].pivot_table(**parameters)
-    # output.fillna(0,inplace=True)
-
-###_* --- Export to output
+    ## create tables of counts
+    def docount(var,req_uniq='group'):
+        def fn(df):
+            return len(df[var].ix[df[req_uniq].notnull()].unique())
+        return fn
     
-    extension = os.path.splitext(args.outputfile)[1]
-    output.to_csv(args.outputfile,index_label='compound')
-    atomicmass.to_csv(args.outputfile.replace(extension,'_atomicmass'+extension),
-                      index_label='atom')
-    for var in ['atom','match']:
-        master[var] = master[var].map('{:.0f}'.format)
-    del master['SMILES'] # 2015.08.13
-    master.to_csv(args.outputfile.replace(extension,'_fulltable'+extension),index=False)
+    param = {'atoms':('type','atom'), 'groups':('group','match')}
+    tables = {}
+    for k in param.keys():
+        grouped = master.groupby(['compound',param[k][0]])
+        counts = grouped.apply(docount(param[k][1])).reset_index(name='count')
+        widef = counts.pivot_table(index='compound',columns=param[k][0],values='count').ix[inp.index]
+        widef.fillna(0,inplace=True)
+        tables[k] = widef
+    
+###_* --- Export to output
+
+    def float2int(df,columns=None):
+        if not columns:
+            columns = df.columns
+        for var in columns:
+            df[var] = df[var].map('{:.0f}'.format)
+        return df
+
+    outpath = os.path.dirname(args.outputprefix)
+    prefix = os.path.basename(args.outputprefix)    
+    extension = '.csv'
+    filename = '{}_{}{}'
+    outputfiles = {
+        k:os.path.join(outpath,filename.format(prefix,k,extension)) for k in
+        ['atomcounts','groupcounts','atomicmass','atomfulltable']
+        }
+    
+    float2int(tables['atoms']).to_csv(outputfiles['atomcounts'],index_label='compound')
+    float2int(tables['groups']).to_csv(outputfiles['groupcounts'],index_label='compound')
+    atomicmass.to_csv(outputfiles['atomicmass'],index_label='atom')
+    master = float2int(master,['atom','match'])
+    master.to_csv(outputfiles['atomfulltable'],index=False)

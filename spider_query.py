@@ -27,7 +27,7 @@
 
 import os
 from argparse import ArgumentParser, RawTextHelpFormatter
-from collections import OrderedDict, namedtuple
+from collections import OrderedDict
 
 ## define arguments
 parser = ArgumentParser(description='''
@@ -88,7 +88,7 @@ parser.add_argument('-b','--export-db-csv',action='store_true')
 parser.add_argument('-p','--prefix',type=str,default='queryresults',
                     help='output will generate {name}_main.csv and {name}_alternates.csv and/or database {name}_p.db.')
 parser.add_argument('-i','--inputfile',type=str,help='file of compound names (optional with -D flag)')
-parser.add_argument('-t','--tokenfile',type=str,default='~/.chemspidertoken',
+parser.add_argument('-t','--token',type=str,default='~/.chemspidertoken',
                     help='file of chemspider token (optional)')
 
 ## parse arguments
@@ -228,19 +228,15 @@ class spiderquery:
 
 ##==============================================================================
 
-# for debugging
-# Args = namedtuple('Args',['tokenfile','inputfile','prefix',
-#                           'from_db','export_db_only','export_db_csv'])
-# args = Args(tokenfile='~/.chemspidertoken',inputfile='compounds.csv',prefix='example',
-#             from_db=None,export_db_only=None,export_db_csv=None)
-        
 if __name__ == '__main__':
 
     ## ==================== set up chemspider ====================
 
     if not args.from_db:
-        with open(os.path.expanduser(args.tokenfile)) as f:
-            csp = ChemSpider(f.read().strip())
+        if os.path.exists(args.token): # is file
+            with open(os.path.expanduser(args.token)) as f:
+                csp = ChemSpider(f.read().strip())
+        csp = ChemSpider(args.token)   # else is token
     else:
         csp = None
 
