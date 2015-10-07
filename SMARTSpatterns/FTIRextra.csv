@@ -1,6 +1,6 @@
 "substructure","pattern","export"
 "aCHinCH3","[CX4;$(C([H])([H])[H])][H]",1
-"aCHinCH2","[CX4;$(C([H])([H])([#6,#8,#7,#16,#17])[#6,#8,#7,#16,#17])][H]",1
+"aCHinCH2","[CX4;$(C([H])([H])([!#1])[!#1])][H]",1
 "alkyneCH","[C;$(C#C)][H]",1
 "alkyneCC","[C]#[C]",1
 "aromaticCC","c:c",1
