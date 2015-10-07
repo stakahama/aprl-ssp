@@ -63,7 +63,7 @@ $ pip install packagename
 
 ## Program scripts
 
-### -------------------- spider\_query.py --------------------
+### ----- spider\_query.py -----
 
 #### Setup
 
@@ -131,7 +131,7 @@ $ spider_query.py -t /path/to/token.txt -p example -i compounds.csv
 
 Optionally, the argument passed can be the value of the token itself.
 
-### -------------------- substructure\_search.py --------------------
+### ----- substructure\_search.py -----
 
 #### Setup
 
@@ -154,7 +154,7 @@ Main arguments:
 
 Flags:
 
-* `-d`: When present, indicates that `GROUPFILE` exists in the subdirectory, `SMARTSpatterns/`, distributed with "substructure_search.py".
+* `-d`: When present, indicates that `GROUPFILE` (and `EXPORT`, if provided) exists in the subdirectory, `SMARTSpatterns/`, distributed with "substructure_search.py".
 
 #### Examples
 
@@ -166,7 +166,7 @@ $ substructure_search.py -d -g SIMPOLgroups.csv -e SIMPOLexportlist.csv \
 In this example, SIMPOLexportlist.csv provides a list of groups in the order that they should be exported.
 
 
-### -------------------- substructure\_generate\_fulltable.py --------------------
+### ----- substructure\_generate\_fulltable.py -----
 
 Similar to substructure\_search.py but returns atoms associated with each fragment. Technically, this information can be used to enumerate fragments as done by substructure\_search.py; but the syntax can be more complex (on account of using set operations) when specifying fragments as a function of other SMARTS patterns.
 
@@ -191,7 +191,7 @@ Main arguments:
 
 Flags:
 
-* `-d`: When present, indicates that `GROUPFILE` exists in the subdirectory, `SMARTSpatterns/`, distributed with "substructure_search.py".
+* `-d`: When present, indicates that `GROUPFILE` (and `EXPORT`, if provided) exists in the subdirectory, `SMARTSpatterns/`, distributed with "substructure_search.py".
 
 #### Examples
 
@@ -247,4 +247,4 @@ Required sofware:
 
      ```
      > install.packages(c("reshape2","dplyr"))
-     ```
+```
