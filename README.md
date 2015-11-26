@@ -16,7 +16,7 @@ Its application is described by
 > for organic aerosol characterization",  Atmospheric Chemistry and Physics Discussions,
 > doi:10.5194/acpd-15-1-2015, 2015.
 
-The program is released under the GNU Public License (GPLv3). Please cite [DOI] for the repository along with the manuscript if used. The corresponding author, Satoshi Takahama (satoshi.takahama@epfl.ch), can be contacted with any bug reports or questions.
+The program is released under the GNU Public License (GPLv3). Please cite   [doi:10.5281/zenodo.34239](https://zenodo.org/badge/latestdoi/19334/stakahama/aprl-ssp) for the repository along with the manuscript if used. The corresponding author, Satoshi Takahama (satoshi.takahama@epfl.ch), can be contacted with any bug reports or questions.
 
 Tables from the manuscript are provided in the "SMARTSpatterns/" subdirectory:
 
