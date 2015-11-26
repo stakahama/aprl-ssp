@@ -13,11 +13,12 @@ APRL-SSP (__APRL__ __S__ubstructure __S__earch __P__rogram) is made up of three 
 
 Its application is described by
 
-> Ruggeri, G. and Takahama, S.: "Technical Note:
-> Use of chemoinformatic tools to enumerate functional groups in molecules
-> for organic aerosol characterization",  _submitted_, 2015.
+> Ruggeri, G. and Takahama, S.: 
+> "Technical Note: Use of chemoinformatic tools to enumerate functional groups in molecules
+> for organic aerosol characterization",  Atmospheric Chemistry and Physics Discussions,
+> doi:10.5194/acpd-15-1-2015, 2015.
 
-The program is released under the Gnu Public License (GPLv3). Please contact the corresponding author, Satoshi Takahama (satoshi.takahama@epfl.ch), with any bug reports or questions.
+The program is released under the GNU Public License (GPLv3). Please cite [DOI] for the repository along with the manuscript if used. The corresponding author, Satoshi Takahama (satoshi.takahama@epfl.ch), can be contacted with any bug reports or questions.
 
 Tables from the manuscript are provided in the "SMARTSpatterns/" subdirectory:
 
@@ -245,6 +246,7 @@ Required sofware:
 * python (tested with 2.7)
 * R (http://cran.r-project.org), also free. Required packages: `reshape2`, `dplyr`.
 
-     ```
+    ```
      > install.packages(c("reshape2","dplyr"))
-```
+	 ```
+
