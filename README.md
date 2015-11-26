@@ -1,11 +1,9 @@
-APRL-SSP (Substructure Search Program)
+APRL-SSP (Substructure Search Program) [![DOI](https://zenodo.org/badge/19334/stakahama/aprl-ssp.svg)](https://zenodo.org/badge/latestdoi/19334/stakahama/aprl-ssp)
 ===
-
-[TOC]
 
 ## Introduction
 
-APRL-SSP (__APRL__ __S__ubstructure __S__earch __P__rogram) is made up of three primary units:
+APRL-SSP (**APRL** **S**ubstructure **S**earch **P**rogram) is made up of three primary units:
 
 * "spider\_query.py": Query the ChemSpider database for SMILES strings and other properties of a molecule.
 * "substructure\_search.py": Use the Open Babel chemoinformatics tool to find number of instances of a substructure (specified by SMARTS pattern) occurring in a molecule (specified by SMILES pattern).
