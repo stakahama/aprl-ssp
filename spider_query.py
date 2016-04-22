@@ -27,7 +27,8 @@
 
 import os
 from argparse import ArgumentParser, RawTextHelpFormatter
-from collections import OrderedDict
+from collections import OrderedDict, namedtuple
+import csv
 
 ## define arguments
 parser = ArgumentParser(description='''
@@ -91,19 +92,6 @@ parser.add_argument('-i','--inputfile',type=str,help='file of compound names (op
 parser.add_argument('-t','--token',type=str,default='~/.chemspidertoken',
                     help='file of chemspider token (optional)')
 
-## parse arguments
-args = parser.parse_args()
-
-## conditional loading of modules
-if not args.from_db:
-    from chemspipy import ChemSpider
-
-if not args.export_db_only:
-    import pandas as pd
-
-if args.from_db or args.export_db_only or args.export_db_csv:
-    import shelve
-
 ##==============================================================================
 
 class spiderquery:
@@ -126,7 +114,7 @@ class spiderquery:
         """
         matched = self.null
         try:
-            results = self.csp.search(cmpd)
+            results = self.csp.simple_search(cmpd) # updated
             if results:
                 matched['first'] = results[0]
                 matched['rest'] = ';'.join(['{:d}:{:s}'.format(r.csid,r.common_name.encode('utf-8'))
@@ -230,13 +218,28 @@ class spiderquery:
 
 if __name__ == '__main__':
 
+    ## parse arguments
+    args = parser.parse_args()
+
+    ## conditional loading of modules
+    if not args.from_db:
+        from chemspipy import ChemSpider
+
+    if not args.export_db_only:
+        import pandas as pd
+
+    if args.from_db or args.export_db_only or args.export_db_csv:
+        import shelve
+
     ## ==================== set up chemspider ====================
 
     if not args.from_db:
-        if os.path.exists(args.token): # is file
-            with open(os.path.expanduser(args.token)) as f:
+        possiblefile = os.path.expanduser(args.token)
+        if os.path.exists(possiblefile):   # is file
+            with open(possiblefile) as f:
                 csp = ChemSpider(f.read().strip())
-        csp = ChemSpider(args.token)   # else is token
+        else:
+            csp = ChemSpider(args.token)   # else is token
     else:
         csp = None
 
@@ -245,10 +248,15 @@ if __name__ == '__main__':
     ## ==================== list of compounds ====================
     
     if args.inputfile:
-        with open(args.inputfile) as f:
+        with open(args.inputfile) as csvfile:
+            f = csv.reader(csvfile)
             compounds = []
-            for line in f:
-                compounds.append(line.strip())
+            j = 0
+            for i,row in enumerate(f):
+                if i==0 and 'compound' in row:
+                    j = row.index('compound')
+                    continue
+                compounds.append(row[j])
     else:
         compounds = None
 

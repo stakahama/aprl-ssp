@@ -13,8 +13,8 @@ Its application is described by
 
 > Ruggeri, G. and Takahama, S.: 
 > "Technical Note: Use of chemoinformatic tools to enumerate functional groups in molecules
-> for organic aerosol characterization",  Atmospheric Chemistry and Physics Discussions,
-> doi:10.5194/acpd-15-1-2015, 2015.
+> for organic aerosol characterization",  *Atmospheric Chemistry and Physics*,
+> doi:10.5194/acp-16-4401-2016, 2016.
 
 The program is released under the GNU Public License (GPLv3). Please cite   [doi:10.5281/zenodo.34255](http://dx.doi.org/10.5281/zenodo.34255) for the repository along with the manuscript if used. The corresponding author, Satoshi Takahama (satoshi.takahama@epfl.ch), can be contacted with any bug reports or questions.
 
@@ -81,7 +81,7 @@ Query to CSV is the default. Flags to change this behavior:
 Three main arguments:
 
 * `-p`: value of `PREFIX`. Name of prefix to database or CSV tables. When `-D` is present, this also indicates the name of database to be read in. If unspecified, will default to "queryresults".
-* `-i`: value of `INPUTFILE` (optional). Name of file containing compounds. Optional if `-D`; otherwise required.
+* `-i`: value of `INPUTFILE` (optional). Name of file containing compounds; a csv file with a column called "compound". Optional if `-D`; otherwise required.
 * `-t`: value of `TOKEN` (optional). Name of file containing ChemSpider token if not "~/.chemspidertoken". See next section.
 
 #### Examples
@@ -129,6 +129,14 @@ $ spider_query.py -t /path/to/token.txt -p example -i compounds.csv
 ```
 
 Optionally, the argument passed can be the value of the token itself.
+
+#### Compound names
+
+Where possible, superfluous spaces should be removed in the name of the compound. We have found inconsistencies in returned results. For instance:
+
+* "benzo[b]fluoranthene" returns benzo[b]fluoranthene with SMILES string of "c1ccc2c(c1)cc-3c4c2cccc4-c5c3cccc5"
+* "benzo[b] fluoranthene" returns (+)-Vincamine with SMILES string of "CC[C@@]12CCCN3[C@@H]1c4c(c5ccccc5n4[C@](C2)(C(=O)OC)O)CC3"
+
 
 ### ----- substructure\_search.py -----
 
