@@ -16,7 +16,7 @@ Its application is described by
 > for organic aerosol characterization",  *Atmospheric Chemistry and Physics*,
 > doi:10.5194/acp-16-4401-2016, 2016.
 
-The program is released under the GNU Public License (GPLv3). Please cite   [doi:10.5281/zenodo.34255](http://dx.doi.org/10.5281/zenodo.34255) for the repository along with the manuscript if used. The corresponding author, Satoshi Takahama (satoshi.takahama@epfl.ch), can be contacted with any bug reports or questions.
+The program is released under the GNU Public License (GPLv3). Please cite   [doi:10.5281/zenodo.34255](http://dx.doi.org/10.5281/zenodo.34255) for the repository along with the manuscript if used. The corresponding author can be contacted with any bug reports or questions.
 
 Tables from the manuscript are provided in the "SMARTSpatterns/" subdirectory:
 
