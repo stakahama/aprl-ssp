@@ -25,10 +25,11 @@
 ##
 ################################################################################
 
+import sys
 import os
 from subprocess import call
 
-###_* ===== class definition 
+###_* ===== class definition
 
 class command_args:
 
@@ -39,12 +40,12 @@ class command_args:
             'validate_atoms':os.path.join(execpath,'validation_atoms.R'),
             'validate_groups':os.path.join(execpath,'validation_groups.R')
             }
-        
+
     def add(self,**kwargs):
         return dict(self.args.items()+kwargs.items())
 
 ###_* ===== commands
-        
+
 commands = {}
 
 commands['atoms'] = {
@@ -87,10 +88,14 @@ Rscript --vanilla {validate_groups} \
 
 execpath = os.path.dirname(os.path.abspath(__file__))
 
+datapath = sys.argv[-1]
+if not os.path.exists(datapath):
+    datapath = os.path.join(execpath,'validation')
+
 argslist = command_args(execpath)
 
 here = os.getcwd()
-os.chdir(os.path.join(execpath,'validation'))
+os.chdir(datapath)
 
 with open('filelist_atoms.csv') as f:
     prefixlist = f.read().strip().split()
@@ -101,7 +106,7 @@ with open('filelist_groups.csv') as f:
 for prefix in prefixlist:
     print 'validating', prefix, '...'
     newargs = argslist.add(prefix=prefix)
-    call(commands['atoms']['allatoms'].format(**newargs).split())    
+    call(commands['atoms']['allatoms'].format(**newargs).split())
     call(commands['atoms']['matchedatoms'].format(**newargs).split())
     call(commands['atoms']['validation'].format(**newargs).split())
 

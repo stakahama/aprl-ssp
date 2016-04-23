@@ -11,12 +11,12 @@ APRL-SSP (**APRL** **S**ubstructure **S**earch **P**rogram) is made up of three 
 
 Its application is described by
 
-> Ruggeri, G. and Takahama, S.: 
+> Ruggeri, G. and Takahama, S.:
 > "Technical Note: Use of chemoinformatic tools to enumerate functional groups in molecules
 > for organic aerosol characterization",  *Atmospheric Chemistry and Physics*,
 > doi:10.5194/acp-16-4401-2016, 2016.
 
-The program is released under the GNU Public License (GPLv3). Please cite   [doi:10.5281/zenodo.34255](http://dx.doi.org/10.5281/zenodo.34255) for the repository along with the manuscript if used. The corresponding author can be contacted with any bug reports or questions.
+The program is released under the GNU Public License (GPLv3). Please include a citation to our [manuscript](http://www.atmos-chem-phys.net/16/4401/2016/) if used. The corresponding author can be contacted with any bug reports or questions.
 
 Tables from the manuscript are provided in the "SMARTSpatterns/" subdirectory:
 
@@ -27,7 +27,7 @@ Tables from the manuscript are provided in the "SMARTSpatterns/" subdirectory:
 
 Supplementary scripts:
 
-* "substructure\_molecular_attributes.py": Extract molecular attributes that can be retrieved from a pybel Molecule object (e.g., molecular weight).
+* "substructure\_molecular\_attributes.py": Extract molecular attributes that can be retrieved from a pybel Molecule object (e.g., molecular weight).
 
  Scripts and input files which reproduce the validation figures in the manuscript are also described below.
 
@@ -193,7 +193,7 @@ Main arguments:
 
 * `-g`: value of `GROUPFILE`. Name of file which contains columns {substructure, pattern}. An additional column, "export", consisting of 0/1 values indicating whether this substructure should be included in `OUTPUTFILE` is allowed.
 * `-i`: value of `INPUTFILE`. Name of file which contains columns {compound, SMILES}.
-* `-o`: value of `OUTPUTPREFIX`. Name of file prefix to be used for generated output files: {PREFIX}_atomcounts.csv, {PREFIX}_groupcounts.csv, {PREFIX}_atomicmass.csv, {PREFIX}_atomfulltable.csv. {PREFIX}_groupcounts.csv is similar to the output of substructure\_search.py but does not contain the full set of patterns in the `INPUTFILE` -- ony the matched ones.
+* `-o`: value of `OUTPUTPREFIX`. Name of file prefix to be used for generated output files: {PREFIX}\_atomcounts.csv, {PREFIX}\_groupcounts.csv, {PREFIX}\_atomicmass.csv, {PREFIX}\_atomfulltable.csv. {PREFIX}_groupcounts.csv is similar to the output of substructure\_search.py but does not contain the full set of patterns in the `INPUTFILE` -- ony the matched ones.
 * `-e`: value of `EXPORT` (optional). Name of file which contains list of substructures to include in `OUTPUTFILE`. Overrides "export" column if present in `GROUPFILE`. (*currently not implemented*)
 
 Flags:
@@ -223,7 +223,7 @@ If only SMARTS patterns are used, the same pattern file can be provided to "subs
 
 ### User-supplied functions
 
-User can define functions to be called for evaluation. These functions should be contained in a file called "userfn.py." These functions will generally accept as its first argument the pybel Molecule object upon which operations are to be performed. In the pattern file, the argument to the function should be provided as `molecule` (lowercase) as this is the object whose value will be evaluated.
+User can define functions to be called for evaluation. These functions should be contained in a file called "userdef.py." These functions will generally accept as its first argument the pybel Molecule object upon which operations are to be performed. In the pattern file, the argument to the function should be provided as `molecule` (lowercase) as this is the object whose value will be evaluated.
 
 ## Validation scripts
 
@@ -235,17 +235,17 @@ Three scripts are provided for generating validation figures:
 
 The main script, "run\_validation.py" script can be run in the "aprl-ssp/" directory. It will read in two lists of files and apply the comparison against reference and matched groups.
 
-"validation/filelist_atoms.csv" for validation of atom membership criteria (completeness and specificity) includes:
+"validation/filelist\_atoms.csv" for validation of atom membership criteria (completeness and specificity) includes:
 
 * apinenemech.csv
 * apinenepropenemech.csv
 * tmbmech.csv
 * tmbpropenemech.csv
 
-"validation/filelist_groups.csv" for validation of group counts against manually enumerated values:
+"validation/filelist\_groups.csv" for validation of group counts against manually enumerated values:
 
-* compounds_SIMPOLgroups.csv
-* compounds_FTIRextra.csv
+* compounds\_SIMPOLgroups.csv
+* compounds\_FTIRextra.csv
 
 Required sofware:
 

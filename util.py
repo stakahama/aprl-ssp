@@ -39,9 +39,13 @@ import functools
 
 compose = functools.partial(functools.reduce, functional.compose)
 
-userfile = os.path.join(os.path.dirname(__file__),'userfn.py')
-if os.path.exists(userfile):
-    execfile(userfile,globals())
+try:
+    import userdef
+except:
+    pass
+# userfile = os.path.join(os.path.dirname(__file__),'userdef.py')
+# if os.path.exists(userfile):
+#     execfile(userfile,globals())
 
 class searchgroups:
 
@@ -52,7 +56,7 @@ class searchgroups:
         self.brackets = re.compile("(?<!')\{([^{}]*)\}") # negative lookahead added 17.06.2015
         self.quotes = re.compile("'\{([^{}]*)\}")        # added 17.06.2015
         self.unquote = lambda x: x.replace("}","}'")
-        
+
     def commonattr(self):
         return (self.groups,
                 self.include,
@@ -75,7 +79,7 @@ class searchgroups:
         ##
         mol = pybel.readstring('smi',smilesstr)
         mol.addh()
-        molecule = mol # copy reference; keyword for userfn.py 29.09.2015        
+        molecule = mol # copy reference; keyword for userdef.py 29.09.2015
         abundances = pd.Series([np.nan]*len(groups),index=groups.index)
         ## SMARTS search
         for key in groups.index[~haskw & ~hasbracket & ~hasquote]:
@@ -87,7 +91,7 @@ class searchgroups:
         for key in groups.index[hasquote]: # untested
             abundances[key] = round(eval(unquote(groups[key]).format(**groups)))
         ## evaluate expressions
-        orderedexpr = self.__orderexpr(groups,hasbracket,brackets)            
+        orderedexpr = self.__orderexpr(groups,hasbracket,brackets)
         for key in orderedexpr: #groups.index[hasbracket]:
             abundances[key] = round(eval(groups[key].format(**abundances)))
         ##
@@ -96,11 +100,11 @@ class searchgroups:
     def matchatoms(self,smilesstr):
         ##
         groups, include, evalkw, brackets, quotes, unquote = self.commonattr()
-        haskw, hasbracket, hasquote = self.matchedpatt(groups)        
+        haskw, hasbracket, hasquote = self.matchedpatt(groups)
         ##
         mol = pybel.readstring('smi',smilesstr)
         mol.addh()
-        molecule = mol # copy reference; keyword for userfn.py 29.09.2015        
+        molecule = mol # copy reference; keyword for userdef.py 29.09.2015
         tups = OrderedDict(zip(groups.index,[None]*len(groups)))
         ## SMARTS search
         for key in groups.index[~haskw & ~hasbracket & ~hasquote]:

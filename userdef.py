@@ -2,7 +2,7 @@
 
 ################################################################################
 ##
-## userfn.py
+## userdef.py
 ## Author: Satoshi Takahama (satoshi.takahama@epfl.ch)
 ## Nov. 2014
 ##
