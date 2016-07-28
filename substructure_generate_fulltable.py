@@ -63,14 +63,14 @@ parser.add_argument('-d','--default-directory',action='store_true',
 if __name__=='__main__':
 
 ###_* --- Parse arguments
-    
+
     args = parser.parse_args()
 
     ## for debugging
     ## args = parser.parse_args('-g SMARTSpatterns/FTIRextra.csv -i examples/example_main.csv -o output'.split())
 
     ## pattern directory
-    if args.default_directory: 
+    if args.default_directory:
         ddirectory = os.path.join(os.path.dirname(__file__),'SMARTSpatterns')
     else:
         ddirectory = ''
@@ -79,14 +79,16 @@ if __name__=='__main__':
 ## added .drop_duplicates() # 2015.08.13
 
 ###_ . SMARTS
-    groupfile = os.path.join(ddirectory,args.groupfile)        
+    groupfile = os.path.join(ddirectory,args.groupfile)
     groups = pd.read_csv(groupfile).drop_duplicates().set_index('substructure')
+    if 'export' not in groups.columns:
+        groups['export'] = 1
 
 ###_ . SMILES
     inp = pd.read_csv(args.inputfile).drop_duplicates().set_index('compound')[['SMILES']]
 
 ###_* --- Apply search function
-    
+
     ## query tables
     search = searchgroups(groups.pattern,groups.export)
     dflist = []
@@ -98,7 +100,7 @@ if __name__=='__main__':
         masslist.append(masstable)
     master = pd.merge(inp.reset_index(),pd.concat(dflist),
                       on='SMILES',how='outer')
-    del master['SMILES']    
+    del master['SMILES']
     atomicmass = pd.DataFrame(list(reduce(set.union,masslist)),
                               columns=['atomtype','atomicmass']).set_index('atomtype')
 
@@ -107,7 +109,7 @@ if __name__=='__main__':
         def fn(df):
             return len(df[var].ix[df[req_uniq].notnull()].unique())
         return fn
-    
+
     param = {'atoms':('type','atom'), 'groups':('group','match')}
     tables = {}
     for k in param.keys():
@@ -116,7 +118,7 @@ if __name__=='__main__':
         widef = counts.pivot_table(index='compound',columns=param[k][0],values='count').ix[inp.index]
         widef.fillna(0,inplace=True)
         tables[k] = widef
-    
+
 ###_* --- Export to output
 
     def float2int(df,columns=None):
@@ -127,14 +129,14 @@ if __name__=='__main__':
         return df
 
     outpath = os.path.dirname(args.outputprefix)
-    prefix = os.path.basename(args.outputprefix)    
+    prefix = os.path.basename(args.outputprefix)
     extension = '.csv'
     filename = '{}_{}{}'
     outputfiles = {
         k:os.path.join(outpath,filename.format(prefix,k,extension)) for k in
         ['atomcounts','groupcounts','atomicmass','atomfulltable']
         }
-    
+
     float2int(tables['atoms']).to_csv(outputfiles['atomcounts'],index_label='compound')
     float2int(tables['groups']).to_csv(outputfiles['groupcounts'],index_label='compound')
     atomicmass.to_csv(outputfiles['atomicmass'],index_label='atom')

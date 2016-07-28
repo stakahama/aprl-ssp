@@ -25,6 +25,7 @@
 ##
 ################################################################################
 
+import pybel
 from itertools import chain
 
 def count_aromatic_rings(mol):
