@@ -1,4 +1,4 @@
-#!/usr/bin/Rscript
+#!/usr/bin/env Rscript
 
 ################################################################################
 ##
@@ -26,7 +26,7 @@
 ################################################################################
 
 ##
-## This script compares matched groups against 
+## This script compares matched groups against
 ##   independent estimate of group counts
 ##
 

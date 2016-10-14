@@ -1,4 +1,4 @@
-#!/usr/bin/Rscript
+#!/usr/bin/env Rscript
 
 ################################################################################
 ##
@@ -26,7 +26,7 @@
 ################################################################################
 
 ##
-## This script compares matched atoms in _atomfulltable.csv against 
+## This script compares matched atoms in _atomfulltable.csv against
 ##   independent estimate of total atom counts in _commonatoms.csv
 ##
 
@@ -104,7 +104,7 @@ pdf(paste0(prefix,"_validation-specificity.pdf"),
     width=7,height=6.5)
 par(mar=c(4,4,1,1),mgp=c(1.8,.2,0),tck=0.02,cex=1.2)
 with(unique.df,{
-  set.seed(1)  
+  set.seed(1)
   plot(rjitter(shorttype),rjitter(n),
        pch=19,col=rgb(t(col2rgb("cornflowerblue"))/255,alpha=.3),
        axes=FALSE,ann=FALSE)

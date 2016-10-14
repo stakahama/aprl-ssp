@@ -44,7 +44,7 @@ class command_args:
     def add(self,**kwargs):
         return dict(self.args.items()+kwargs.items())
 
-###_* ===== commands
+###_* ===== commands =====
 
 commands = {}
 
@@ -84,7 +84,7 @@ Rscript --vanilla {validate_groups} \
 '''
     }
 
-###_* ===== execute
+###_* ===== execute =====
 
 execpath = os.path.dirname(os.path.abspath(__file__))
 
@@ -97,12 +97,14 @@ argslist = command_args(execpath)
 here = os.getcwd()
 os.chdir(datapath)
 
+## read file lists
 with open('filelist_atoms.csv') as f:
     prefixlist = f.read().strip().split()
 
 with open('filelist_groups.csv') as f:
     grouplist = f.read().strip().split()
 
+## perform atom-level validation
 for prefix in prefixlist:
     print 'validating', prefix, '...'
     newargs = argslist.add(prefix=prefix)
@@ -110,6 +112,7 @@ for prefix in prefixlist:
     call(commands['atoms']['matchedatoms'].format(**newargs).split())
     call(commands['atoms']['validation'].format(**newargs).split())
 
+## perform group-level validation (less specific)
 for groupfile in grouplist:
     print 'validating', groupfile, '...'
     newargs = argslist.add(groupfile=groupfile)

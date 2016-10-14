@@ -11,10 +11,7 @@ APRL-SSP (**APRL** **S**ubstructure **S**earch **P**rogram) is made up of three 
 
 Its application is described by
 
-> Ruggeri, G. and Takahama, S.:
-> "Technical Note: Use of chemoinformatic tools to enumerate functional groups in molecules
-> for organic aerosol characterization",  *Atmospheric Chemistry and Physics*,
-> doi:10.5194/acp-16-4401-2016, 2016.
+> Ruggeri, G. and Takahama, S.: Technical Note: Development of chemoinformatic tools to enumerate functional groups in molecules for organic aerosol characterization, *Atmos. Chem. Phys.*, 16, 4401-4422, doi:10.5194/acp-16-4401-2016, 2016.
 
 The program is released under the GNU Public License (GPLv3). Please include a citation to our [manuscript](http://www.atmos-chem-phys.net/16/4401/2016/) if used. The corresponding author can be contacted with any bug reports or questions.
 
