@@ -101,6 +101,7 @@ if __name__=='__main__':
 
     theta = wf[fgvars].drop_duplicates()
     theta.index = theta.apply(label_ctype, axis=1)
+    theta.index.name = 'ctype'
 
     ## -------------------------------------------------------------------------
 

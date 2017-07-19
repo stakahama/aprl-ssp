@@ -61,6 +61,7 @@ if __name__=='__main__':
 
     ## parse arguments
 
+    # args = parser.parse_args('-f ssp/apinene_MCMgroups_atomfulltable.csv -a ssp/apinene_commonatoms.csv -o apinene'.split())
     args = parser.parse_args()
 
     filename = {
@@ -73,22 +74,28 @@ if __name__=='__main__':
     ## -------------------------------------------------------------------------
 
     ## read
+
+    atype = lambda x: x[0].upper()
     
     atoms = pd.read_csv(filename['atoms']).set_index('compound')
-    atoms.columns = atoms.columns.map(lambda x: x[0].upper())
+    atoms.columns = atoms.columns.map(atype)
 
     fulltable = pd.read_csv(filename['fulltable'])
     fulltable['atype'] = (
-        fulltable['type'].str.replace('^(.).*', '\\1').apply(str.upper)
+        fulltable['type'].map(atype)
         .astype('category', categories=atoms.columns)
         )
 
     ## -------------------------------------------------------------------------
 
     ## atom completeness (atoms in matched groups per compound)
+    
+    ismatched = ~fulltable['match'].isnull() # this is critical
 
     atomsv = (
-        fulltable[['compound', 'atom', 'atype']].drop_duplicates()
+        fulltable
+        .loc[ismatched, ['compound', 'atom', 'atype']]
+        .drop_duplicates()
         .groupby(['compound', 'atype'])['atom'].count()
         .unstack(level='atype', fill_value=0)
         )
@@ -123,6 +130,21 @@ if __name__=='__main__':
 
     # plt.ion()
 
+    def plotframe(ax, mx):
+        
+        dx = 1 if mx < 5 else 2 # just a heuristic for tick interval
+        ticks = np.arange(0, mx+1, dx)
+        lim = np.array([0, mx]) + np.array([-1, 1]) * 0.04 * mx
+        ##
+        ax.set_autoscale_on(False)    
+        ax.set_xlim(lim)
+        ax.set_ylim(lim)
+        #
+        ax.set_xticks(ticks)
+        ax.set_yticks(ticks)
+        ##
+        ax.plot(lim, lim)    
+
     def jitterplot(ax, x, y, seed = 1):
 
         np.random.seed(seed)
@@ -136,31 +158,21 @@ if __name__=='__main__':
         ax.set_xticklabels(x.cat.categories)
         ax.set_yticks(np.arange(y.min(), y.max()+1))
 
+    # atoms
     plt.close()
     fig = plt.figure()
     ncol = len(atomsv.columns)
     for i, x in enumerate(atomsv.columns):
-        ##
-        mm = atoms[x].max()
-        dm = 1 if mm < 5 else 2
-        ticks = np.arange(0, mm+1, dm)
-        lim = np.array([0, mm]) + np.array([-1, 1]) * 0.04 * mm
-        ##
         ax = fig.add_subplot(1, ncol, i+1)
-        ax.set_autoscale_on(False)    
-        ax.set_xlim(lim)
-        ax.set_ylim(lim)
-        ax.set_xticks(ticks)
-        ax.set_yticks(ticks)
-        ax.set_title(x)
-        ##
-        ax.plot(lim, lim)    
+        plotframe(ax, atoms[x].max())
         ax.scatter(atoms[x], atomsv.loc[atoms.index,x])
+        ax.set_title(x)        
     fig.text(0.5, 0.04, 'True atom count by compound', ha='center')
     fig.text(0.04, 0.5, 'Matched atom count by compound', va='center', rotation='vertical')
     fig.set_size_inches((12,5))
     fig.savefig('{}_validation_completeness.pdf'.format(prefix))
 
+    # groups
     plt.close()
     fig, ax = plt.subplots()
     jitterplot(ax, groupv['atype'], groupv['match'], 1)
@@ -168,6 +180,7 @@ if __name__=='__main__':
     ax.set_ylabel('Matched atom count per group')
     fig.savefig('{}_validation_specificity_FG.pdf'.format(prefix))
 
+    # carbon
     plt.close()
     fig, ax = plt.subplots()
     jitterplot(ax, carbonv['group'], carbonv['atom'], 2)
