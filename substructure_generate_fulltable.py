@@ -32,6 +32,7 @@ import pandas as pd
 from collections import OrderedDict
 from argparse import ArgumentParser, RawTextHelpFormatter
 from util import searchgroups
+from functools import reduce
 
 ###_* --- Define command-line arguments
 

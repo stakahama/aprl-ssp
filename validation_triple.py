@@ -75,7 +75,12 @@ if __name__=='__main__':
 
     ## read
 
-    atype = lambda x: x[0].upper()
+    # atype = lambda x: x[0].upper()
+    def atype(x):
+        try:
+            return x[0].upper()
+        except:
+            return np.nan
     
     atoms = pd.read_csv(filename['atoms']).set_index('compound')
     atoms.columns = atoms.columns.map(atype)

@@ -151,7 +151,7 @@ Required external programs:
 
 Required python packages:
 
-* pybel (interface to Open Babel)
+* pybel (interface to Open Babel) [here](https://anaconda.org/openbabel/openbabel)
 
 #### Arguments
 
@@ -283,6 +283,8 @@ If only SMARTS patterns are used, the same pattern file can be provided to "subs
 User can define functions to be called for evaluation. These functions should be contained in a file called "userdef.py." These functions will generally accept as its first argument the pybel Molecule object upon which operations are to be performed. In the pattern file, the argument to the function should be provided as `molecule` (lowercase) as this is the object whose value will be evaluated.
 
 ## Validation scripts (for Ruggeri and Takahama, 2016)
+
+(*Note this has been superceded by "validation\_triple.py".*)
 
 Three scripts are provided for generating validation figures:
 

@@ -73,8 +73,8 @@ if __name__=='__main__':
         exportfile = os.path.join(ddirectory,args.export) ## looks in same directory
         with open(exportfile) as f:
             export = [x.strip('"\'\n') for x in f]
-        print 'exporting ',\
-              ', '.join('{:d}: {:s}'.format(*x) for x in zip(range(1,len(export)+1),export))
+        print('exporting ',\
+              ', '.join('{:d}: {:s}'.format(*x) for x in zip(range(1,len(export)+1),export)))
     else:
         export = None
 

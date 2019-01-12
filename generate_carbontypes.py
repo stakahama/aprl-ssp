@@ -77,7 +77,7 @@ if __name__=='__main__':
 
     wf = (
         fulltable
-        .loc[fulltable['type'].str.contains('^C|c')]
+        .loc[~fulltable['type'].isnull() & fulltable['type'].str.contains('^C|c')]
         .groupby(['compound','atom','type','group'])['match'].count()
         .unstack(level='group', fill_value=0)
         )
@@ -103,6 +103,18 @@ if __name__=='__main__':
     theta.index = theta.apply(label_ctype, axis=1)
     theta.index.name = 'ctype'
 
+    ## -----------------------------------------------------------------------------
+
+    gamma = (
+        fulltable.loc[fulltable['type'].str.contains('^C|c')]
+        .groupby(['compound', 'match', 'group'])['atom'].count()
+        .reset_index('group').reset_index(drop=True).drop_duplicates()
+        .rename(columns={"atom": "count"})
+        .set_index('group').loc[xmat.columns]
+    )
+    gamma['gamma'] = 1/gamma['count']
+    del gamma['count']
+    
     ## -------------------------------------------------------------------------
 
     ## export
@@ -110,3 +122,4 @@ if __name__=='__main__':
     xmat.to_csv('{}_carbontypes_X.csv'.format(prefix))
     ymat.to_csv('{}_carbontypes_Y.csv'.format(prefix))
     theta.to_csv('{}_carbontypes_Theta.csv'.format(prefix))
+    gamma.to_csv('{}_carbontypes_gamma.csv'.format(prefix))

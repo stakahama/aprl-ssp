@@ -32,12 +32,12 @@ import pandas as pd
 import numpy as np
 from collections import OrderedDict
 from operator import add
-from functional import compose
 import os
-import functional
-import functools
+from functools import reduce
 
-compose = functools.partial(functools.reduce, functional.compose)
+# https://mathieularose.com/function-composition-in-python/
+def compose(*functions):
+    return reduce(lambda f, g: lambda x: f(g(x)), functions, lambda x: x)
 
 try:
     import userdef
@@ -66,9 +66,9 @@ class searchgroups:
                 self.unquote)
 
     def matchedpatt(self,groups):
-        return (groups.map(compose((bool,self.evalkw.search,str))),
-                groups.map(compose((bool,self.brackets.search,str))),
-                groups.map(compose((bool,self.quotes.search,str))))
+        return (groups.map(compose(bool,self.evalkw.search,str)),
+                groups.map(compose(bool,self.brackets.search,str)),
+                groups.map(compose(bool,self.quotes.search,str)))
 
     def count(self,smilesstr):
         ##
@@ -176,7 +176,7 @@ class searchgroups:
             ##
             i += 1
             if i > maxiter:
-                print 'remaining:', ','.join(remaining)
+                print('remaining:', ','.join(remaining))
                 sys.exit('exceeded maximum number of iterations {:d}'.format(maxiter))
         return ordered
 
